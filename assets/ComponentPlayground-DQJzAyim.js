@@ -1,4 +1,4 @@
-import{n as e,r as t,t as n}from"./index-DEc98Eb4.js";var r={timestamp:`2026-06-09T09:40:22`,compiler:{name:`@stencil/core`,version:`4.43.4`,typescriptVersion:`5.8.3`},components:[{filePath:`src/components/library/category-section.tsx`,encapsulation:`shadow`,tag:`category-section`,readme:`# library-card\r
+import{n as e,r as t,t as n}from"./index-jNMaXYsG.js";var r={timestamp:`2026-06-09T09:40:22`,compiler:{name:`@stencil/core`,version:`4.43.4`,typescriptVersion:`5.8.3`},components:[{filePath:`src/components/library/category-section.tsx`,encapsulation:`shadow`,tag:`category-section`,readme:`# library-card\r
 \r
 \r
 \r`,docs:``,docsTags:[],usage:{},props:[{name:`categoryIcon`,type:`string`,complexType:{original:`string`,resolved:`string`,references:{}},mutable:!1,attr:`category-icon`,reflectToAttr:!1,docs:`Category icon`,docsTags:[{name:`default`,text:`'📦'`}],default:`'📦'`,values:[{type:`string`}],optional:!1,required:!1,getter:!1,setter:!1},{name:`categoryName`,type:`string`,complexType:{original:`string`,resolved:`string`,references:{}},mutable:!1,attr:`category-name`,reflectToAttr:!1,docs:`Category name`,docsTags:[],values:[{type:`string`}],optional:!1,required:!1,getter:!1,setter:!1},{name:`components`,type:`ComponentData[]`,complexType:{original:`ComponentData[]`,resolved:`ComponentData[]`,references:{ComponentData:{location:`import`,path:`./data`,id:`src/components/library/data.ts::ComponentData`,referenceLocation:`ComponentData`}}},mutable:!1,reflectToAttr:!1,docs:`Components in this category`,docsTags:[{name:`default`,text:`[]`}],default:`[]`,values:[{type:`ComponentData[]`}],optional:!1,required:!1,getter:!1,setter:!1},{name:`expanded`,type:`boolean`,complexType:{original:`boolean`,resolved:`boolean`,references:{}},mutable:!0,attr:`expanded`,reflectToAttr:!1,docs:`Whether the section is expanded`,docsTags:[{name:`default`,text:`true`}],default:`true`,values:[{type:`boolean`}],optional:!1,required:!1,getter:!1,setter:!1},{name:`mode`,type:`"demo" | "doc"`,complexType:{original:`'demo' | 'doc'`,resolved:`"demo" | "doc"`,references:{}},mutable:!1,attr:`mode`,reflectToAttr:!1,docs:`Mode: 'demo' or 'doc'`,docsTags:[{name:`default`,text:`'demo'`}],default:`'demo'`,values:[{value:`demo`,type:`string`},{value:`doc`,type:`string`}],optional:!1,required:!1,getter:!1,setter:!1}],methods:[],events:[],listeners:[],styles:[],slots:[],parts:[],states:[],dependents:[`ui-library`],dependencies:[`ui-button`,`library-card`],dependencyGraph:{"category-section":[`ui-button`,`library-card`],"ui-button":[`ui-badge`,`ui-loader`,`ui-icon`],"ui-badge":[`ui-icon`,`ui-button`],"ui-icon":[`ui-loader`],"library-card":[`ui-button`],"ui-library":[`category-section`]}},{filePath:`src/components/layout-manager/layout-manager.tsx`,encapsulation:`none`,tag:`layout-manager`,readme:`# layout-manager\r
@@ -1308,17 +1308,17 @@ Schema: { left?: ToolbarItem[], center?: ToolbarItem[], right?: ToolbarItem[] }`
         <ui-accordion id="dropdownAccordion" variant="card-list" selected-header-color="#8b5cf6" multiple="true">\r
           <div slot="content-filters" style="padding: 24px; display: flex; flex-direction: column; gap: 20px;">\r
             <div>\r
-              <label style="display: block; font-size: 13px; font-weight: 600; color: #4b5563; margin-bottom: 8px;">Select Department</label>\r
+              <ui-label style="display: block; font-size: 13px; font-weight: 600; color: #4b5563; margin-bottom: 8px;">Select Department</ui-label>\r
               <ui-dropdown id="accDeptDropdown" placeholder="All Departments" icon-library="lucide"></ui-dropdown>\r
             </div>\r
             <div>\r
-              <label style="display: block; font-size: 13px; font-weight: 600; color: #4b5563; margin-bottom: 8px;">Filter by Role</label>\r
+              <ui-label style="display: block; font-size: 13px; font-weight: 600; color: #4b5563; margin-bottom: 8px;">Filter by Role</ui-label>\r
               <ui-dropdown id="accRoleDropdown" multi-select placeholder="Select roles..." icon-library="lucide"></ui-dropdown>\r
             </div>\r
           </div>\r
           \r
           <div slot="content-settings" style="padding: 24px;">\r
-            <label style="display: block; font-size: 13px; font-weight: 600; color: #4b5563; margin-bottom: 8px;">Region Selection</label>\r
+            <ui-label style="display: block; font-size: 13px; font-weight: 600; color: #4b5563; margin-bottom: 8px;">Region Selection</ui-label>\r
             <ui-dropdown id="accRegionDropdown" cascading placeholder="Select region..." icon-library="lucide"></ui-dropdown>\r
           </div>\r
         </ui-accordion>\r
@@ -1415,11 +1415,11 @@ Schema: { left?: ToolbarItem[], center?: ToolbarItem[], right?: ToolbarItem[] }`
               <ui-checkbox id="accordionHolographic" label="🔳 3D Depth"></ui-checkbox>\r
               <ui-checkbox id="accordionSparklines" label="📉 Sparklines"></ui-checkbox>\r
               <div style="display: flex; align-items: center; gap: 8px;">\r
-                <label style="font-size: 13px; color: var(--text-secondary, #4b5563);">Header Color</label>\r
+                <ui-label style="font-size: 13px; color: var(--text-secondary, #4b5563);">Header Color</ui-label>\r
                 <ui-color-picker id="accordionColor" value="#10b981"></ui-color-picker>\r
               </div>\r
               <div style="display: flex; align-items: center; gap: 8px;">\r
-                <label style="font-size: 13px; color: var(--text-secondary, #4b5563);">Background</label>\r
+                <ui-label style="font-size: 13px; color: var(--text-secondary, #4b5563);">Background</ui-label>\r
                 <ui-color-picker id="accordionBgColor" value="#ffffff"></ui-color-picker>\r
               </div>\r
             </div>\r
@@ -1440,7 +1440,7 @@ Schema: { left?: ToolbarItem[], center?: ToolbarItem[], right?: ToolbarItem[] }`
             <h4 style="margin: 24px 0 16px 0; color: var(--text-primary, #1e293b); font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em;">⚙️ Configuration</h4>\r
             <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-end;">\r
                <div style="width: 150px;">\r
-                 <label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Variant</label>\r
+                 <ui-label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Variant</ui-label>\r
                  <ui-dropdown id="accordionVariant" value="default" options='[\r
                    {"label": "Default", "value": "default"},\r
                    {"label": "Splitted", "value": "splitted"},\r
@@ -1451,7 +1451,7 @@ Schema: { left?: ToolbarItem[], center?: ToolbarItem[], right?: ToolbarItem[] }`
                  ]'></ui-dropdown>\r
                </div>\r
                <div style="width: 120px;">\r
-                 <label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Size</label>\r
+                 <ui-label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Size</ui-label>\r
                  <ui-dropdown id="accordionSize" value="md" options='[\r
                    {"label": "Small", "value": "sm"},\r
                    {"label": "Medium", "value": "md"},\r
@@ -1459,7 +1459,7 @@ Schema: { left?: ToolbarItem[], center?: ToolbarItem[], right?: ToolbarItem[] }`
                  ]'></ui-dropdown>\r
                </div>\r
                <div style="width: 120px;">\r
-                 <label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Theme</label>\r
+                 <ui-label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Theme</ui-label>\r
                  <ui-dropdown id="accordionTheme" value="default" options='[\r
                    {"label": "Default", "value": "default"},\r
                    {"label": "Glass", "value": "glass"},\r
@@ -1467,14 +1467,14 @@ Schema: { left?: ToolbarItem[], center?: ToolbarItem[], right?: ToolbarItem[] }`
                  ]'></ui-dropdown>\r
                </div>\r
                <div style="width: 120px;">\r
-                 <label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Icon Pos</label>\r
+                 <ui-label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Icon Pos</ui-label>\r
                  <ui-dropdown id="accordionIconPos" value="end" options='[\r
                    {"label": "End", "value": "end"},\r
                    {"label": "Start", "value": "start"}\r
                  ]'></ui-dropdown>\r
                </div>\r
                <div style="width: 120px;">\r
-                 <label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Physics</label>\r
+                 <ui-label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Physics</ui-label>\r
                  <ui-dropdown id="accordionPhysics" value="stiff" options='[\r
                    {"label": "Stiff", "value": "stiff"},\r
                    {"label": "Bouncy", "value": "bouncy"},\r
@@ -1482,7 +1482,7 @@ Schema: { left?: ToolbarItem[], center?: ToolbarItem[], right?: ToolbarItem[] }`
                  ]'></ui-dropdown>\r
                </div>\r
                <div style="width: 100px;">\r
-                 <label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Columns</label>\r
+                 <ui-label style="display:block; font-size:12px; margin-bottom:4px; color: var(--text-secondary, inherit);">Columns</ui-label>\r
                  <ui-number-input id="accordionCols" value="1" min="1" max="4"></ui-number-input>\r
                </div>\r
             </div>\r
@@ -4638,7 +4638,7 @@ setTimeout(() => {\r
         <p style="color: #6b7280; margin-bottom: 16px;">Customize row density from small to extra-large, and drag rows to reorder them.</p>
 
         <div style="margin-bottom: 16px; display: flex; gap: 12px; align-items: center;">
-          <label style="font-size: 13px; font-weight: 600; color: #4b5563;">Row Height:</label>
+          <ui-label style="font-size: 13px; font-weight: 600; color: #4b5563;">Row Height:</ui-label>
           <ui-dropdown id="rowHeightDropdown" value="medium" options='[{"label": "Small", "value": "small"}, {"label": "Medium", "value": "medium"}, {"label": "Large", "value": "large"}, {"label": "Extra Large", "value": "extra-large"}]'></ui-dropdown>
         </div>
 
@@ -35048,7 +35048,7 @@ const printCurrentTable = function () {\r
             \r
             <div style="display: flex; flex-direction: column; gap: 16px;">\r
               <div>\r
-                <label style="display:block; font-size:12px; margin-bottom:4px; font-weight:500;">Orientation</label>\r
+                <ui-label style="display:block; font-size:12px; margin-bottom:4px; font-weight:500;">Orientation</ui-label>\r
                 <ui-dropdown id="playOrientation" value="vertical" options='[\r
                   {"label": "Vertical", "value": "vertical"},\r
                   {"label": "Horizontal", "value": "horizontal"}\r
@@ -35056,7 +35056,7 @@ const printCurrentTable = function () {\r
               </div>\r
               \r
               <div>\r
-                <label style="display:block; font-size:12px; margin-bottom:4px; font-weight:500;">Type</label>\r
+                <ui-label style="display:block; font-size:12px; margin-bottom:4px; font-weight:500;">Type</ui-label>\r
                 <ui-dropdown id="playType" value="line" options='[\r
                   {"label": "Line (Default)", "value": "line"},\r
                   {"label": "Dot", "value": "dot"}\r
@@ -35966,7 +35966,7 @@ const printCurrentTable = function () {\r
                    </div>\r
                    <ui-input label="Ctrl Shortcut" id="asideShortcut" placeholder="B" maxlength="1"></ui-input>\r
                    <div style="display: flex; flex-direction: column; gap: 4px;">\r
-                     <label style="font-size: 12px;">Stack Offset: <span id="stackVal">0px</span></label>\r
+                     <ui-label style="font-size: 12px;">Stack Offset: <span id="stackVal">0px</span></ui-label>\r
                      <ui-range-slider id="asideStackOffset" min="0" max="100" value="0"></ui-range-slider>\r
                    </div>\r
                 </div>\r
@@ -35988,11 +35988,11 @@ const printCurrentTable = function () {\r
                    <ui-dropdown label="Animation Type" id="asideAnimation" value="slide-in-out" options='[{"label":"Slide In-Out","value":"slide-in-out"},{"label":"Fade","value":"fade"},{"label":"Scale","value":"scale"}]'></ui-dropdown>\r
                    \r
                    <div style="display: flex; flex-direction: column; gap: 4px;">\r
-                     <label style="font-size: 12px;">Speed (Duration): <span id="durVal">1s</span></label>\r
+                     <ui-label style="font-size: 12px;">Speed (Duration): <span id="durVal">1s</span></ui-label>\r
                      <ui-range-slider id="asideDuration" min="0.1" max="2" step="0.1" value="1"></ui-range-slider>\r
                    </div>\r
                    <div style="display: flex; flex-direction: column; gap: 4px;">\r
-                     <label style="font-size: 12px;">Diagnostic Progress: <span id="progVal">OFF</span></label>\r
+                     <ui-label style="font-size: 12px;">Diagnostic Progress: <span id="progVal">OFF</span></ui-label>\r
                      <ui-range-slider id="asideProgress" min="-1" max="100" value="-1"></ui-range-slider>\r
                    </div>\r
                 </div>\r
@@ -36861,13 +36861,13 @@ const printCurrentTable = function () {\r
         <p style="opacity: 0.7; margin-bottom: 24px;">Try all badge features in real-time!</p>\r
         \r
         <div class="playground-settings" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">\r
-          <label><span>Value:</span>\r
+          <ui-label><span>Value:</span>\r
             <ui-input id="badgeValue" value="5" style="width: 100%;"></ui-input>\r
-          </label>\r
-          <label><span>Icon Name:</span>\r
+          </ui-label>\r
+          <ui-label><span>Icon Name:</span>\r
             <ui-input id="badgeIcon" placeholder="bell" style="width: 100%;"></ui-input>\r
-          </label>\r
-          <label><span>Library:</span>\r
+          </ui-label>\r
+          <ui-label><span>Library:</span>\r
             <ui-dropdown id="badgeIconLibrary" value="lucide" options='[\r
               {"label": "Lucide", "value": "lucide"},\r
               {"label": "FontAwesome", "value": "fontawesome"},\r
@@ -36878,8 +36878,8 @@ const printCurrentTable = function () {\r
               {"label": "SE Icons", "value": "se"},\r
               {"label": "Default", "value": "default"}\r
             ]' style="width: 100%;"></ui-dropdown>\r
-          </label>\r
-          <label><span>Color:</span>\r
+          </ui-label>\r
+          <ui-label><span>Color:</span>\r
             <ui-dropdown id="badgeColor" value="danger" options='[\r
               {"label": "Primary", "value": "primary"},\r
               {"label": "Secondary", "value": "secondary"},\r
@@ -36888,23 +36888,23 @@ const printCurrentTable = function () {\r
               {"label": "Warning", "value": "warning"},\r
               {"label": "Info", "value": "info"}\r
             ]' style="width: 100%;"></ui-dropdown>\r
-          </label>\r
-          <label><span>Variant:</span>\r
+          </ui-label>\r
+          <ui-label><span>Variant:</span>\r
             <ui-dropdown id="badgeVariant" value="standard" options='[\r
               {"label": "Standard", "value": "standard"},\r
               {"label": "Outlined", "value": "outlined"},\r
               {"label": "Bordered", "value": "bordered"},\r
               {"label": "Soft", "value": "soft"}\r
             ]' style="width: 100%;"></ui-dropdown>\r
-          </label>\r
-          <label><span>Size:</span>\r
+          </ui-label>\r
+          <ui-label><span>Size:</span>\r
             <ui-dropdown id="badgeSize" value="md" options='[\r
               {"label": "Small", "value": "sm"},\r
               {"label": "Medium", "value": "md"},\r
               {"label": "Large", "value": "lg"}\r
             ]' style="width: 100%;"></ui-dropdown>\r
-          </label>\r
-          <label><span>Gradient:</span>\r
+          </ui-label>\r
+          <ui-label><span>Gradient:</span>\r
             <ui-dropdown id="badgeGradient" value="" options='[\r
               {"label": "None", "value": ""},\r
               {"label": "Blue-Purple", "value": "blue-purple"},\r
@@ -36912,15 +36912,15 @@ const printCurrentTable = function () {\r
               {"label": "Orange-Red", "value": "orange-red"},\r
               {"label": "Pink-Purple", "value": "pink-purple"}\r
             ]' style="width: 100%;"></ui-dropdown>\r
-          </label>\r
-          <label><span>Animation:</span>\r
+          </ui-label>\r
+          <ui-label><span>Animation:</span>\r
             <ui-dropdown id="badgeAnimation" value="none" options='[\r
               {"label": "None", "value": "none"},\r
               {"label": "Pulse", "value": "pulse"},\r
               {"label": "Bounce", "value": "bounce"},\r
               {"label": "Shake", "value": "shake"}\r
             ]' style="width: 100%;"></ui-dropdown>\r
-          </label>\r
+          </ui-label>\r
           <ui-checkbox id="badgeDot" label="Dot Mode"></ui-checkbox>\r
           <ui-checkbox id="badgeInteractive" label="Interactive"></ui-checkbox>\r
           <ui-checkbox id="badgeCloseable" label="Closeable"></ui-checkbox>\r
@@ -37458,7 +37458,7 @@ const printCurrentTable = function () {\r
         <div style="background: var(--bg-secondary); padding: 32px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 1px solid var(--border-default); max-width: 500px; margin: 0 auto;">\r
           <form id="demoForm" style="display: flex; flex-direction: column; gap: 20px;">\r
             <div style="display: flex; flex-direction: column; gap: 8px;">\r
-               <label style="font-size: 13px; font-weight: 600; color: var(--text-primary);">Profile Picture</label>\r
+               <ui-label style="font-size: 13px; font-weight: 600; color: var(--text-primary);">Profile Picture</ui-label>\r
                <div style="display: flex; align-items: center; gap: 16px;">\r
                   <ui-button type="avatar" avatar-src="/build/assets/images/logo.png" avatar-alt="User" size="xl" status="online"></ui-button>\r
                   <ui-button variant="soft" size="md" icon="camera" label="Change Photo"></ui-button>\r
@@ -37466,12 +37466,12 @@ const printCurrentTable = function () {\r
             </div>\r
 \r
             <div style="display: flex; flex-direction: column; gap: 8px;">\r
-              <label style="font-size: 13px; font-weight: 600; color: var(--text-primary);">Username</label>\r
+              <ui-label style="font-size: 13px; font-weight: 600; color: var(--text-primary);">Username</ui-label>\r
               <ui-input placeholder="Enter username" value="antigravity_user" variant="filled"></ui-input>\r
             </div>\r
 \r
             <div style="display: flex; flex-direction: column; gap: 8px;">\r
-              <label style="font-size: 13px; font-weight: 600; color: var(--text-primary);">Bio</label>\r
+              <ui-label style="font-size: 13px; font-weight: 600; color: var(--text-primary);">Bio</ui-label>\r
               <ui-input type="textarea" placeholder="Tell us about yourself..." variant="filled"></ui-input>\r
             </div>\r
 \r
@@ -39533,7 +39533,7 @@ const printCurrentTable = function () {\r
           <span class="cb-section-label" style="margin-top:8px;">Interactive — drag the slider to update progress live</span>\r
           <div style="display:flex; flex-direction:column; gap:12px;">\r
             <div style="display:flex; align-items:center; gap:12px;">\r
-              <label style="font-size:13px; font-weight:600; white-space:nowrap;">Progress: <span id="cb-prog-val">45</span>%</label>\r
+              <ui-label style="font-size:13px; font-weight:600; white-space:nowrap;">Progress: <span id="cb-prog-val">45</span>%</ui-label>\r
               <input type="range" id="cb-prog-slider" min="0" max="100" value="45" style="flex:1;">\r
             </div>\r
             <ui-callout-banner id="cb-prog-banner" progress="45" variant="info" heading="Custom Progress" message="Adjust the slider above to see the progress bar update."></ui-callout-banner>\r
@@ -39619,7 +39619,7 @@ const printCurrentTable = function () {\r
         <div style="display:flex; flex-direction:column; gap:12px;">\r
           <!-- Controls row -->\r
           <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">\r
-            <label style="font-size:13px; font-weight:600; white-space:nowrap;">Progress: <span id="cb-st-val">0</span>%</label>\r
+            <ui-label style="font-size:13px; font-weight:600; white-space:nowrap;">Progress: <span id="cb-st-val">0</span>%</ui-label>\r
             <input type="range" id="cb-st-slider" min="0" max="100" value="0" style="flex:1; min-width:120px;">\r
             <button id="cb-st-interrupt" style="padding:4px 14px; font-size:12px; font-weight:600; border-radius:6px; border:1.5px solid #f59e0b; background:var(--accent-orange-soft,#fff7ed); color:var(--accent-yellow,#b45309); cursor:pointer; white-space:nowrap;">⛔ Interrupt</button>\r
             <button id="cb-st-reset"     style="padding:4px 14px; font-size:12px; font-weight:600; border-radius:6px; border:1.5px solid #e2e8f0; background:var(--bg-secondary,#f8fafc); color:#475569; cursor:pointer;">↺ Reset</button>\r
@@ -39634,10 +39634,10 @@ const printCurrentTable = function () {\r
             </div>\r
             <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px; flex:1; min-width:280px;">\r
               \${['notStarted','running','interrupted','completed'].map((k,i) => \`\r
-                <label style="display:flex; flex-direction:column; gap:3px; font-size:10px; font-weight:700; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:.05em;">\r
+                <ui-label style="display:flex; flex-direction:column; gap:3px; font-size:10px; font-weight:700; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:.05em;">\r
                   \${['Not Started','Running','Interrupted','Completed'][i]}\r
                   <input id="cb-st-lbl-\${k}" type="text" placeholder="\${['Not Started','Running','Interrupted','Completed'][i]}" style="padding:4px 7px; font-size:12px; border-radius:6px; border:1px solid var(--border-default,#e2e8f0); outline:none; background:var(--bg-primary,white);">\r
-                </label>\`).join('')}\r
+                </ui-label>\`).join('')}\r
             </div>\r
           </div>\r
           <!-- Live banner -->\r
@@ -40065,7 +40065,7 @@ const printCurrentTable = function () {\r
         <ui-card hoverable="true" card-title="Hover Effect" description="Subtle Lift and Shadow increase on hover."></ui-card>\r
       </div>`},{title:`Contextual Menus`,description:``,html:`<h3 class="section-title" style="margin-top: 0;">Contextual Menus</h3>\r
       <div class="demo-grid">\r
-        <ui-card show-menu="true" menu-items='\${menuItems}' card-title="JSON Defined Menu" icon-library="lucide" description="Define menu items via complex JSON objects."></ui-card>\r
+        <ui-card show-menu="true" menu-items='[{"label":"Edit"},{"label":"Delete"}]' card-title="JSON Defined Menu" icon-library="lucide" description="Define menu items via complex JSON objects."></ui-card>\r
         <ui-card menu-actions="Share, Export, Report" card-title="Action String Menu" description="Quickly define menu actions via a simple comma-separated string."></ui-card>\r
       </div>\r
 \r
@@ -40085,7 +40085,7 @@ const printCurrentTable = function () {\r
            <h4 style="margin: 0 0 20px; font-size: 18px;">Configuration</h4>\r
            \r
            <div style="display: flex; flex-direction: column; gap: 16px;">\r
-             <label><span>Variant:</span>\r
+             <ui-label><span>Variant:</span>\r
                <ui-dropdown id="pg-variant" value="default" size="md" onValueChange="window.updatePlayground()">\r
                  <option value="default">Default</option>\r
                  <option value="elevated">Elevated</option>\r
@@ -40094,59 +40094,59 @@ const printCurrentTable = function () {\r
                  <option value="primary">Primary</option>\r
                  <option value="success">Success</option>\r
                </ui-dropdown>\r
-             </label>\r
+             </ui-label>\r
  \r
-             <label><span>Layout:</span>\r
+             <ui-label><span>Layout:</span>\r
                <ui-dropdown id="pg-layout" value="vertical" size="md" onValueChange="window.updatePlayground()">\r
                  <option value="vertical">Vertical</option>\r
                  <option value="horizontal">Horizontal</option>\r
                </ui-dropdown>\r
-             </label>\r
+             </ui-label>\r
  \r
-             <label><span>Pattern:</span>\r
+             <ui-label><span>Pattern:</span>\r
                <ui-dropdown id="pg-pattern" value="default" size="md" onValueChange="window.updatePlayground()">\r
                  <option value="default">Default</option>\r
                  <option value="product">Product</option>\r
                  <option value="shortcut">Shortcut</option>\r
                </ui-dropdown>\r
-             </label>\r
+             </ui-label>\r
  \r
              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-glass" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Glass</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-hover" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Hoverable</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-flip" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Flippable</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-coll" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Collapsible</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-sele" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Selectable</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-clos" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Closable</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-tilt" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Tilt (3D)</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-magn" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Magnetic</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-menu" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Menu</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-load" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Loading</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-auto" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Auto Scroll</label>\r
-               <label style="font-size: 13px;"><ui-checkbox id="pg-border" checked onCheckboxChange="window.updatePlayground()"></ui-checkbox> Bordered</label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-glass" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Glass</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-hover" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Hoverable</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-flip" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Flippable</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-coll" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Collapsible</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-sele" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Selectable</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-clos" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Closable</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-tilt" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Tilt (3D)</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-magn" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Magnetic</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-menu" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Menu</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-load" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Loading</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-auto" onCheckboxChange="window.updatePlayground()"></ui-checkbox> Auto Scroll</ui-label>\r
+               <ui-label style="font-size: 13px;"><ui-checkbox id="pg-border" checked onCheckboxChange="window.updatePlayground()"></ui-checkbox> Bordered</ui-label>\r
              </div>\r
  \r
-             <label><span>Type:</span>\r
+             <ui-label><span>Type:</span>\r
                <ui-dropdown id="pg-type" value="default" size="md" onValueChange="window.updatePlayground()">\r
                  <option value="default">Default</option>\r
                  <option value="inner">Inner</option>\r
                </ui-dropdown>\r
-             </label>\r
+             </ui-label>\r
  \r
-             <label><span>Importance:</span>\r
+             <ui-label><span>Importance:</span>\r
                <ui-dropdown id="pg-importance" value="standard" size="md" onValueChange="window.updatePlayground()">\r
                  <option value="standard">Standard</option>\r
                  <option value="emphasized">Emphasized</option>\r
                </ui-dropdown>\r
-             </label>\r
+             </ui-label>\r
  \r
-             <label><span>Ribbon Text:</span>\r
+             <ui-label><span>Ribbon Text:</span>\r
                <ui-input id="pg-ribbon" placeholder="e.g. New" size="md" onInputChange="window.updatePlayground()"></ui-input>\r
-             </label>\r
+             </ui-label>\r
  \r
-             <label><span>Card Title:</span>\r
+             <ui-label><span>Card Title:</span>\r
                <ui-input id="pg-title" value="Playground Card" size="md" onInputChange="window.updatePlayground()"></ui-input>\r
-             </label>\r
+             </ui-label>\r
            </div>\r
         </div>\r
  \r
@@ -41741,7 +41741,7 @@ public class HelloWorld {\r
               <ui-switch checked="true"></ui-switch>\r
             </div>\r
             <div>\r
-              <label style="display: block; margin-bottom: 8px; font-weight: 600;">Environment Type</label>\r
+              <ui-label style="display: block; margin-bottom: 8px; font-weight: 600;">Environment Type</ui-label>\r
               <ui-button-toggle-group value="prod" size="md">\r
                 <ui-button-toggle value="dev" label="Development"></ui-button-toggle>\r
                 <ui-button-toggle value="staging" label="Staging"></ui-button-toggle>\r
@@ -42238,7 +42238,7 @@ public class HelloWorld {\r
           <h3 style="margin-top: 0;">🎮 Interactive Playground</h3>\r
           <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">\r
             <div>\r
-              <label style="display: block; margin-bottom: 5px; font-weight: 500;">Menu Items (JSON):</label>\r
+              <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Menu Items (JSON):</ui-label>\r
               <ui-input id="contextMenuItems" multiline="true" rows="15" \r
                 style="font-family: monospace; font-size: 12px;"></ui-input>\r
             </div>\r
@@ -42624,7 +42624,7 @@ public class HelloWorld {\r
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">\r
                 <ui-number-input label="Daily API Request Limit" value="2500" min="100" max="50000" step="100" size="md" helper-text="Steps of 100 requests"></ui-number-input>\r
                 <div style="display: flex; flex-direction: column;">\r
-                  <label style="display: block; font-weight: 600; font-size: 12px; margin-bottom: 4px; color: var(--text-standard);">Session Timeout</label>\r
+                  <ui-label style="display: block; font-weight: 600; font-size: 12px; margin-bottom: 4px; color: var(--text-standard);">Session Timeout</ui-label>\r
                   <div style="display: flex; align-items: center; justify-content: center; height: 100%; min-height: 48px;">\r
                     <ui-knob value="15" min="5" max="120" step="5" size="80" stroke-width="6" show-value="true" enable-wheel="true" value-suffix="m"></ui-knob>\r
                   </div>\r
@@ -42637,7 +42637,7 @@ public class HelloWorld {\r
               <h4 style="margin: 0 0 16px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color:var(--text-secondary,#64748b); font-weight: 700;">3. Security & Access Settings</h4>\r
               <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; margin-bottom: 16px;">\r
                 <div>\r
-                  <label style="display: block; font-weight: 700; font-size: 12px; margin-bottom: 8px; color: var(--text-standard);">Deployment Strategy</label>\r
+                  <ui-label style="display: block; font-weight: 700; font-size: 12px; margin-bottom: 8px; color: var(--text-standard);">Deployment Strategy</ui-label>\r
                   <ui-radio-group value="cloud" size="md">\r
                     <ui-radio value="cloud" label="Cloud Infrastructure" description="Auto-scaled managed servers" checked glow size="md"></ui-radio>\r
                     <ui-radio value="on-premise" label="On-Premise Server" description="Private air-gapped hardware" size="md"></ui-radio>\r
@@ -42658,7 +42658,7 @@ public class HelloWorld {\r
               <h4 style="margin: 0 0 16px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color:var(--text-secondary,#64748b); font-weight: 700;">4. Customization & Theme</h4>\r
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 16px;">\r
                 <div>\r
-                  <label style="display: block; font-weight: 600; font-size: 12px; margin-bottom: 8px; color: var(--text-standard);">Theme Interface</label>\r
+                  <ui-label style="display: block; font-weight: 600; font-size: 12px; margin-bottom: 8px; color: var(--text-standard);">Theme Interface</ui-label>\r
                   <ui-button-toggle-group value="system" size="md" variant="outline">\r
                     <ui-button-toggle value="light" label="Light"></ui-button-toggle>\r
                     <ui-button-toggle value="dark" label="Dark"></ui-button-toggle>\r
@@ -42669,12 +42669,12 @@ public class HelloWorld {\r
               </div>\r
               \r
               <div style="margin-bottom: 16px;">\r
-                <label style="display: block; font-weight: 600; font-size: 12px; margin-bottom: 8px; color: var(--text-standard);">Platform Experience Level</label>\r
+                <ui-label style="display: block; font-weight: 600; font-size: 12px; margin-bottom: 8px; color: var(--text-standard);">Platform Experience Level</ui-label>\r
                 <ui-range-slider value="80" min="0" max="100" step="5" size="md"></ui-range-slider>\r
               </div>\r
 \r
               <div style="margin-bottom: 16px;">\r
-                <label style="display: block; font-weight: 600; font-size: 12px; margin-bottom: 8px; color: var(--text-standard);">Profile Photo Upload</label>\r
+                <ui-label style="display: block; font-weight: 600; font-size: 12px; margin-bottom: 8px; color: var(--text-standard);">Profile Photo Upload</ui-label>\r
                 <ui-file-upload variant="compact" label="Upload Avatar" accept="image/*" size="md" max-files="1"></ui-file-upload>\r
               </div>\r
 \r
@@ -42689,7 +42689,7 @@ public class HelloWorld {\r
 \r
             <!-- Section 5: Satisfaction -->\r
             <div style="background: rgba(16, 185, 129, 0.04); padding: 16px; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.15); display: flex; align-items: center; justify-content: space-between;">\r
-              <label style="font-weight: 600; font-size: 13px; color: #111827; margin: 0;">How satisfied are you with this framework?</label>\r
+              <ui-label style="font-weight: 600; font-size: 13px; color: #111827; margin: 0;">How satisfied are you with this framework?</ui-label>\r
               <ui-rating value="5" max="5" size="lg"></ui-rating>\r
             </div>\r
           </div>\r
@@ -42851,11 +42851,11 @@ public class HelloWorld {\r
         <ui-dialog-box id="dAsync" dialog-title="Edit Profile" ok-text="Save Changes" cancel-text="Cancel" keep-mounted="true" width="500px" icon-library="lucide">\r
            <div style="display: flex; flex-direction: column; gap: 12px;">\r
               <div>\r
-                 <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px; color: #374151;">Full Name</label>\r
+                 <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px; color: #374151;">Full Name</ui-label>\r
                  <ui-input id="profName" value="John Doe"></ui-input>\r
               </div>\r
               <div>\r
-                 <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px; color: #374151;">Email</label>\r
+                 <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px; color: #374151;">Email</ui-label>\r
                  <ui-input type="email" id="profEmail" value="john@company.com"></ui-input>\r
               </div>\r
               <div style="font-size: 13px; color: #6b7280; background:var(--bg-secondary,#f9fafb); padding: 8px; border-radius: 4px; display: flex; align-items: center; gap: 8px;">\r
@@ -42956,14 +42956,14 @@ public class HelloWorld {\r
           parentDialog.setAttribute('status', 'info');\r
           parentDialog.innerHTML = \`\r
             <div style="padding: 16px;">\r
-              <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">\r
+              <ui-label style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">\r
                 <span>Child Dialog Width:</span>\r
                 <ui-input id="childWidthInput" value="400px" style="width: 100px;"></ui-input>\r
-              </label>\r
-              <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">\r
+              </ui-label>\r
+              <ui-label style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">\r
                 <span>Child Dialog Height:</span>\r
                 <ui-input id="childHeightInput" value="300px" style="width: 100px;"></ui-input>\r
-              </label>\r
+              </ui-label>\r
               <ui-button id="openChildDialogBtn" size="md" variant="outline" color="primary" label="Open Child Dialog" size="md" variant="outline" style="--btn-bg: var(--accent-indigo,#6366f1);"></ui-button>\r
             </div>\r
           \`;\r
@@ -43092,7 +43092,7 @@ public class HelloWorld {\r
             \r
             <!-- Basic Controls -->\r
             <div class="control-group">\r
-              <label style="display: flex; flex-direction: column; gap: 8px;">\r
+              <ui-label style="display: flex; flex-direction: column; gap: 8px;">\r
                 <span style="font-size: 11px; font-weight: 800; color:var(--text-secondary,#64748b); text-transform: uppercase; letter-spacing: 0.1em;">Window Size</span>\r
                 <ui-dropdown id="iDSize" value="sm" full-width="true" options='[\r
                   {"label": "Custom", "value": "custom"},\r
@@ -43107,11 +43107,11 @@ public class HelloWorld {\r
                   {"label": "XXXL (1600px)", "value": "xxxl"},\r
                   {"label": "Fill (90%)", "value": "fill"}\r
                 ]'></ui-dropdown>\r
-              </label>\r
+              </ui-label>\r
             </div>\r
 \r
             <div class="control-group">\r
-              <label style="display: flex; flex-direction: column; gap: 8px;">\r
+              <ui-label style="display: flex; flex-direction: column; gap: 8px;">\r
                 <span style="font-size: 11px; font-weight: 800; color:var(--text-secondary,#64748b); text-transform: uppercase; letter-spacing: 0.1em;">Aesthetic Variant</span>\r
                 <ui-dropdown id="iDVariant" value="soft" full-width="true" options='[\r
                    {"label": "Soft (Modern)", "value": "soft"},\r
@@ -43119,11 +43119,11 @@ public class HelloWorld {\r
                    {"label": "Filled (Bold)", "value": "filled"},\r
                    {"label": "Glass (Premium)", "value": "glass"}\r
                 ]'></ui-dropdown>\r
-              </label>\r
+              </ui-label>\r
             </div>\r
 \r
             <div class="control-group">\r
-              <label style="display: flex; flex-direction: column; gap: 8px;">\r
+              <ui-label style="display: flex; flex-direction: column; gap: 8px;">\r
                 <span style="font-size: 11px; font-weight: 800; color:var(--text-secondary,#64748b); text-transform: uppercase; letter-spacing: 0.1em;">Semantic Status</span>\r
                 <ui-dropdown id="iDStatus" value="default" full-width="true" options='[\r
                   {"label": "Default", "value": "default"},\r
@@ -43132,14 +43132,14 @@ public class HelloWorld {\r
                   {"label": "Warning Yellow", "value": "warning"},\r
                   {"label": "Danger Red", "value": "error"}\r
                 ]'></ui-dropdown>\r
-              </label>\r
+              </ui-label>\r
             </div>\r
 \r
             <div class="control-group">\r
-              <label style="display: flex; flex-direction: column; gap: 8px;">\r
+              <ui-label style="display: flex; flex-direction: column; gap: 8px;">\r
                 <span style="font-size: 11px; font-weight: 800; color:var(--text-secondary,#64748b); text-transform: uppercase; letter-spacing: 0.1em;">Background Accent</span>\r
                 <ui-color-picker id="iDBgColor" value="#ffffff"></ui-color-picker>\r
-              </label>\r
+              </ui-label>\r
             </div>\r
 \r
             <!-- Settings Toggles -->\r
@@ -44663,7 +44663,7 @@ public class HelloWorld {\r
           <ui-input type="number" label="Current Step" id="divCurrStep" value="0" min="0"></ui-input>\r
           \r
           <div style="display: flex; flex-direction: column; gap: 4px;">\r
-            <label style="font-size: 13px; font-weight: 600;">Percent (Heatmap): <span id="divPercentVal">50%</span></label>\r
+            <ui-label style="font-size: 13px; font-weight: 600;">Percent (Heatmap): <span id="divPercentVal">50%</span></ui-label>\r
             <ui-range-slider id="divPercent" value="50" min="0" max="100" style="width: 100%;"></ui-range-slider>\r
           </div>\r
           \r
@@ -45221,7 +45221,7 @@ public class HelloWorld {\r
 \r
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; padding: 20px; background-color:var(--bg-primary,white); border-radius: 8px;">\r
         <div>\r
-          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Position:</label>\r
+          <ui-label style="display: block; margin-bottom: 8px; font-weight: 600;">Position:</ui-label>\r
           <ui-dropdown id="dockPosition" value="bottom" options='[\r
             {"label": "Bottom", "value": "bottom"},\r
             {"label": "Top", "value": "top"},\r
@@ -45231,7 +45231,7 @@ public class HelloWorld {\r
         </div>\r
 \r
         <div>\r
-          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Size:</label>\r
+          <ui-label style="display: block; margin-bottom: 8px; font-weight: 600;">Size:</ui-label>\r
           <ui-dropdown id="dockSize" value="md" options='[\r
             {"label": "Small", "value": "sm"},\r
             {"label": "Medium", "value": "md"},\r
@@ -45240,7 +45240,7 @@ public class HelloWorld {\r
         </div>\r
 \r
         <div>\r
-          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Magnify:</label>\r
+          <ui-label style="display: block; margin-bottom: 8px; font-weight: 600;">Magnify:</ui-label>\r
           <ui-dropdown id="dockMagnify" value="true" options='[\r
             {"label": "Yes", "value": "true"},\r
             {"label": "No", "value": "false"}\r
@@ -45248,7 +45248,7 @@ public class HelloWorld {\r
         </div>\r
 \r
         <div>\r
-          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Blur Effect:</label>\r
+          <ui-label style="display: block; margin-bottom: 8px; font-weight: 600;">Blur Effect:</ui-label>\r
           <ui-dropdown id="dockBlur" value="true" options='[\r
             {"label": "Yes", "value": "true"},\r
             {"label": "No", "value": "false"}\r
@@ -45256,7 +45256,7 @@ public class HelloWorld {\r
         </div>\r
 \r
         <div>\r
-          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Show Labels:</label>\r
+          <ui-label style="display: block; margin-bottom: 8px; font-weight: 600;">Show Labels:</ui-label>\r
           <ui-dropdown id="dockShowLabels" value="true" options='[\r
             {"label": "Yes", "value": "true"},\r
             {"label": "No", "value": "false"}\r
@@ -45264,7 +45264,7 @@ public class HelloWorld {\r
         </div>\r
 \r
         <div>\r
-          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Item Count:</label>\r
+          <ui-label style="display: block; margin-bottom: 8px; font-weight: 600;">Item Count:</ui-label>\r
           <ui-dropdown id="dockItemCount" value="7" options='[\r
             {"label": "3 Items", "value": "3"},\r
             {"label": "5 Items", "value": "5"},\r
@@ -45275,7 +45275,7 @@ public class HelloWorld {\r
 \r
         <!-- Premium Toggles -->\r
         <div>\r
-          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Premium Features:</label>\r
+          <ui-label style="display: block; margin-bottom: 8px; font-weight: 600;">Premium Features:</ui-label>\r
           <div style="display: flex; gap: 10px; flex-wrap: wrap;">\r
              <ui-checkbox id="dockShowActive" label="Active Dot" checked></ui-checkbox>\r
              <ui-checkbox id="dockShowBounce" label="Bounce"></ui-checkbox>\r
@@ -47399,7 +47399,7 @@ public class HelloWorld {\r
           <div style="background:var(--bg-secondary,#f8fafc); padding: 20px; border-radius: 12px; border:1px solid var(--border-default,#e2e8f0);">\r
              <div style="display: grid; gap: 16px;">\r
                 <div style="display: flex; flex-direction: column; gap: 4px;">\r
-                  <label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Type (Presets):</label>\r
+                  <ui-label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Type (Presets):</ui-label>\r
                   <ui-dropdown id="empType" value="no-data" options='[\r
                     {"label": "No Data", "value": "no-data"},\r
                     {"label": "No Results", "value": "no-results"},\r
@@ -47424,7 +47424,7 @@ public class HelloWorld {\r
                 </div>\r
 \r
                 <div style="display: flex; flex-direction: column; gap: 4px;">\r
-                  <label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Variant:</label>\r
+                  <ui-label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Variant:</ui-label>\r
                   <ui-dropdown id="empVariant" value="default" options='[\r
                     {"label": "Default", "value": "default"},\r
                     {"label": "Outlined", "value": "outlined"},\r
@@ -47435,12 +47435,12 @@ public class HelloWorld {\r
                 </div>\r
 \r
                 <div style="display: flex; flex-direction: column; gap: 4px;">\r
-                  <label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Description:</label>\r
+                  <ui-label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Description:</ui-label>\r
                   <ui-input id="empDesc" placeholder="Sub-tip text..."></ui-input>\r
                 </div>\r
 \r
                 <div style="display: flex; flex-direction: column; gap: 4px;">\r
-                  <label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Alignment:</label>\r
+                  <ui-label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Alignment:</ui-label>\r
                   <ui-dropdown id="empAlign" value="center" options='[\r
                     {"label": "Center (Default)", "value": "center"},\r
                     {"label": "Left", "value": "left"},\r
@@ -47449,7 +47449,7 @@ public class HelloWorld {\r
                 </div>\r
 \r
                 <div style="display: flex; flex-direction: column; gap: 4px;">\r
-                  <label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Size:</label>\r
+                  <ui-label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Size:</ui-label>\r
                   <ui-dropdown id="empSize" value="md" options='[\r
                     {"label": "Small", "value": "small"},\r
                     {"label": "Medium", "value": "md"},\r
@@ -47466,7 +47466,7 @@ public class HelloWorld {\r
                    <ui-checkbox id="empShowSearch" label="Show Search"></ui-checkbox>\r
                    \r
                    <div style="display: flex; flex-direction: column; gap: 4px; font-size: 13px; margin-top: 8px;">\r
-                     <label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Retry Delay (s):</label>\r
+                     <ui-label style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Retry Delay (s):</ui-label>\r
                      <ui-number-input id="empRetry" value="0" min="0"></ui-number-input>\r
                    </div>\r
                 </div>\r
@@ -47610,7 +47610,7 @@ public class HelloWorld {\r
         <h4 style="margin-top: 0;">Interactive Configurator</h4>\r
         \r
         <div style="margin-bottom: 12px;">\r
-          <label style="display: block; font-size: 12px; margin-bottom: 4px; color:var(--text-secondary,#64748b);">Variant</label>\r
+          <ui-label style="display: block; font-size: 12px; margin-bottom: 4px; color:var(--text-secondary,#64748b);">Variant</ui-label>\r
           <ui-dropdown id="fabPropVariant" value="primary" options='[\r
             {"label": "Primary", "value": "primary"},\r
             {"label": "Success", "value": "success"},\r
@@ -47622,7 +47622,7 @@ public class HelloWorld {\r
         </div>\r
 \r
         <div style="margin-bottom: 12px;">\r
-          <label style="display: block; font-size: 12px; margin-bottom: 4px; color:var(--text-secondary,#64748b);">Position</label>\r
+          <ui-label style="display: block; font-size: 12px; margin-bottom: 4px; color:var(--text-secondary,#64748b);">Position</ui-label>\r
           <ui-dropdown id="fabPropPosition" value="bottom-right" options='[\r
             {"label": "Bottom Right", "value": "bottom-right"},\r
             {"label": "Bottom Left", "value": "bottom-left"},\r
@@ -47634,7 +47634,7 @@ public class HelloWorld {\r
         </div>\r
 \r
         <div style="margin-bottom: 12px;">\r
-          <label style="display: block; font-size: 12px; margin-bottom: 4px; color:var(--text-secondary,#64748b);">Size</label>\r
+          <ui-label style="display: block; font-size: 12px; margin-bottom: 4px; color:var(--text-secondary,#64748b);">Size</ui-label>\r
           <ui-dropdown id="fabPropSize" value="md" options='[\r
             {"label": "Medium", "value": "md"},\r
             {"label": "Large", "value": "large"},\r
@@ -48392,7 +48392,7 @@ public class HelloWorld {\r
             <div style="flex: 1; min-width: 300px;">\r
               <div style="display: flex; flex-direction: column; gap: 15px;">\r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Variant:</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Variant:</ui-label>\r
                   <ui-dropdown id="navVariant" onchange="updateInteractiveNav()" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">\r
                     <option value="default">Default</option>\r
                     <option value="pills" selected>Pills</option>\r
@@ -48402,7 +48402,7 @@ public class HelloWorld {\r
                 </div>\r
                 \r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Size:</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Size:</ui-label>\r
                   <ui-dropdown id="navSize" onchange="updateInteractiveNav()" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">\r
                     <option value="sm">Small</option>\r
                     <option value="md" selected>md</option>\r
@@ -48411,7 +48411,7 @@ public class HelloWorld {\r
                 </div>\r
                 \r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Alignment:</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Alignment:</ui-label>\r
                   <ui-dropdown id="navAlign" onchange="updateInteractiveNav()" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">\r
                     <option value="start" selected>Start</option>\r
                     <option value="center">Center</option>\r
@@ -48421,7 +48421,7 @@ public class HelloWorld {\r
                 </div>\r
                 \r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Items (JSON):</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Items (JSON):</ui-label>\r
                   <textarea id="navItems" onchange="updateInteractiveNav()" \r
                     style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; font-family: monospace; font-size: 12px; min-height: 150px;">[\r
   {"id": "home", "label": "Home", "icon": "🏠", "active": true},\r
@@ -48713,7 +48713,7 @@ public class HelloWorld {\r
           <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 16px;">\r
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">\r
               <div>\r
-                <label style="display: block; font-weight: 600; margin-bottom: 4px;">Library</label>\r
+                <ui-label style="display: block; font-weight: 600; margin-bottom: 4px;">Library</ui-label>\r
                 <ui-dropdown id="playgroundLibrary" class="demo-input">\r
                   <option value="default">Default (SVG/URL/Text)</option>\r
                   <option value="se">QuartzDS (Se)</option>\r
@@ -48729,17 +48729,17 @@ public class HelloWorld {\r
                 </ui-dropdown>\r
               </div>\r
               <div>\r
-                <label style="display: block; font-weight: 600; margin-bottom: 4px;">Size</label>\r
+                <ui-label style="display: block; font-weight: 600; margin-bottom: 4px;">Size</ui-label>\r
                 <ui-input type="text" id="playgroundSize" class="demo-input" value="4rem">\r
               </div>\r
             </div>\r
             <div>\r
-              <label style="display: block; font-weight: 600; margin-bottom: 4px;">Icon Name / Content</label>\r
+              <ui-label style="display: block; font-weight: 600; margin-bottom: 4px;">Icon Name / Content</ui-label>\r
               <ui-input type="text" id="playgroundName" class="demo-input" value="🚀">\r
               <small style="color:var(--text-secondary,#64748b); margin-top: 4px; display: block;">e.g., 'house' (se), 'fa-star' (fa), '🚀' (emoji), or an SVG path</small>\r
             </div>\r
             <div>\r
-              <label style="display: block; font-weight: 600; margin-bottom: 4px;">Color</label>\r
+              <ui-label style="display: block; font-weight: 600; margin-bottom: 4px;">Color</ui-label>\r
               <ui-input type="color" id="playgroundColor" class="demo-input" value="#6366f1" style="height: 42px; padding: 2px;">\r
             </div>\r
           </div>\r
@@ -50469,61 +50469,61 @@ public class HelloWorld {\r
                   <ui-button type="button" onclick="applyKnobPreset('rpm')" >Preset: Tachometer RPM</ui-button>\r
                 </div>\r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Value:</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Value:</ui-label>\r
                   <ui-input type="number" id="knobValue" value="50" min="0" max="100" oninput="updateInteractiveKnob()"\r
                  >\r
                 </div>\r
                 \r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Min Value:</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Min Value:</ui-label>\r
                   <ui-input type="number" id="knobMin" value="0" oninput="updateInteractiveKnob()"\r
                     >\r
                 </div>\r
                 \r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Max Value:</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Max Value:</ui-label>\r
                   <ui-input type="number" id="knobMax" value="100" oninput="updateInteractiveKnob()"\r
                     >\r
                 </div>\r
                 \r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Step:</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Step:</ui-label>\r
                   <ui-input type="number" id="knobStep" value="1" min="1" oninput="updateInteractiveKnob()"\r
                     >\r
                 </div>\r
                 \r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Size:</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Size:</ui-label>\r
                   <ui-input type="number" id="knobSize" value="120" min="50" max="300" oninput="updateInteractiveKnob()"\r
                     >\r
                 </div>\r
                 <div style="display:flex; gap:12px;">\r
                   <div style="flex:1;">\r
-                    <label style="display:block; margin-bottom:5px; font-weight:500;">Start Angle:</label>\r
+                    <ui-label style="display:block; margin-bottom:5px; font-weight:500;">Start Angle:</ui-label>\r
                     <ui-input type="number" id="knobStartAngle" value="135" min="0" max="360" oninput="updateInteractiveKnob()"\r
                       >\r
                   </div>\r
                   <div style="flex:1;">\r
-                    <label style="display:block; margin-bottom:5px; font-weight:500;">End Angle:</label>\r
+                    <ui-label style="display:block; margin-bottom:5px; font-weight:500;">End Angle:</ui-label>\r
                     <ui-input type="number" id="knobEndAngle" value="405" min="0" max="540" oninput="updateInteractiveKnob()"\r
                       >\r
                   </div>\r
                 </div>\r
                 \r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Stroke Width:</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Stroke Width:</ui-label>\r
                   <ui-input type="number" id="knobStrokeWidth" value="8" min="2" max="20" oninput="updateInteractiveKnob()"\r
                     >\r
                 </div>\r
                 \r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Color:</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Color:</ui-label>\r
                   <ui-input type="color" id="knobColor" value="#10b981" oninput="updateInteractiveKnob()"\r
                     >\r
                 </div>\r
                 \r
                 <div>\r
-                  <label style="display: block; margin-bottom: 5px; font-weight: 500;">Value Suffix (unit):</label>\r
+                  <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Value Suffix (unit):</ui-label>\r
                   <ui-input type="text" id="knobValueSuffix" value="" oninput="updateInteractiveKnob()"\r
                      placeholder="e.g., %, km/h, °">\r
                 </div>\r
@@ -50542,17 +50542,17 @@ public class HelloWorld {\r
                     <ui-checkbox id="knobShowTicks" label="Show Ticks:" onCheckboxChange="updateInteractiveKnob()"></ui-checkbox>\r
                   </div>\r
                   <div style="flex:1; min-width:150px;">\r
-                    <label style="display:block; margin-bottom:5px; font-weight:500;">Tick Count:</label>\r
+                    <ui-label style="display:block; margin-bottom:5px; font-weight:500;">Tick Count:</ui-label>\r
                     <ui-input type="number" id="knobTickCount" value="10" min="2" max="60" oninput="updateInteractiveKnob()"\r
                       >\r
                   </div>\r
                   <div style="flex:1; min-width:150px;">\r
-                    <label style="display:block; margin-bottom:5px; font-weight:500;">Tick Length:</label>\r
+                    <ui-label style="display:block; margin-bottom:5px; font-weight:500;">Tick Length:</ui-label>\r
                     <ui-input type="number" id="knobTickLength" value="0.1" step="0.01" min="0.02" max="0.4" oninput="updateInteractiveKnob()"\r
                       >\r
                   </div>\r
                   <div style="flex:1; min-width:150px;">\r
-                    <label style="display:block; margin-bottom:5px; font-weight:500;">Tick Color:</label>\r
+                    <ui-label style="display:block; margin-bottom:5px; font-weight:500;">Tick Color:</ui-label>\r
                     <ui-input type="color" id="knobTickColor" value="#94a3b8" oninput="updateInteractiveKnob()"\r
                       >\r
                   </div>\r
@@ -50637,11 +50637,11 @@ public class HelloWorld {\r
           <!-- Controls -->\r
           <div style="background: var(--bg-secondary, #f8fafc); border: 1px solid var(--border-default, #e2e8f0); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 14px;">\r
             <div>\r
-              <label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Label Text</label>\r
+              <ui-label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Label Text</ui-label>\r
               <input id="pgLabelText" type="text" value="Email address" style="width: 100%; padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; box-sizing: border-box;" />\r
             </div>\r
             <div>\r
-              <label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Size</label>\r
+              <ui-label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Size</ui-label>\r
               <select id="pgLabelSize" style="width: 100%; padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px;">\r
                 <option value="xxs">xxs</option>\r
                 <option value="xs">xs</option>\r
@@ -50655,7 +50655,7 @@ public class HelloWorld {\r
               </select>\r
             </div>\r
             <div>\r
-              <label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Weight</label>\r
+              <ui-label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Weight</ui-label>\r
               <select id="pgLabelWeight" style="width: 100%; padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px;">\r
                 <option value="light">light</option>\r
                 <option value="normal">normal</option>\r
@@ -50665,7 +50665,7 @@ public class HelloWorld {\r
               </select>\r
             </div>\r
             <div>\r
-              <label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Variant</label>\r
+              <ui-label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Variant</ui-label>\r
               <select id="pgLabelVariant" style="width: 100%; padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px;">\r
                 <option value="default" selected>default</option>\r
                 <option value="muted">muted</option>\r
@@ -50678,32 +50678,32 @@ public class HelloWorld {\r
               </select>\r
             </div>\r
             <div style="display: flex; flex-direction: column; gap: 8px;">\r
-              <label style="font-size: 12px; font-weight: 600; opacity: 0.7;">Options</label>\r
-              <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
+              <ui-label style="font-size: 12px; font-weight: 600; opacity: 0.7;">Options</ui-label>\r
+              <ui-label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
                 <input type="checkbox" id="pgRequired" /> Required\r
-              </label>\r
-              <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
+              </ui-label>\r
+              <ui-label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
                 <input type="checkbox" id="pgOptional" /> Optional\r
-              </label>\r
-              <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
+              </ui-label>\r
+              <ui-label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
                 <input type="checkbox" id="pgDisabled" /> Disabled\r
-              </label>\r
-              <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
+              </ui-label>\r
+              <ui-label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
                 <input type="checkbox" id="pgLoading" /> Loading\r
-              </label>\r
-              <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
+              </ui-label>\r
+              <ui-label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
                 <input type="checkbox" id="pgCopyable" /> Copyable\r
-              </label>\r
-              <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
+              </ui-label>\r
+              <ui-label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer;">\r
                 <input type="checkbox" id="pgClickable" /> Clickable\r
-              </label>\r
+              </ui-label>\r
             </div>\r
             <div>\r
-              <label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Helper Text</label>\r
+              <ui-label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Helper Text</ui-label>\r
               <input id="pgHelperText" type="text" placeholder="optional helper text" style="width: 100%; padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; box-sizing: border-box;" />\r
             </div>\r
             <div>\r
-              <label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Start Icon (HTML/emoji)</label>\r
+              <ui-label style="font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; opacity: 0.7;">Start Icon (HTML/emoji)</ui-label>\r
               <input id="pgStartIcon" type="text" placeholder="e.g. ✉️ or SVG string" style="width: 100%; padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; box-sizing: border-box;" />\r
             </div>\r
           </div>\r
@@ -52024,7 +52024,105 @@ await manager.loadLayout(saved);</code></pre>\r
 }</code></pre>\r
         </div>\r
       </div>\r
-    </div>`}],list:[{title:`Simple List`,description:`Small`,html:`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">\r
+    </div>`},{title:`Visual IDE`,description:`Full page layout manager demo.`,html:`
+<div class="demo-block">
+    <h3 class="section-title" style="margin-top: 0;">Visual IDE Layout</h3>
+    <p class="section-description">A full-page IDE style layout showcasing advanced docking, nested panels, and drag-to-dock sidebars.</p>
+    
+    <div style="height: 600px; width: 100%; border: 1px solid #2d2d2d; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; background: #1e1e1e;">
+        <div style="height: 40px; background: #323233; color: #ccc; display: flex; align-items: center; padding: 0 16px; font-size: 13px; border-bottom: 1px solid #2d2d2d; flex-shrink: 0;">
+            <span style="font-weight: bold; color: #fff; margin-right: 20px;">Visual IDE</span>
+            <span>File</span><span style="margin: 0 10px;">Edit</span><span>View</span><span>Run</span>
+        </div>
+        <div style="flex: 1; display: flex; position: relative; overflow: hidden;">
+            <div style="width: 50px; background: #333333; display: flex; flex-direction: column; align-items: center; padding-top: 10px; border-right: 1px solid #2d2d2d; flex-shrink: 0;">
+                <div class="activity-icon" draggable="true" data-panel-type="Explorer" style="cursor: grab; margin-bottom: 20px; font-size: 20px; color: #858585;" title="Explorer">📂</div>
+                <div class="activity-icon" draggable="true" data-panel-type="Search" style="cursor: grab; margin-bottom: 20px; font-size: 20px; color: #858585;" title="Search">🔍</div>
+                <div class="activity-icon" draggable="true" data-panel-type="Source Control" style="cursor: grab; margin-bottom: 20px; font-size: 20px; color: #858585;" title="Source Control">🌿</div>
+                <div class="activity-icon" draggable="true" data-panel-type="Debug" style="cursor: grab; margin-bottom: 20px; font-size: 20px; color: #858585;" title="Debug">🐞</div>
+                <div style="flex: 1;"></div>
+                <div class="activity-icon" style="margin-bottom: 10px; font-size: 20px; color: #858585;">⚙️</div>
+            </div>
+            <layout-manager id="ide-manager" style="flex: 1; height: 100%;"></layout-manager>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    setTimeout(() => {
+        const initialLayout = {
+            version: 1,
+            root: {
+                id: 'root-horiz',
+                type: 'horizontal',
+                children: [
+                    {
+                        type: 'panel',
+                        id: 'explorer',
+                        title: 'Explorer',
+                        content: '<div style="padding: 10px; color: #888;">src/components/app.tsx<br>src/index.html</div>',
+                        size: 20
+                    },
+                    {
+                        id: 'middle-vert',
+                        type: 'vertical',
+                        size: 60,
+                        children: [
+                            {
+                                type: 'panel',
+                                id: 'editor',
+                                title: 'Main Editor',
+                                content: '<div style="padding: 20px; font-family: monospace; color: #dcdcaa;">const app = () => {<br>&nbsp;&nbsp;return &lt;div&gt;Hello IDE&lt;/div&gt;;<br>};</div>',
+                                size: 70
+                            },
+                            {
+                                type: 'panel',
+                                id: 'terminal',
+                                title: 'Terminal',
+                                content: '<div style="padding: 10px; font-family: monospace; color: #10b981; background: #000; height: 100%;">$ npm start<br>> Starting dev server...</div>',
+                                size: 30
+                            }
+                        ]
+                    },
+                    {
+                        type: 'panel',
+                        id: 'properties',
+                        title: 'Properties',
+                        content: '<div style="padding: 10px; color: #aaa;">width: 100%<br>height: 100%</div>',
+                        size: 20
+                    }
+                ]
+            },
+            floating: []
+        };
+
+        const manager = document.getElementById('ide-manager');
+        if (manager) {
+            manager.initialLayout = JSON.stringify(initialLayout);
+            
+            const container = manager.closest('.demo-block');
+            if(container) {
+                container.querySelectorAll('.activity-icon[draggable="true"]').forEach(icon => {
+                    icon.addEventListener('dragstart', (e) => {
+                        const type = icon.getAttribute('data-panel-type');
+                        if (window.LayoutEventBus) {
+                            window.LayoutEventBus.emit('panel:dragstart', {
+                                panelId: "new:" + type,
+                                x: e.clientX,
+                                y: e.clientY
+                            });
+                        }
+                    });
+                    icon.addEventListener('mouseenter', () => icon.style.color = '#fff');
+                    icon.addEventListener('mouseleave', () => icon.style.color = '#858585');
+                });
+            }
+        }
+    }, 200);
+})();
+<\/script>
+`}],list:[{title:`Simple List`,description:`Small`,html:`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">\r
 \r
       <!-- Simple slotted -->\r
       <div class="demo-block" style="background:var(--bg-primary,white);border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">\r
@@ -52872,12 +52970,12 @@ await manager.loadLayout(saved);</code></pre>\r
           <ui-checkbox id="pgRounded" label="Rounded" oncheckboxchange="updateListPlayground()"></ui-checkbox>\r
           <ui-checkbox id="pgElevated" label="Elevated" oncheckboxchange="updateListPlayground()"></ui-checkbox>\r
           <ui-checkbox id="pgNumbered" label="Numbered" oncheckboxchange="updateListPlayground()"></ui-checkbox>\r
-          <label style="font-size:13px;display:flex;align-items:center;gap:6px;">\r
+          <ui-label style="font-size:13px;display:flex;align-items:center;gap:6px;">\r
             Variant:\r
             <ui-dropdown id="pgVariant" onchange="updateListPlayground()" style="padding:4px 8px;border-radius:4px;border:1px solid #d1d5db;">\r
               <option>text</option><option>filled</option><option>outlined</option><option>soft</option>\r
             </ui-dropdown>\r
-          </label>\r
+          </ui-label>\r
         </div>\r
         <ui-list id="playgroundList" dividers>\r
           <ui-list-item label="Item Alpha"   icon="fas fa-circle" value="a"></ui-list-item>\r
@@ -53344,7 +53442,7 @@ await manager.loadLayout(saved);</code></pre>\r
               <h4 style="margin: 0 0 12px 0; font-size: 13px; text-transform: uppercase; color: var(--text-secondary, #64748b); letter-spacing: 0.05em;">Core Settings</h4>\r
               <div style="display: grid; gap: 12px;">\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Animation Type</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Animation Type</ui-label>\r
                   <ui-dropdown id="pType" >\r
                     <option value="spinner">Spinner</option><option value="dots">Dots</option><option value="bar">Bar</option>\r
                     <option value="pulse">Pulse</option><option value="ring">Ring</option><option value="bounce">Bounce</option>\r
@@ -53364,7 +53462,7 @@ await manager.loadLayout(saved);</code></pre>\r
                   </ui-dropdown>\r
                 </div>\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Size Preset</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Size Preset</ui-label>\r
                   <ui-dropdown id="pSize" >\r
                     <option value="3xs">3XS</option>\r
                     <option value="2xs">2XS</option>\r
@@ -53379,7 +53477,7 @@ await manager.loadLayout(saved);</code></pre>\r
                   </ui-dropdown>\r
                 </div>\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Color / Gradient</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Color / Gradient</ui-label>\r
                   <ui-input type="text" id="pColor" value="primary" placeholder="primary, hex, or gradient" >\r
                 </div>\r
               </div>\r
@@ -53389,15 +53487,15 @@ await manager.loadLayout(saved);</code></pre>\r
               <h4 style="margin: 0 0 12px 0; font-size: 13px; text-transform: uppercase; color: var(--text-secondary, #64748b); letter-spacing: 0.05em;">Content & Text</h4>\r
               <div style="display: grid; gap: 12px;">\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Main Label</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Main Label</ui-label>\r
                   <ui-input type="text" id="pLabel" value="Loading..." >\r
                 </div>\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Description</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Description</ui-label>\r
                   <ui-input type="text" id="pDesc" value="" placeholder="Optional sub-text" >\r
                 </div>\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Position</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Position</ui-label>\r
                   <ui-dropdown id="pPos" onchange="updateAll()" >\r
                     <option value="bottom">Bottom</option><option value="top">Top</option><option value="left">Left</option><option value="right">Right</option>\r
                   </ui-dropdown>\r
@@ -53415,11 +53513,11 @@ await manager.loadLayout(saved);</code></pre>\r
                   <ui-checkbox id="pTrapFocus" label="Trap Focus"></ui-checkbox>\r
                 </div>\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Progress Value (0-100)</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Progress Value (0-100)</ui-label>\r
                   <ui-input type="number" id="pValue" min="0" max="100" placeholder="Determinate state" >\r
                 </div>\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Thickness (px)</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Thickness (px)</ui-label>\r
                   <ui-input type="number" id="pThick" value="3" >\r
                 </div>\r
               </div>\r
@@ -53429,13 +53527,13 @@ await manager.loadLayout(saved);</code></pre>\r
               <h4 style="margin: 0 0 12px 0; font-size: 13px; text-transform: uppercase; color: var(--text-secondary, #64748b); letter-spacing: 0.05em;">Premium & Advanced</h4>\r
               <div style="display: grid; gap: 12px;">\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Variant Style</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Variant Style</ui-label>\r
                   <ui-dropdown id="pVariant" >\r
                     <option value="standard">Standard</option><option value="glass">Glass</option><option value="neon">Neon</option><option value="minimal">Minimal</option><option value="linear-strip">Linear Strip (Top)</option>\r
                   </ui-dropdown>\r
                 </div>\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">ARIA Live</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">ARIA Live</ui-label>\r
                   <ui-dropdown id="pAriaLive" >\r
                     <option value="polite" selected>Polite</option>\r
                     <option value="assertive">Assertive</option>\r
@@ -53443,17 +53541,17 @@ await manager.loadLayout(saved);</code></pre>\r
                   </ui-dropdown>\r
                 </div>\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Overlay Background</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Overlay Background</ui-label>\r
                   <ui-input type="text" id="pOverlayBg" value="" placeholder="Custom color or gradient" >\r
                 </div>\r
                 <div>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Status Image URL</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Status Image URL</ui-label>\r
                   <ui-input type="text" id="pImage" value="/build/assets/images/logo.png" >\r
                 </div>\r
                 <div id="rainOptionsWrap" style="display:none;">\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Rain Text (characters pool)</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Rain Text (characters pool)</ui-label>\r
                   <ui-input type="text" id="pRainText" value="" placeholder="Default: A-Z 0-9" style="margin-bottom: 8px;"></ui-input>\r
-                  <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Rain Columns</label>\r
+                  <ui-label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px;">Rain Columns</ui-label>\r
                   <ui-input type="number" id="pRainColumns" value="5" min="1" max="20" ></ui-input>\r
                 </div>\r
               </div>\r
@@ -54049,7 +54147,7 @@ await manager.loadLayout(saved);</code></pre>\r
             <h3>🎮 Interactive Playground</h3>\r
             <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">\r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Orientation:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Orientation:</ui-label>\r
                 <ui-dropdown id="meterOrientation" onchange="updateInteractiveMeter()">\r
                   <option value="horizontal" selected>Horizontal</option>\r
                   <option value="vertical">Vertical</option>\r
@@ -54057,7 +54155,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Shape:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Shape:</ui-label>\r
                 <ui-dropdown id="meterShape" onchange="updateInteractiveMeter()">\r
                   <option value="line" selected>Line</option>\r
                   <option value="circle">Circle</option>\r
@@ -54065,7 +54163,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Size:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Size:</ui-label>\r
                 <ui-dropdown id="meterSize" onchange="updateInteractiveMeter()">\r
                   <option value="sm">Small</option>\r
                   <option value="md" selected>md</option>\r
@@ -54082,17 +54180,17 @@ await manager.loadLayout(saved);</code></pre>\r
               <ui-checkbox id="meterInteractive" label="Interactive (Clickable)" oncheckboxchange="updateInteractiveMeter()"></ui-checkbox>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Min Value:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Min Value:</ui-label>\r
                 <ui-input type="number" id="meterMin" value="0" onchange="updateInteractiveMeter()"></ui-input>\r
               </div>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Max Value:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Max Value:</ui-label>\r
                 <ui-input type="number" id="meterMax" value="100" onchange="updateInteractiveMeter()"></ui-input>\r
               </div>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Values (JSON):</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Values (JSON):</ui-label>\r
                 <textarea id="meterValues" onchange="updateInteractiveMeter()" \r
                   style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; font-family: monospace; font-size: 12px; min-height: 180px;">[\r
   {"label": "Used", "value": 65, "color": "#ef4444", "icon": "💾"},\r
@@ -54849,13 +54947,13 @@ await manager.loadLayout(saved);</code></pre>\r
             <ui-checkbox id="multiLevelKeyboardNav" checked label="Keyboard Navigation" oncheckboxchange="updateInteractiveMultiLevelMenu()"></ui-checkbox>\r
             \r
             <div>\r
-              <label style="display: block; margin-bottom: 5px; font-weight: 500;">Menu Title:</label>\r
+              <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Menu Title:</ui-label>\r
               <ui-input type="text" id="multiLevelMenuTitle" value="" placeholder="Optional title" onchange="updateInteractiveMultiLevelMenu()"\r
                 style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px;">\r
             </div>\r
             \r
             <div>\r
-              <label style="display: block; margin-bottom: 5px; font-weight: 500;">Menu Items (JSON):</label>\r
+              <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Menu Items (JSON):</ui-label>\r
               <textarea id="multiLevelMenuItems" onchange="updateInteractiveMultiLevelMenu()" \r
                 style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; font-family: monospace; font-size: 12px; min-height: 300px;">[\r
   {\r
@@ -56629,7 +56727,7 @@ await manager.loadLayout(saved);</code></pre>\r
           </div>\r
 \r
           <div style="margin-bottom: 12px;">\r
-            <label style="display: block; font-size: 11px; color:var(--text-secondary,#64748b); margin-bottom: 4px; text-transform: uppercase;">Background Color</label>\r
+            <ui-label style="display: block; font-size: 11px; color:var(--text-secondary,#64748b); margin-bottom: 4px; text-transform: uppercase;">Background Color</ui-label>\r
             <ui-color-picker id="playBgColor" value="#ffffff"></ui-color-picker>\r
           </div>\r
 \r
@@ -56666,7 +56764,7 @@ await manager.loadLayout(saved);</code></pre>\r
           </div>\r
 \r
           <div style="margin-bottom: 20px;">\r
-            <label style="display: block; font-size: 11px; color: var(--text-secondary); margin-bottom: 4px; text-transform: uppercase;">Elevation Depth (0-5)</label>\r
+            <ui-label style="display: block; font-size: 11px; color: var(--text-secondary); margin-bottom: 4px; text-transform: uppercase;">Elevation Depth (0-5)</ui-label>\r
             <ui-input type="range" id="playElevation" min="0" max="5" value="2" style="width: 100%; cursor: pointer;">\r
           </div>\r
 \r
@@ -57027,12 +57125,12 @@ await manager.loadLayout(saved);</code></pre>\r
         \r
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px;">\r
           <div>\r
-            <label style="display: block; margin-bottom: 5px; font-weight: 500;">Pattern (# for digits):</label>\r
+            <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Pattern (# for digits):</ui-label>\r
             <ui-input type="text" id="patString" value="(###) ###-####" onchange="updateInteractivePattern()" \r
             >\r
           </div>\r
           <div>\r
-            <label style="display: block; margin-bottom: 5px; font-weight: 500;">Input Type:</label>\r
+            <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Input Type:</ui-label>\r
             <ui-dropdown id="patType" onchange="updateInteractivePattern()" >\r
               <option value="numeric">Numeric</option>\r
               <option value="alpha">Alpha</option>\r
@@ -58179,12 +58277,12 @@ await manager.loadLayout(saved);</code></pre>\r
         <div style="display: grid; grid-template-columns: 320px 1fr; gap: 30px;">\r
           <!-- Controls -->\r
           <div style="background:var(--bg-primary,white); padding: 24px; border-radius: 12px; border:1px solid var(--border-default,#e2e8f0); display: flex; flex-direction: column; gap: 16px;">\r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Percent (0-100)</span>\r
               <ui-input type="range" id="progPercent" min="0" max="100" value="45" oninput="updateProgressPlayground()">\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Type</span>\r
               <ui-dropdown id="progType" onchange="updateProgressPlayground()" style="padding: 8px; border-radius: 6px; border: 1px solid #cbd5e1;">\r
                 <option value="line">Line (Default)</option>\r
@@ -58192,9 +58290,9 @@ await manager.loadLayout(saved);</code></pre>\r
                 <option value="dashboard">Dashboard</option>\r
                 <option value="industrial">Industrial Segments</option>\r
               </ui-dropdown>\r
-            </label>\r
+            </ui-label>\r
 \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Status</span>\r
               <ui-dropdown id="progStatus" onchange="updateProgressPlayground()" style="padding: 8px; border-radius: 6px; border: 1px solid #cbd5e1;">\r
                 <option value="default">Default</option>\r
@@ -58208,17 +58306,17 @@ await manager.loadLayout(saved);</code></pre>\r
                 <option value="completed">Completed (Check)</option>\r
                 <option value="interrupted">Interrupted (Alert)</option>\r
               </ui-dropdown>\r
-            </label>\r
+            </ui-label>\r
 \r
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">\r
-              <label style="display: flex; flex-direction: column; gap: 4px;">\r
+              <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
                 <span style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Stroke Width</span>\r
                 <ui-input type="number" id="progStrokeWidth" value="10" oninput="updateProgressPlayground()" style="padding: 8px; border-radius: 6px; border: 1px solid #cbd5e1;">\r
-              </label>\r
-              <label style="display: flex; flex-direction: column; gap: 4px;">\r
+              </ui-label>\r
+              <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
                 <span style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Decimal</span>\r
                 <ui-input type="number" id="progDecimal" value="0" min="0" max="2" oninput="updateProgressPlayground()" style="padding: 8px; border-radius: 6px; border: 1px solid #cbd5e1;">\r
-              </label>\r
+              </ui-label>\r
             </div>\r
 \r
             <div style="display: flex; flex-wrap: wrap; gap: 10px;">\r
@@ -58228,10 +58326,10 @@ await manager.loadLayout(saved);</code></pre>\r
               <ui-checkbox id="progLiquid" label="Liquid" onCheckboxChange="updateProgressPlayground()"></ui-checkbox>\r
             </div>\r
 \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span style="font-size: 12px; font-weight: 600; color:var(--text-secondary,#64748b);">Custom Data Label</span>\r
               <ui-input type="text" id="progDataLabels" placeholder="e.g. 5.2 GB" onInputChange="updateProgressPlayground()"></ui-input>\r
-            </label>\r
+            </ui-label>\r
           </div>\r
 \r
           <!-- Preview -->\r
@@ -58619,7 +58717,7 @@ await manager.loadLayout(saved);</code></pre>\r
         <div style="background:var(--bg-primary,white); border-radius: 16px; padding: 40px; border:1px solid var(--border-default,#e2e8f0); display: flex; flex-direction: column; gap: 40px;">\r
            <div>\r
               <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">\r
-                 <label style="font-weight: 600; font-size: 13px;">Manual Fan Speed Configuration</label>\r
+                 <ui-label style="font-weight: 600; font-size: 13px;">Manual Fan Speed Configuration</ui-label>\r
                  <span id="fanVal" style="font-family: monospace; color: #10b981; font-weight: 700;">45%</span>\r
               </div>\r
               <ui-progress \r
@@ -58634,7 +58732,7 @@ await manager.loadLayout(saved);</code></pre>\r
 \r
            <div>\r
               <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">\r
-                 <label style="font-weight: 600; font-size: 13px;">Audio Gain Modulation</label>\r
+                 <ui-label style="font-weight: 600; font-size: 13px;">Audio Gain Modulation</ui-label>\r
                  <span id="audioVal" style="font-family: monospace; color: #10b981; font-weight: 700;">65.2 dB</span>\r
               </div>\r
               <ui-progress \r
@@ -59042,7 +59140,7 @@ await manager.loadLayout(saved);</code></pre>\r
         <h4 style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--text-secondary,#64748b); margin:0 0 14px;">Interactive</h4>\r
         <div style="background:var(--bg-primary,white); padding:24px; border-radius:12px; border:1px solid var(--border-default,#e2e8f0);">\r
           <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:16px;">\r
-            <label style="font-size:13px; font-weight:600; white-space:nowrap; color:var(--text-primary,#0f172a);">Progress: <span id="sb-val">0</span>%</label>\r
+            <ui-label style="font-size:13px; font-weight:600; white-space:nowrap; color:var(--text-primary,#0f172a);">Progress: <span id="sb-val">0</span>%</ui-label>\r
             <input type="range" id="sb-slider" min="0" max="100" value="0" style="flex:1; min-width:140px;">\r
             <ui-button id="sb-btn-interrupt" variant="outline" style="--ui-button-color:var(--accent-yellow,#d97706); --ui-button-border-color:#fde68a;">⛔ Interrupt</ui-button>\r
             <ui-button id="sb-btn-reset" variant="ghost">↺ Reset</ui-button>\r
@@ -59067,22 +59165,22 @@ await manager.loadLayout(saved);</code></pre>\r
           </div>\r
           <!-- Custom label inputs -->\r
           <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:10px; margin-bottom:20px; padding:16px; background:var(--bg-secondary,#f8fafc); border-radius:8px; border:1px solid var(--border-default,#e2e8f0);">\r
-            <label style="display:flex; flex-direction:column; gap:4px; font-size:11px; font-weight:700; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:.05em;">\r
+            <ui-label style="display:flex; flex-direction:column; gap:4px; font-size:11px; font-weight:700; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:.05em;">\r
               Not Started\r
               <input id="sb-lbl-notStarted" type="text" placeholder="Not Started" value="" style="padding:5px 8px; font-size:12px; border-radius:6px; border:1px solid var(--border-default,#e2e8f0); outline:none; background:var(--bg-primary,white);">\r
-            </label>\r
-            <label style="display:flex; flex-direction:column; gap:4px; font-size:11px; font-weight:700; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:.05em;">\r
+            </ui-label>\r
+            <ui-label style="display:flex; flex-direction:column; gap:4px; font-size:11px; font-weight:700; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:.05em;">\r
               Running\r
               <input id="sb-lbl-running" type="text" placeholder="Running" value="" style="padding:5px 8px; font-size:12px; border-radius:6px; border:1px solid var(--border-default,#e2e8f0); outline:none; background:var(--bg-primary,white);">\r
-            </label>\r
-            <label style="display:flex; flex-direction:column; gap:4px; font-size:11px; font-weight:700; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:.05em;">\r
+            </ui-label>\r
+            <ui-label style="display:flex; flex-direction:column; gap:4px; font-size:11px; font-weight:700; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:.05em;">\r
               Interrupted\r
               <input id="sb-lbl-interrupted" type="text" placeholder="Interrupted" value="" style="padding:5px 8px; font-size:12px; border-radius:6px; border:1px solid var(--border-default,#e2e8f0); outline:none; background:var(--bg-primary,white);">\r
-            </label>\r
-            <label style="display:flex; flex-direction:column; gap:4px; font-size:11px; font-weight:700; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:.05em;">\r
+            </ui-label>\r
+            <ui-label style="display:flex; flex-direction:column; gap:4px; font-size:11px; font-weight:700; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:.05em;">\r
               Completed\r
               <input id="sb-lbl-completed" type="text" placeholder="Completed" value="" style="padding:5px 8px; font-size:12px; border-radius:6px; border:1px solid var(--border-default,#e2e8f0); outline:none; background:var(--bg-primary,white);">\r
-            </label>\r
+            </ui-label>\r
           </div>\r
           <ui-progress id="sb-bar" percent="0" status-bar status-bar-align="left" stroke-width="8"></ui-progress>\r
         </div>\r
@@ -60004,56 +60102,56 @@ await manager.loadLayout(saved);</code></pre>\r
         <div style="background-color:var(--bg-primary,white); padding: 20px; border-radius: 8px; margin-bottom: 20px; border:1px solid var(--border-default,#e5e7eb);">\r
           <h4 style="margin: 0 0 16px;">Settings</h4>\r
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">\r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Label:</span>\r
               <ui-input type="text" id="sliderLabel" value="Live Preview" oninput="updateInteractiveSlider()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
 \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Min Value:</span>\r
               <ui-input type="number" id="sliderMin" value="0" oninput="updateInteractiveSlider()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Max Value:</span>\r
               <ui-input type="number" id="sliderMax" value="100" oninput="updateInteractiveSlider()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Step:</span>\r
               <ui-input type="number" id="sliderStep" value="1" min="1" oninput="updateInteractiveSlider()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Value:</span>\r
               <ui-input type="number" id="sliderValue" value="50" oninput="updateInteractiveSlider()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
 \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Prefix Text:</span>\r
               <ui-input type="text" id="sliderPrefixText" placeholder="e.g., $" oninput="updateInteractiveSlider()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
 \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Suffix Text:</span>\r
               <ui-input type="text" id="sliderSuffixText" placeholder="e.g., % or px" value="%" oninput="updateInteractiveSlider()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
 \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Display Format:</span>\r
               <ui-input type="text" id="sliderDisplayFormat" placeholder="e.g., Value: {value}" oninput="updateInteractiveSlider()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
             \r
             <div class="form-group">\r
-               <label>Variant</label>\r
+               <ui-label>Variant</ui-label>\r
                <ui-dropdown id="sliderVariant" onchange="updateInteractiveSlider()" class="demo-select">\r
                  <option value="" selected>Default</option>\r
                  <option value="primary">Primary</option>\r
@@ -60077,19 +60175,19 @@ await manager.loadLayout(saved);</code></pre>\r
                <ui-checkbox id="sliderRtl" label="🌍 RTL" oncheckboxchange="updateInteractiveSlider()"></ui-checkbox>\r
             </div>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Color:</span>\r
               <ui-input type="color" id="sliderColor" value="#10b981" oninput="updateInteractiveSlider()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Track Color:</span>\r
               <ui-input type="color" id="sliderTrackColor" value="#e5e7eb" oninput="updateInteractiveSlider()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Start Icon:</span>\r
               <ui-input type="text" id="sliderStartIcon" placeholder="e.g., 🔇 or Min" oninput="updateInteractiveSlider()"\r
                 >\r
@@ -60099,9 +60197,9 @@ await manager.loadLayout(saved);</code></pre>\r
                 <ui-button onclick="document.getElementById('sliderStartIcon').value='🐢'; updateInteractiveSlider();" style="padding: 4px 8px; font-size: 11px; background: #f3f4f6; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">🐢 Slow</ui-button>\r
                 <ui-button onclick="document.getElementById('sliderStartIcon').value='Min'; updateInteractiveSlider();" style="padding: 4px 8px; font-size: 11px; background: #f3f4f6; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">Min</ui-button>\r
               </div>\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>End Icon:</span>\r
               <ui-input type="text" id="sliderEndIcon" placeholder="e.g., 🔊 or Max" oninput="updateInteractiveSlider()"\r
                 >\r
@@ -60111,16 +60209,16 @@ await manager.loadLayout(saved);</code></pre>\r
                 <ui-button onclick="document.getElementById('sliderEndIcon').value='🚀'; updateInteractiveSlider();" style="padding: 4px 8px; font-size: 11px; background: #f3f4f6; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">🚀 Fast</ui-button>\r
                 <ui-button onclick="document.getElementById('sliderEndIcon').value='Max'; updateInteractiveSlider();" style="padding: 4px 8px; font-size: 11px; background: #f3f4f6; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">Max</ui-button>\r
               </div>\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Size:</span>\r
               <ui-dropdown id="sliderSize" oninput="updateInteractiveSlider()" style="padding: 6px; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">\r
                 <option value="sm">Small</option>\r
                 <option value="md" selected>md</option>\r
                 <option value="lg">Large</option>\r
               </ui-dropdown>\r
-            </label>\r
+            </ui-label>\r
 \r
             <ui-checkbox id="sliderGradient" label="Gradient Track" oncheckboxchange="updateInteractiveSlider()"></ui-checkbox>\r
             \r
@@ -60134,17 +60232,17 @@ await manager.loadLayout(saved);</code></pre>\r
           <div id="rangeControls" style="margin-top: 16px; display: none; padding-top: 16px; border-top: 1px solid #e5e7eb;">\r
             <h4 style="margin: 0 0 12px;">Range Mode Settings:</h4>\r
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">\r
-              <label style="display: flex; flex-direction: column; gap: 4px;">\r
+              <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
                 <span>Start Value:</span>\r
                 <ui-input type="number" id="sliderStartValue" value="30" oninput="updateInteractiveSlider()"\r
                   >\r
-              </label>\r
+              </ui-label>\r
               \r
-              <label style="display: flex; flex-direction: column; gap: 4px;">\r
+              <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
                 <span>End Value:</span>\r
                 <ui-input type="number" id="sliderEndValue" value="70" oninput="updateInteractiveSlider()"\r
                   >\r
-              </label>\r
+              </ui-label>\r
             </div>\r
           </div>\r
         </div>\r
@@ -60365,9 +60463,9 @@ await manager.loadLayout(saved);</code></pre>\r
           <p style="color:#6b7280;">Dynamic step, configurable range, Indian number formatting, and emits value changes.</p>\r
           <ui-range-slider id="advSlider" min="0" max="1000000" value="50000" input-sync></ui-range-slider>\r
           <div style="margin: 12px 0;">\r
-            <label>Min: <ui-input id="advMin" type="number" value="0" style="width:80px;"></label>\r
-            <label>Max: <ui-input id="advMax" type="number" value="1000000" style="width:100px;"></label>\r
-            <label>Step: <ui-input id="advStep" type="number" value="1000" style="width:80px;"></label>\r
+            <ui-label>Min: <ui-input id="advMin" type="number" value="0" style="width:80px;"></ui-label>\r
+            <ui-label>Max: <ui-input id="advMax" type="number" value="1000000" style="width:100px;"></ui-label>\r
+            <ui-label>Step: <ui-input id="advStep" type="number" value="1000" style="width:80px;"></ui-label>\r
           </div>\r
           <div id="advSliderValue" style="padding: 10px; background: #f0f9ff; border-radius: 6px; text-align: center;">\r
             Value: <strong>₹50,000</strong>\r
@@ -60456,7 +60554,7 @@ await manager.loadLayout(saved);</code></pre>\r
         <div class="playground-settings" style="padding: 24px; border-radius: 16px; margin-bottom: 24px;">\r
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">\r
             <div class="form-group">\r
-               <label>Rating Type</label>\r
+               <ui-label>Rating Type</ui-label>\r
                <ui-dropdown id="ratingType" onchange="updateInteractiveRating()" class="demo-select">\r
                  <option value="star" selected>Star Substrate</option>\r
                  <option value="smiley">Smiley Set</option>\r
@@ -60464,11 +60562,11 @@ await manager.loadLayout(saved);</code></pre>\r
                </ui-dropdown>\r
             </div>\r
             <div class="form-group">\r
-               <label>Value</label>\r
+               <ui-label>Value</ui-label>\r
                <ui-input type="number" id="ratingValue" value="3.5" min="0" max="5" step="0.5" oninput="updateInteractiveRating()" class="demo-input">\r
             </div>\r
             <div class="form-group">\r
-               <label>Precision Size</label>\r
+               <ui-label>Precision Size</ui-label>\r
                <ui-dropdown id="ratingSize" onchange="updateInteractiveRating()" class="demo-select">\r
                  <option value="xxs">XXS (Sub-atomic)</option>\r
                  <option value="xs">XS (Atomic)</option>\r
@@ -60481,7 +60579,7 @@ await manager.loadLayout(saved);</code></pre>\r
                </ui-dropdown>\r
             </div>\r
             <div class="form-group">\r
-               <label>Material Variant</label>\r
+               <ui-label>Material Variant</ui-label>\r
                <ui-dropdown id="ratingVariant" onchange="updateInteractiveRating()" class="demo-select">\r
                  <option value="default" selected>Default</option>\r
                  <option value="glass">Glassmorphism</option>\r
@@ -60489,7 +60587,7 @@ await manager.loadLayout(saved);</code></pre>\r
                </ui-dropdown>\r
             </div>\r
             <div class="form-group">\r
-               <label>Color Palette</label>\r
+               <ui-label>Color Palette</ui-label>\r
                <ui-dropdown id="ratingColor" onchange="updateInteractiveRating()" class="demo-select">\r
                  <option value="warning" selected>Warning (Gold)</option>\r
                  <option value="primary">Primary (Blue)</option>\r
@@ -60500,23 +60598,23 @@ await manager.loadLayout(saved);</code></pre>\r
                </ui-dropdown>\r
             </div>\r
             <div class="form-group">\r
-               <label>Custom Icon (Lucide)</label>\r
+               <ui-label>Custom Icon (Lucide)</ui-label>\r
                <ui-input type="text" id="ratingIcon" value="star" placeholder="heart, shield, star" oninput="updateInteractiveRating()" class="demo-input">\r
             </div>\r
             <div class="form-group">\r
-               <label>Custom Image (URL)</label>\r
+               <ui-label>Custom Image (URL)</ui-label>\r
                <ui-input type="text" id="ratingImage" value="" placeholder="https://..." oninput="updateInteractiveRating()" class="demo-input">\r
             </div>\r
             <div class="form-group">\r
-               <label>Heatmap (Color Map JSON)</label>\r
+               <ui-label>Heatmap (Color Map JSON)</ui-label>\r
                <ui-input type="text" id="ratingColorMap" value="" placeholder='["danger", "success"]' oninput="updateInteractiveRating()" class="demo-input">\r
             </div>\r
             <div class="form-group">\r
-               <label>Helper Text</label>\r
+               <ui-label>Helper Text</ui-label>\r
                <ui-input type="text" id="ratingHelper" value="Select a grade" oninput="updateInteractiveRating()" class="demo-input">\r
             </div>\r
             <div class="form-group">\r
-               <label>Error Message</label>\r
+               <ui-label>Error Message</ui-label>\r
                <ui-input type="text" id="ratingError" value="This field is required" oninput="updateInteractiveRating()" class="demo-input">\r
             </div>\r
             <div class="form-group" style="display: flex; gap: 16px; align-items: flex-end; padding-bottom: 8px;">\r
@@ -60524,15 +60622,15 @@ await manager.loadLayout(saved);</code></pre>\r
                <ui-checkbox id="ratingShowReviews" label="👥 Show Reviews" oncheckboxchange="updateInteractiveRating()"></ui-checkbox>\r
             </div>\r
             <div class="form-group">\r
-               <label>Total Reviews</label>\r
+               <ui-label>Total Reviews</ui-label>\r
                <ui-input type="number" id="ratingTotalReviews" value="1250" oninput="updateInteractiveRating()" class="demo-input">\r
             </div>\r
             <div class="form-group">\r
-               <label>Tactical Description</label>\r
+               <ui-label>Tactical Description</ui-label>\r
                <ui-input type="text" id="ratingDesc" value="How satisfied are you with this module?" oninput="updateInteractiveRating()" class="demo-input">\r
             </div>\r
             <div class="form-group">\r
-               <label>Description Position</label>\r
+               <ui-label>Description Position</ui-label>\r
                <ui-dropdown id="ratingDescPos" onchange="updateInteractiveRating()" class="demo-select">\r
                  <option value="bottom" selected>Bottom</option>\r
                  <option value="side">Side (Dense)</option>\r
@@ -60788,7 +60886,7 @@ await manager.loadLayout(saved);</code></pre>\r
             <h3>Playground</h3>\r
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px;">\r
               <div>\r
-                <label>Position</label>\r
+                <ui-label>Position</ui-label>\r
                 <ui-dropdown id="stPos" onchange="updateST()" class="st-input">\r
                   <option value="bottom-right">Bottom Right</option>\r
                   <option value="bottom-left">Bottom Left</option>\r
@@ -60802,7 +60900,7 @@ await manager.loadLayout(saved);</code></pre>\r
                 </ui-dropdown>\r
               </div>\r
               <div>\r
-                <label>Mode</label>\r
+                <ui-label>Mode</ui-label>\r
                 <ui-dropdown id="stMode" onchange="updateST()" class="st-input">\r
                   <option value="top">To Top</option>\r
                   <option value="bottom">To Bottom</option>\r
@@ -60810,15 +60908,15 @@ await manager.loadLayout(saved);</code></pre>\r
                 </ui-dropdown>\r
               </div>\r
               <div class="control-group">\r
-                <label>Size</label>\r
+                <ui-label>Size</ui-label>\r
                 <div class="radio-group" id="stSizeGroup">\r
-                  <label><ui-input type="radio" name="stSize" value="sm" onchange="updateST()"> SM</label>\r
-                  <label><ui-input type="radio" name="stSize" value="md" checked onchange="updateST()"> MD</label>\r
-                  <label><ui-input type="radio" name="stSize" value="lg" onchange="updateST()"> LG</label>\r
+                  <ui-label><ui-input type="radio" name="stSize" value="sm" onchange="updateST()"> SM</ui-label>\r
+                  <ui-label><ui-input type="radio" name="stSize" value="md" checked onchange="updateST()"> MD</ui-label>\r
+                  <ui-label><ui-input type="radio" name="stSize" value="lg" onchange="updateST()"> LG</ui-label>\r
                 </div>\r
               </div>\r
               <div class="control-group">\r
-                <label>Variant</label>\r
+                <ui-label>Variant</ui-label>\r
                 <ui-dropdown id="stVariant" onchange="updateST()" class="st-input">\r
                   <option value="solid" selected>Solid</option>\r
                   <option value="outline">Outline</option>\r
@@ -60826,7 +60924,7 @@ await manager.loadLayout(saved);</code></pre>\r
                 </ui-dropdown>\r
               </div>\r
               <div class="control-group">\r
-                <label>Color</label>\r
+                <ui-label>Color</ui-label>\r
                 <ui-dropdown id="stColor" onchange="updateST()" class="st-input">\r
                   <option value="primary" selected>Primary</option>\r
                   <option value="secondary">Secondary</option>\r
@@ -60838,7 +60936,7 @@ await manager.loadLayout(saved);</code></pre>\r
                 </ui-dropdown>\r
               </div>\r
               <div>\r
-                <label>Shape</label>\r
+                <ui-label>Shape</ui-label>\r
                 <ui-dropdown id="stShape" onchange="updateST()" class="st-input">\r
                   <option value="rounded" selected>Rounded</option>\r
                   <option value="square">Square</option>\r
@@ -60849,7 +60947,7 @@ await manager.loadLayout(saved);</code></pre>\r
                 </ui-dropdown>\r
               </div>\r
               <div>\r
-                <label>Animation</label>\r
+                <ui-label>Animation</ui-label>\r
                 <ui-dropdown id="stAnim" onchange="updateST()" class="st-input">\r
                   <option value="scale">Scale</option>\r
                   <option value="fade">Fade</option>\r
@@ -60857,7 +60955,7 @@ await manager.loadLayout(saved);</code></pre>\r
                 </ui-dropdown>\r
               </div>\r
               <div>\r
-                <label>Options</label>\r
+                <ui-label>Options</ui-label>\r
                 <div style="display: flex; flex-direction: column; gap: 8px;">\r
                   <ui-checkbox id="stProg" label="Progress Tracking" oncheckboxchange="updateST()"></ui-checkbox>\r
                   <ui-checkbox id="stProgVal" label="Show % Value" oncheckboxchange="updateST()"></ui-checkbox>\r
@@ -60869,7 +60967,7 @@ await manager.loadLayout(saved);</code></pre>\r
                 </div>\r
               </div>\r
               <div style="grid-column: span 2;">\r
-                <label>Label</label>\r
+                <ui-label>Label</ui-label>\r
                 <ui-input type="text" id="stLabel" placeholder="Optional text label" oninput="updateST()" class="st-input">\r
               </div>\r
             </div>\r
@@ -61278,7 +61376,7 @@ await manager.loadLayout(saved);</code></pre>\r
         <div style="background-color: var(--bg-secondary, #f9fafb); padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 1px solid var(--border-default, #e5e7eb);">\r
           <h4 style="margin: 0 0 16px;">Settings</h4>\r
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">\r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Shape:</span>\r
               <ui-dropdown id="skeletonShape" oninput="updateInteractiveSkeleton()" >\r
                 <option value="rectangle" selected>Rectangle</option>\r
@@ -61291,9 +61389,9 @@ await manager.loadLayout(saved);</code></pre>\r
                 <option value="pill">Pill</option>\r
                 <option value="image">Image</option>\r
               </ui-dropdown>\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Template:</span>\r
               <ui-dropdown id="skeletonTemplate" oninput="updateInteractiveSkeleton()" >\r
                 <option value="none" selected>None</option>\r
@@ -61304,36 +61402,36 @@ await manager.loadLayout(saved);</code></pre>\r
                 <option value="feed-item">Feed Item</option>\r
                 <option value="table-row">Table Row</option>\r
               </ui-dropdown>\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Size:</span>\r
               <ui-dropdown id="skeletonSize" oninput="updateInteractiveSkeleton()" >\r
                 <option value="sm">Small</option>\r
                 <option value="md" selected>md</option>\r
                 <option value="lg">Large</option>\r
               </ui-dropdown>\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Width:</span>\r
               <ui-input type="text" id="skeletonWidth" value="200px" oninput="updateInteractiveSkeleton()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Height:</span>\r
               <ui-input type="text" id="skeletonHeight" value="100px" oninput="updateInteractiveSkeleton()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Border Radius:</span>\r
               <ui-input type="text" id="skeletonBorderRadius" value="8px" oninput="updateInteractiveSkeleton()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
             \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Animation Type:</span>\r
               <ui-dropdown id="skeletonAnimationType" oninput="updateInteractiveSkeleton()" >\r
                 <option value="pulse" selected>Pulse</option>\r
@@ -61346,19 +61444,19 @@ await manager.loadLayout(saved);</code></pre>\r
                 <option value="liquify">Liquify (Premium)</option>\r
                 <option value="aurora">Aurora (Premium)</option>\r
               </ui-dropdown>\r
-            </label>\r
+            </ui-label>\r
 \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Rows (Text):</span>\r
               <ui-input type="number" id="skeletonRows" value="1" min="1" max="10" oninput="updateInteractiveSkeleton()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
 \r
-            <label style="display: flex; flex-direction: column; gap: 4px;">\r
+            <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
               <span>Last Row Width:</span>\r
               <ui-input type="text" id="skeletonLastRowWidth" value="80%" oninput="updateInteractiveSkeleton()"\r
                 >\r
-            </label>\r
+            </ui-label>\r
             \r
             <ui-checkbox id="skeletonAnimated" checked label="Animated" oncheckboxchange="updateInteractiveSkeleton()"></ui-checkbox>\r
           </div>\r
@@ -62165,7 +62263,7 @@ await manager.loadLayout(saved);</code></pre>\r
           <h3 style="margin-top: 0;">?? Interactive Playground</h3>\r
           <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">\r
             <div>\r
-              <label style="display: block; margin-bottom: 5px; font-weight: 500;">Menu Items (JSON):</label>\r
+              <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Menu Items (JSON):</ui-label>\r
               <textarea id="smartMenuItems" onchange="updateInteractiveSmartMenu()"\r
                 style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; font-family: monospace; font-size: 12px; min-height: 300px;"></textarea>\r
             </div>\r
@@ -63332,7 +63430,7 @@ await manager.loadLayout(saved);</code></pre>\r
             <h3>🎮 Interactive Playground</h3>\r
             <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">\r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Position:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Position:</ui-label>\r
                 <ui-dropdown id="speedDialPosition" onchange="updateInteractiveSpeedDial()" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">\r
                   <option value="top-left">Top Left</option>\r
                   <option value="top-right">Top Right</option>\r
@@ -63342,7 +63440,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Layout:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Layout:</ui-label>\r
                 <ui-dropdown id="speedDialLayout" onchange="updateInteractiveSpeedDial()" \r
                   style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px;">\r
                   <option value="linear">Linear (Default)</option>\r
@@ -63352,7 +63450,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
 \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Size:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Size:</ui-label>\r
                 <ui-dropdown id="speedDialSize" onchange="updateInteractiveSpeedDial()" \r
                   style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px;">\r
                   <option value="sm">Small (40px)</option>\r
@@ -63362,7 +63460,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
 \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Variant:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Variant:</ui-label>\r
                 <ui-dropdown id="speedDialVariant" onchange="updateInteractiveSpeedDial()" \r
                   style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px;">\r
                   <option value="ghost">Ghost</option>\r
@@ -63370,7 +63468,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
 \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Shape:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Shape:</ui-label>\r
                 <ui-dropdown id="speedDialShape" onchange="updateInteractiveSpeedDial()" \r
                   style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px;">\r
                   <option value="rounded" selected>Rounded</option>\r
@@ -63383,7 +63481,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
 \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Main Color:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Main Color:</ui-label>\r
                 <ui-dropdown id="speedDialColor" onchange="updateInteractiveSpeedDial()" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">\r
                   <option value="primary" selected>Primary</option>\r
                   <option value="secondary">Secondary</option>\r
@@ -63395,7 +63493,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
 \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Strategy:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Strategy:</ui-label>\r
                 <ui-dropdown id="speedDialStrategy" onchange="updateInteractiveSpeedDial()" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">\r
                   <option value="fixed" selected>Fixed (Screen)</option>\r
                   <option value="absolute">Absolute (Container)</option>\r
@@ -63403,7 +63501,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Trigger:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Trigger:</ui-label>\r
                 <ui-dropdown id="speedDialTrigger" onchange="updateInteractiveSpeedDial()" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">\r
                   <option value="click" selected>Click</option>\r
                   <option value="hover">Hover</option>\r
@@ -63411,7 +63509,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
 \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Direction:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Direction:</ui-label>\r
                 <ui-dropdown id="speedDialDirection" onchange="updateInteractiveSpeedDial()" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">\r
                   <option value="auto" selected>Auto</option>\r
                   <option value="up">Up</option>\r
@@ -63422,7 +63520,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Tooltip Position:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Tooltip Position:</ui-label>\r
                 <ui-dropdown id="speedDialTooltipPosition" onchange="updateInteractiveSpeedDial()" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer;">\r
                   <option value="auto" selected>Auto</option>\r
                   <option value="left">Left</option>\r
@@ -63433,7 +63531,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Icon:</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Icon:</ui-label>\r
                 <ui-input type="text" id="speedDialIcon" value="+" onchange="updateInteractiveSpeedDial()"\r
                   style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px;">\r
               </div>\r
@@ -63449,19 +63547,19 @@ await manager.loadLayout(saved);</code></pre>\r
               <ui-checkbox id="speedDialPersist" checked label="Persist Drag Position (Apex)" oncheckboxchange="updateInteractiveSpeedDial()"></ui-checkbox>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Offset X (e.g. 50px):</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Offset X (e.g. 50px):</ui-label>\r
                 <ui-input type="text" id="speedDialOffsetX" placeholder="Default: 24px" onchange="updateInteractiveSpeedDial()"\r
                   style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px;">\r
               </div>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Offset Y (e.g. 50px):</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Offset Y (e.g. 50px):</ui-label>\r
                 <ui-input type="text" id="speedDialOffsetY" placeholder="Default: 24px" onchange="updateInteractiveSpeedDial()"\r
                   style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px;">\r
               </div>\r
 \r
               <div>\r
-                <label style="display: block; margin-bottom: 5px; font-weight: 500;">Actions (JSON):</label>\r
+                <ui-label style="display: block; margin-bottom: 5px; font-weight: 500;">Actions (JSON):</ui-label>\r
                 <textarea id="speedDialActions" onchange="updateInteractiveSpeedDial()" \r
                   style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; font-family: monospace; font-size: 12px; min-height: 150px;">[\r
   {"id": "add", "label": "Add", "icon": "plus", "color": "#10b981"},\r
@@ -63559,12 +63657,12 @@ await manager.loadLayout(saved);</code></pre>\r
           </div>\r
 \r
           <div style="display: flex; flex-direction: column; gap: 8px;">\r
-            <label style="display: block; font-size: 13px; font-weight: 600; color: #475569;">Start Angle: <span id="lblStartAngle">-135°</span></label>\r
+            <ui-label style="display: block; font-size: 13px; font-weight: 600; color: #475569;">Start Angle: <span id="lblStartAngle">-135°</span></ui-label>\r
             <ui-input type="range" id="playStartAngle" min="-360" max="360" value="-135" style="width: 100%; cursor: pointer;">\r
           </div>\r
 \r
           <div style="display: flex; flex-direction: column; gap: 8px;">\r
-            <label style="display: block; font-size: 13px; font-weight: 600; color: #475569;">End Angle: <span id="lblEndAngle">135°</span></label>\r
+            <ui-label style="display: block; font-size: 13px; font-weight: 600; color: #475569;">End Angle: <span id="lblEndAngle">135°</span></ui-label>\r
             <ui-input type="range" id="playEndAngle" min="-360" max="360" value="135" style="width: 100%; cursor: pointer;">\r
           </div>\r
 \r
@@ -65962,7 +66060,7 @@ await manager.loadLayout(saved);</code></pre>\r
 \r
           <!-- Color swatches -->\r
           <div style="display:flex; flex-direction:column; gap:4px;">\r
-            <label style="font-size:12px; font-weight:600; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:0.04em;">Active Color</label>\r
+            <ui-label style="font-size:12px; font-weight:600; color:var(--text-secondary,#64748b); text-transform:uppercase; letter-spacing:0.04em;">Active Color</ui-label>\r
             <div id="colorSwatches" style="display:flex; gap:6px; align-items:center;">\r
               <button class="tab-color-swatch" data-color="#ec4899" title="Pink"   style="background:var(--accent-pink,#ec4899);" onclick="setTabActiveColor('#ec4899')"></button>\r
               <button class="tab-color-swatch" data-color="#8b5cf6" title="Violet" style="background:var(--accent-purple,#8b5cf6);" onclick="setTabActiveColor('#8b5cf6')"></button>\r
@@ -67469,7 +67567,7 @@ await manager.loadLayout(saved);</code></pre>\r
               <h5 style="margin: 0 0 16px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color:var(--text-secondary,#64748b);">Test Components</h5>\r
               \r
               <div style="margin-bottom: 20px;">\r
-                <label style="display: block; margin-bottom: 12px; font-size: 13px; font-weight: 600; color: #334155;">Status Badges</label>\r
+                <ui-label style="display: block; margin-bottom: 12px; font-size: 13px; font-weight: 600; color: #334155;">Status Badges</ui-label>\r
                 <div style="display: flex; gap: 10px; flex-wrap: wrap;">\r
                   <ui-badge label="Primary" variant="filled" color="primary" size="md"ui-badge>\r
                   <ui-badge label="Success" variant="filled" color="success" size="md"ui-badge>\r
@@ -67477,7 +67575,7 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
               \r
               <div style="margin-bottom: 20px;">\r
-                <label style="display: block; margin-bottom: 12px; font-size: 13px; font-weight: 600; color: #334155;">Interactive Chips</label>\r
+                <ui-label style="display: block; margin-bottom: 12px; font-size: 13px; font-weight: 600; color: #334155;">Interactive Chips</ui-label>\r
                 <div style="display: flex; gap: 10px; flex-wrap: wrap;">\r
                   <ui-chip label="Technology" icon="💻" color="primary"></ui-chip>\r
                   <ui-chip label="Design" icon="🎨" color="success"></ui-chip>\r
@@ -67485,13 +67583,13 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
               \r
               <div>\r
-                <label style="display: block; margin-bottom: 12px; font-size: 13px; font-weight: 600; color: #334155;">Action Button</label>\r
+                <ui-label style="display: block; margin-bottom: 12px; font-size: 13px; font-weight: 600; color: #334155;">Action Button</ui-label>\r
                 <ui-button label="Sample Button" color="success" size="md"riant="outline"></ui-button>\r
               </div>\r
             </div>\r
             \r
             <div>\r
-              <label style="display: block; margin-bottom: 16px; font-size: 14px; font-weight: 700; color: #334155;">Visual Settings</label>\r
+              <ui-label style="display: block; margin-bottom: 16px; font-size: 14px; font-weight: 700; color: #334155;">Visual Settings</ui-label>\r
               <div style="display: flex; flex-direction: column; gap: 12px;">\r
                 <ui-checkbox id="themeAutoSwitch" label="Auto Theme (System)"></ui-checkbox>\r
                 <ui-checkbox id="themeHighContrast" label="High Contrast Mode"></ui-checkbox>\r
@@ -69074,12 +69172,12 @@ await manager.loadLayout(saved);</code></pre>\r
            <!-- Area 2: Settings -->\r
            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; font-size: 12px;">\r
               <div class="pg-field" style="grid-column: span 2;">\r
-                 <label>Content Text</label>\r
+                 <ui-label>Content Text</ui-label>\r
                  <ui-input id="pgContent" value="Elite contextual overlay active."></ui-input>\r
               </div>\r
 \r
               <div class="pg-field">\r
-                 <label>Position</label>\r
+                 <ui-label>Position</ui-label>\r
                  <ui-dropdown id="pgPos" value="top">\r
                     <option value="top">Top</option>\r
                     <option value="bottom">Bottom</option>\r
@@ -69089,7 +69187,7 @@ await manager.loadLayout(saved);</code></pre>\r
                  </ui-dropdown>\r
               </div>\r
               <div class="pg-field">\r
-                 <label>Theme</label>\r
+                 <ui-label>Theme</ui-label>\r
                  <ui-dropdown id="pgVariant" value="primary">\r
                     <option value="dark">Dark</option>\r
                     <option value="light">Light</option>\r
@@ -69100,7 +69198,7 @@ await manager.loadLayout(saved);</code></pre>\r
                  </ui-dropdown>\r
               </div>\r
               <div class="pg-field">\r
-                 <label>Animation</label>\r
+                 <ui-label>Animation</ui-label>\r
                  <ui-dropdown id="pgAnim" value="scale">\r
                     <option value="fade">Fade</option>\r
                     <option value="slide">Slide</option>\r
@@ -69109,7 +69207,7 @@ await manager.loadLayout(saved);</code></pre>\r
                  </ui-dropdown>\r
               </div>\r
               <div class="pg-field">\r
-                 <label>Shape</label>\r
+                 <ui-label>Shape</ui-label>\r
                  <ui-dropdown id="pgShape" value="rounded">\r
                     <option value="rounded">Rounded</option>\r
                     <option value="square">Square</option>\r
@@ -69118,28 +69216,28 @@ await manager.loadLayout(saved);</code></pre>\r
               </div>\r
 \r
               <div class="pg-field">\r
-                 <label>Elevation (0-5)</label>\r
+                 <ui-label>Elevation (0-5)</ui-label>\r
                  <ui-number-input id="pgElevation" value="0" min="0" max="5"></ui-number-input>\r
               </div>\r
               <div class="pg-field">\r
-                 <label>Offset (px)</label>\r
+                 <ui-label>Offset (px)</ui-label>\r
                  <ui-number-input id="pgOffset" value="8" min="0" max="40"></ui-number-input>\r
               </div>\r
               <div class="pg-field">\r
-                 <label>Show Delay (ms)</label>\r
+                 <ui-label>Show Delay (ms)</ui-label>\r
                  <ui-number-input id="pgShowDelay" value="0" min="0" max="2000" step="100"></ui-number-input>\r
               </div>\r
               <div class="pg-field">\r
-                 <label>Hide Delay (ms)</label>\r
+                 <ui-label>Hide Delay (ms)</ui-label>\r
                  <ui-number-input id="pgHideDelay" value="0" min="0" max="2000" step="100"></ui-number-input>\r
               </div>\r
               <div class="pg-field">\r
-                 <label>Arrow Size (px)</label>\r
+                 <ui-label>Arrow Size (px)</ui-label>\r
                  <ui-number-input id="pgArrowSize" value="8" min="0" max="20" step="2"></ui-number-input>\r
               </div>\r
 \r
               <div class="pg-field" style="grid-column: span 2;">\r
-                  <label>Override Theme (Custom Colors)</label>\r
+                  <ui-label>Override Theme (Custom Colors)</ui-label>\r
                   <div style="display:flex; flex-direction:column; gap:12px;">\r
                     <ui-checkbox id="pgUseColor" label="Enable Custom Styling"></ui-checkbox>\r
                     <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">\r
@@ -69550,35 +69648,35 @@ await manager.loadLayout(saved);</code></pre>\r
               <h4 style="margin: 0 0 16px; color: var(--text-primary);">Settings</h4>\r
               \r
               <div style="display: flex; flex-direction: column; gap: 12px;">\r
-                <label style="display: flex; flex-direction: column; gap: 4px;">\r
+                <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
                   <span style="font-size: 13px; font-weight: 500; color: var(--text-secondary);">Company Name:</span>\r
                   <ui-input id="playCompanyName" value="My Company"></ui-input>\r
-                </label>\r
+                </ui-label>\r
                 \r
-                <label style="display: flex; flex-direction: column; gap: 4px;">\r
+                <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
                   <span style="font-size: 13px; font-weight: 500; color: var(--text-secondary);">Company Logo (Emoji):</span>\r
                   <ui-input id="playCompanyLogo" value="🏢"></ui-input>\r
-                </label>\r
+                </ui-label>\r
                 \r
-                <label style="display: flex; flex-direction: column; gap: 4px;">\r
+                <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
                   <span style="font-size: 13px; font-weight: 500; color: var(--text-secondary);">User Name:</span>\r
                   <ui-input id="playUserName" value="John Smith"></ui-input>\r
-                </label>\r
+                </ui-label>\r
                 \r
-                <label style="display: flex; flex-direction: column; gap: 4px;">\r
+                <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
                   <span style="font-size: 13px; font-weight: 500; color: var(--text-secondary);">User Avatar (Emoji):</span>\r
                   <ui-input id="playUserAvatar" value="👤"></ui-input>\r
-                </label>\r
+                </ui-label>\r
                 \r
-                <label style="display: flex; flex-direction: column; gap: 4px;">\r
+                <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
                   <span style="font-size: 13px; font-weight: 500; color: var(--text-secondary);">Background Color:</span>\r
                   <ui-color-picker id="playBgColor" value="#ffffff"></ui-color-picker>\r
-                </label>\r
+                </ui-label>\r
                 \r
-                <label style="display: flex; flex-direction: column; gap: 4px;">\r
+                <ui-label style="display: flex; flex-direction: column; gap: 4px;">\r
                   <span style="font-size: 13px; font-weight: 500; color: var(--text-secondary);">Text Color:</span>\r
                   <ui-color-picker id="playTextColor" value="#111827"></ui-color-picker>\r
-                </label>\r
+                </ui-label>\r
                 \r
                 <ui-checkbox id="playShowShadow" label="Show Shadow" checked="true"></ui-checkbox>\r
               </div>\r
@@ -69635,19 +69733,19 @@ await manager.loadLayout(saved);</code></pre>\r
         <div class="playground-settings" style="background: var(--bg-secondary); border: 1px solid var(--border-default);">\r
           <div class="settings-grid">\r
             <div class="setting-item">\r
-              <label style="color: var(--text-primary);">Mode</label>\r
+              <ui-label style="color: var(--text-primary);">Mode</ui-label>\r
               <ui-dropdown id="pg-mode" value="list" options='[{"label":"List","value":"list"},{"label":"Tree","value":"tree"},{"label":"Table","value":"table"}]'></ui-dropdown>\r
             </div>\r
             <div class="setting-item">\r
-              <label style="color: var(--text-primary);">Search Placeholder</label>\r
+              <ui-label style="color: var(--text-primary);">Search Placeholder</ui-label>\r
               <ui-input id="pg-searchPlaceholder" value="Search items..."></ui-input>\r
             </div>\r
             <div class="setting-item">\r
-              <label style="color: var(--text-primary);">Max Selected Items</label>\r
+              <ui-label style="color: var(--text-primary);">Max Selected Items</ui-label>\r
               <ui-number-input id="pg-max" value="10" min="1"></ui-number-input>\r
             </div>\r
             <div class="setting-item">\r
-               <label style="color: var(--text-primary);">List Height</label>\r
+               <ui-label style="color: var(--text-primary);">List Height</ui-label>\r
                <ui-input id="pg-height" value="300px"></ui-input>\r
             </div>\r
           </div>\r
@@ -70187,27 +70285,27 @@ await manager.loadLayout(saved);</code></pre>\r
       \r
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:20px; background: var(--bg-secondary); padding:24px; border-radius:12px; margin-bottom:24px; border:1px solid var(--border-default);">\r
         <div class="control">\r
-          <label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">DATA SET</label>\r
+          <ui-label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">DATA SET</ui-label>\r
           <ui-dropdown id="dataset-select" value="standard" options='[{"label":"Standard","value":"standard"},{"label":"Elite (IDE / Explorer)","value":"elite"},{"label":"Modern Green","value":"green"}]'></ui-dropdown>\r
         </div>\r
         <div class="control">\r
-          <label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">CONN SHAPE</label>\r
+          <ui-label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">CONN SHAPE</ui-label>\r
           <ui-dropdown id="shape-select" value="rounded" options='[{"label":"Zen-Curve (Smooth)","value":"rounded"},{"label":"L-Shape (Technical)","value":"square"}]'></ui-dropdown>\r
         </div>\r
         <div class="control">\r
-          <label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">CONN WIDTH</label>\r
+          <ui-label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">CONN WIDTH</ui-label>\r
           <ui-range-slider id="width-slider" min="0.5" max="4" step="0.1" value="1.8"></ui-range-slider>\r
           <div style="display:flex; justify-content:space-between; font-size:10px; color: var(--text-secondary); margin-top:4px;"><span>Thin</span><span>Thick</span></div>\r
         </div>\r
         <div class="control">\r
-          <label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">VARIANT / THEME</label>\r
+          <ui-label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">VARIANT / THEME</ui-label>\r
           <div style="display:flex; gap:8px;">\r
              <ui-dropdown id="variant-select" value="default" options='[{"label":"Default","value":"default"},{"label":"Bordered","value":"bordered"},{"label":"Glass","value":"glass"},{"label":"Modern Green","value":"modern-green"}]' style="flex:1;"></ui-dropdown>\r
              <ui-dropdown id="theme-select" value="light" options='[{"label":"Light","value":"light"},{"label":"Dark","value":"dark"}]' style="flex:0.6;"></ui-dropdown>\r
           </div>\r
         </div>\r
         <div class="control">\r
-          <label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">INTERACTIVE</label>\r
+          <ui-label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">INTERACTIVE</ui-label>\r
           <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px; font-size:13px;">\r
             <ui-checkbox id="lines-check" label="Lines" checked="true"></ui-checkbox>\r
             <ui-checkbox id="glow-check" label="Glow"></ui-checkbox>\r
@@ -70216,7 +70314,7 @@ await manager.loadLayout(saved);</code></pre>\r
           </div>\r
         </div>\r
         <div class="control">\r
-          <label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">LINE COLOR</label>\r
+          <ui-label style="display:block; font-size:12px; font-weight:700; color: var(--text-secondary); margin-bottom:8px;">LINE COLOR</ui-label>\r
           <ui-color-picker id="color-picker" value="#10b981"></ui-color-picker>\r
         </div>\r
       </div>\r
@@ -70511,8 +70609,8 @@ await manager.loadLayout(saved);</code></pre>\r
   }, 500);
 })();
 <\/script>`}]},a={};function o(e){if(a[e])return a[e];let t=r.components.find(t=>t.tag===e);if(!t)return[];let n=t.props.map(e=>{let t=`string`,n,r=e.type.trim();r===`boolean`?t=`boolean`:r===`number`?t=`number`:r.includes(`|`)||e.values&&e.values.length>1&&e.values.every(e=>e.value!==void 0)?(t=`select`,n=e.values&&e.values.length>0&&e.values.every(e=>e.value!==void 0)?e.values.map(e=>e.value):r.split(`|`).map(e=>e.trim().replace(/^['"]|['"]$/g,``)).filter(e=>e!==`undefined`&&e!==`null`)):(r.includes(`[]`)||r===`any`||r.includes(`Record<`)||r.includes(`Array<`))&&(t=`json`);let i;if(e.default!==void 0){let n=e.default.trim();if(t===`boolean`)i=n===`true`;else if(t===`number`)i=Number(n),isNaN(i)&&(i=0);else if(t===`select`||t===`string`)i=n.replace(/^['"`]|['"`]$/g,``);else if(t===`json`)try{i=JSON.parse(n)}catch{i=void 0}}let a=e.name.replace(/([A-Z])/g,` $1`).trim().replace(/^\w/,e=>e.toUpperCase());return{name:e.name,type:t,label:a,defaultValue:i,options:n,description:e.docs||`${a} property`,rawType:e.type.trim(),attrName:e.attr||e.name.replace(/([a-z0-9])([A-Z])/g,`$1-$2`).toLowerCase(),required:e.required||!1}});return a[e]=n,n}function s(e,t){let n=r.components.find(t=>t.tag===e);return n&&(n.docs||n.readme?.split(`
-`)[2]?.trim())||t}function c(e){return i[e]||[]}function l(e){let t=r.components.find(t=>t.tag===e);return!t||!t.events?[]:t.events.map(e=>({event:e.event,detail:e.detail,docs:e.docs}))}function u(e){let t=r.components.find(t=>t.tag===e);return!t||!t.methods?[]:t.methods.map(e=>({name:e.name,signature:e.signature,docs:e.docs}))}function d(e){let t=r.components.find(t=>t.tag===e);return!t||!t.slots?[]:t.slots.map(e=>({name:e.name||`(default)`,docs:e.docs||``}))}function f(e){let t=r.components.find(t=>t.tag===e);return!t||!t.parts?[]:t.parts.map(e=>({name:e.name,docs:e.docs||``}))}var p=t(e(),1),m=n();function h({propConfigs:e,values:t,onChange:n,theme:r=`dark`}){let i=e.filter(e=>e.type===`boolean`),a=e.filter(e=>e.type===`select`),o=e.filter(e=>e.type===`string`||e.type===`textarea`),s=e.filter(e=>![`boolean`,`select`,`string`,`textarea`].includes(e.type)),c=[...i.length>0?[{id:`booleans`,title:`State & Behaviors (${i.length})`}]:[],...a.length>0?[{id:`selects`,title:`Layout & Variants (${a.length})`}]:[],...o.length>0?[{id:`inputs`,title:`Content & Text (${o.length})`}]:[],...s.length>0?[{id:`others`,title:`Advanced Configuration (${s.length})`}]:[]];return(0,m.jsx)(`div`,{className:`pe-root ${r===`light`?`theme-light`:`theme-dark`}`,children:(0,m.jsxs)(`ui-accordion`,{items:JSON.stringify(c),multiple:`true`,"default-open":JSON.stringify(c.map(e=>e.id)),class:`pe-accordion`,children:[i.length>0&&(0,m.jsx)(`div`,{slot:`content-booleans`,className:`pe-booleans-wrap pe-accordion-body`,children:i.map(e=>(0,m.jsx)(g,{config:e,value:t[e.name],onChange:t=>n(e.name,t),theme:r},e.name))}),a.length>0&&(0,m.jsx)(`div`,{slot:`content-selects`,className:`pe-grid-2 pe-accordion-body`,children:a.map(e=>(0,m.jsx)(g,{config:e,value:t[e.name],onChange:t=>n(e.name,t),theme:r},e.name))}),o.length>0&&(0,m.jsx)(`div`,{slot:`content-inputs`,className:`pe-grid-2 pe-accordion-body`,children:o.map(e=>(0,m.jsx)(g,{config:e,value:t[e.name],onChange:t=>n(e.name,t),theme:r},e.name))}),s.length>0&&(0,m.jsx)(`div`,{slot:`content-others`,className:`pe-grid-2 pe-accordion-body`,children:s.map(e=>(0,m.jsx)(g,{config:e,value:t[e.name],onChange:t=>n(e.name,t),theme:r},e.name))})]})})}function g({config:e,value:t,onChange:n,theme:r}){let[i,a]=(0,p.useState)(null),[o,s]=(0,p.useState)(()=>typeof t==`object`?JSON.stringify(t,null,2):``),c=(0,p.useRef)(n);c.current=n;let l=(0,p.useRef)(null),u=(0,p.useRef)(null);(0,p.useEffect)(()=>{let t=l.current;if(!t)return;let n=e.type===`number`,r=e=>{let t=e.detail!==void 0&&typeof e.detail==`string`?e.detail:e.detail&&e.detail.value!==void 0?e.detail.value:e.target.value;c.current(n?Number(t):t)};return t.addEventListener(`inputChange`,r),t.addEventListener(`inputInput`,r),t.addEventListener(`uiInput`,r),t.addEventListener(`input`,r),()=>{t.removeEventListener(`inputChange`,r),t.removeEventListener(`inputInput`,r),t.removeEventListener(`uiInput`,r),t.removeEventListener(`input`,r)}},[e.type]),(0,p.useEffect)(()=>{let e=u.current;if(!e)return;let t=e=>{let t=e.detail&&typeof e.detail.checked==`boolean`?e.detail.checked:e.target.checked;c.current(t)};return e.addEventListener(`switchChange`,t),e.addEventListener(`uiChange`,t),e.addEventListener(`change`,t),()=>{e.removeEventListener(`switchChange`,t),e.removeEventListener(`uiChange`,t),e.removeEventListener(`change`,t)}},[t]);let d=e=>{s(e);try{let t=JSON.parse(e);a(null),n(t)}catch{a(`Invalid JSON`)}};return(0,m.jsxs)(`div`,{className:`pe-control`,children:[(0,m.jsxs)(`ui-label`,{className:`pe-label`,children:[(0,m.jsx)(`span`,{className:`pe-prop-name`,children:(e=>{let t=e.replace(/([A-Z])/g,` $1`);return t.charAt(0).toUpperCase()+t.slice(1)})(e.name)}),e.description&&(0,m.jsx)(`ui-tooltip`,{content:e.description,position:`top`,trigger:`hover`,children:(0,m.jsx)(`span`,{slot:`target`,className:`pe-prop-hint`,children:`?`})})]}),e.type===`boolean`&&(0,m.jsx)(`ui-switch`,{ref:u,checked:t||void 0,label:t?`true`:`false`,size:`sm`,color:`success`,theme:r}),e.type===`string`&&(0,m.jsx)(`ui-input`,{ref:l,value:t??``,placeholder:e.label,size:`sm`,theme:r}),e.type===`textarea`&&(0,m.jsx)(`ui-input`,{ref:l,value:t??``,placeholder:e.label,size:`sm`,theme:r}),e.type===`number`&&(0,m.jsxs)(`div`,{className:`pe-number-row`,children:[(0,m.jsx)(`ui-input`,{ref:l,type:`number`,value:String(t??0),size:`sm`,theme:r,class:`pe-number-input`}),(0,m.jsx)(`input`,{className:`pe-range`,type:`range`,min:0,max:100,value:t??0,onChange:e=>n(Number(e.target.value))})]}),e.type===`color`&&(0,m.jsxs)(`div`,{className:`pe-color-row`,children:[(0,m.jsx)(`input`,{type:`color`,className:`pe-color-picker`,value:t??`#ffffff`,onChange:e=>n(e.target.value)}),(0,m.jsx)(`input`,{className:`pe-input pe-input--color-text`,type:`text`,value:t??``,onChange:e=>n(e.target.value),placeholder:`#rrggbb`})]}),e.type===`select`&&(0,m.jsx)(`select`,{className:`pe-native-select`,value:t??``,onChange:e=>n(e.target.value),children:e.options?.map(e=>(0,m.jsx)(`option`,{value:e,children:e},e))}),e.type===`json`&&(0,m.jsxs)(`div`,{className:`pe-json-wrap`,children:[(0,m.jsx)(`textarea`,{className:`pe-json-textarea ${i?`pe-json-textarea--error`:``}`,value:o,onChange:e=>d(e.target.value),rows:6,spellCheck:!1}),i&&(0,m.jsx)(`span`,{className:`pe-json-error`,children:i})]})]})}function _(e,t){if(t===`html`){let t=[],n=/(<\/?)([a-zA-Z-]+)([^>]*?)(\/?>)|(\{[^}]*\})|("(?:[^"\\]|\\.)*")|([a-zA-Z-]+=)|(<!--[\s\S]*?-->)|([^<{]+)/g,r;for(;(r=n.exec(e))!==null;)if(r[1]!==void 0){t.push({type:`punctuation`,value:r[1]}),t.push({type:`tag`,value:r[2]});let e=r[3];if(e){let n=/([a-zA-Z-]+)(=?)("(?:[^"\\]|\\.)*")?/g,r,i=0;for(;(r=n.exec(e))!==null;){let n=e.slice(i,r.index);n&&t.push({type:`text`,value:n}),t.push({type:`attr-name`,value:r[1]}),r[2]&&t.push({type:`punctuation`,value:`=`}),r[3]&&t.push({type:`attr-value`,value:r[3]}),i=r.index+r[0].length}let a=e.slice(i);a&&t.push({type:`text`,value:a})}t.push({type:`punctuation`,value:r[4]})}else r[5]?t.push({type:`jsx-expr`,value:r[5]}):r[6]?t.push({type:`attr-value`,value:r[6]}):r[7]?t.push({type:`attr-name`,value:r[7]}):r[8]?t.push({type:`comment`,value:r[8]}):r[9]&&t.push({type:`text`,value:r[9]});return t}return[{type:`text`,value:e}]}function v({code:e,language:t=`html`}){let[n,r]=(0,p.useState)(!1),i=()=>{navigator.clipboard.writeText(e),r(!0),setTimeout(()=>r(!1),2e3)},a=_(e,t);return(0,m.jsxs)(`div`,{className:`code-preview`,children:[(0,m.jsxs)(`div`,{className:`code-preview-header`,children:[(0,m.jsx)(`span`,{className:`code-preview-lang`,children:t.toUpperCase()}),(0,m.jsx)(`ui-button`,{variant:n?`success`:`ghost`,size:`sm`,icon:n?`check`:`copy`,class:`code-preview-copy`,onClick:i,children:n?`Copied!`:`Copy`})]}),(0,m.jsx)(`pre`,{className:`code-preview-pre`,children:(0,m.jsx)(`code`,{children:a.map((e,t)=>(0,m.jsx)(`span`,{className:`token-${e.type}`,children:e.value},t))})})]})}function y({html:e,label:t}){let n=(0,p.useRef)(null);return(0,p.useEffect)(()=>{n.current&&(window.openDialog||(window.openDialog=e=>{let t=document.getElementById(e);t&&(typeof t.show==`function`?t.show():t.open=!0)}),window.closeDialog||(window.closeDialog=e=>{let t=document.getElementById(e);t&&(typeof t.hide==`function`?t.hide():t.open=!1)}),n.current.innerHTML=e,n.current.querySelectorAll(`script`).forEach(e=>{let t=e.textContent||``;if(!e.hasAttribute(`src`)&&t.trim()!==``)try{Function(t)}catch(e){console.warn(`Skipping broken inline demo script due to syntax error:`,e);return}let n=document.createElement(`script`);Array.from(e.attributes).forEach(e=>n.setAttribute(e.name,e.value));let r=t;r.includes(`section.`)&&(r=`const section = document.currentScript.parentElement;
-`+r),n.textContent=r,e.parentNode?.replaceChild(n,e)}))},[e]),(0,m.jsxs)(`div`,{className:`demo-renderer`,children:[t&&(0,m.jsx)(`div`,{className:`demo-renderer-label`,children:t}),(0,m.jsx)(`div`,{ref:n,className:`demo-renderer-content`})]})}var b=[{id:`section-overview`,label:`Overview`,icon:`info`},{id:`section-examples`,label:`Examples`,icon:`code-2`},{id:`section-props`,label:`Props Reference`,icon:`list`}];function x({propCount:e,events:t,methods:n,slots:r,parts:i,docs:a,scrollContainerRef:o}){let[s,c]=(0,p.useState)(`docs-props`),l=[{id:`docs-props`,label:`Props`,icon:`list`,count:e,color:`indigo`},...t.length>0?[{id:`docs-events`,label:`Events`,icon:`zap`,count:t.length,color:`emerald`}]:[],...n.length>0?[{id:`docs-methods`,label:`Methods`,icon:`terminal`,count:n.length,color:`blue`}]:[],...r.length>0?[{id:`docs-slots`,label:`Named Slots`,icon:`layout-template`,count:r.length,color:`amber`}]:[],...i.length>0?[{id:`docs-parts`,label:`CSS Parts`,icon:`paintbrush`,count:i.length,color:`rose`}]:[],...a.map((e,t)=>({id:`docs-guide-${t}`,label:e.title,icon:`book-open`,count:0,color:`slate`}))];(0,p.useEffect)(()=>{let e=o.current;if(!e)return;let t=()=>{for(let t of[...l].reverse()){let n=e.querySelector(`#${t.id}`);if(n&&n.offsetTop<=e.scrollTop+150){c(t.id);return}}l.length>0&&c(l[0].id)};return e.addEventListener(`scroll`,t,{passive:!0}),()=>e.removeEventListener(`scroll`,t)},[l.map(e=>e.id).join()]);let u=e=>{let t=o.current;if(!t)return;let n=t.querySelector(`#${e}`);n&&t.scrollTo({top:n.offsetTop-32,behavior:`smooth`}),c(e)},d={indigo:`#818cf8`,emerald:`#34d399`,blue:`#60a5fa`,amber:`#fbbf24`,rose:`#fb7185`,slate:`#94a3b8`};return(0,m.jsxs)(`aside`,{className:`cp-docs-toc`,children:[(0,m.jsxs)(`div`,{className:`cp-docs-toc-header`,children:[(0,m.jsx)(`ui-icon`,{name:`menu`,size:`12`}),`On this page`]}),(0,m.jsx)(`div`,{className:`cp-docs-toc-list`,children:l.map(e=>(0,m.jsxs)(`button`,{className:`cp-docs-toc-item${s===e.id?` cp-docs-toc-item--active`:``}`,style:s===e.id?{"--toc-active-color":d[e.color]}:{},onClick:()=>u(e.id),children:[(0,m.jsx)(`ui-icon`,{name:e.icon,size:`12`}),(0,m.jsx)(`span`,{children:e.label}),e.count>0&&(0,m.jsx)(`span`,{className:`cp-docs-toc-count`,children:e.count})]},e.id))})]})}function S({componentName:e,tagName:t,description:n,propConfigs:r,docs:i,examples:a,demoSections:o,onSectionChange:s,noScrollWrapper:c=!1,events:l=[],methods:u=[],slots:d=[],parts:f=[]}){let h=(0,p.useRef)(null),[g,_]=(0,p.useState)(`sub-props`);(0,p.useEffect)(()=>{let e=h.current;if(!e)return;let t=()=>{let t=b.map(e=>e.id);for(let n of[...t].reverse()){let t=e.querySelector(`#${n}`);if(t&&t.offsetTop<=e.scrollTop+120){s(n);return}}s(t[0])};return e.addEventListener(`scroll`,t,{passive:!0}),()=>e.removeEventListener(`scroll`,t)},[]),(0,p.useEffect)(()=>{let e=()=>h.current||document.getElementById(`id-center-scroll`),t=[`sub-props`,...l.length>0?[`sub-events`]:[],...u.length>0?[`sub-methods`]:[],...d.length>0?[`sub-slots`]:[],...f.length>0?[`sub-parts`]:[],`sub-notes`],n=()=>{let n=e();if(n)for(let e of[...t].reverse()){let t=n.querySelector(`#${e}`);if(t&&t.offsetTop<=n.scrollTop+160){_(e);return}}},r=e();return r?.addEventListener(`scroll`,n,{passive:!0}),()=>r?.removeEventListener(`scroll`,n)},[l.length,u.length,d.length,f.length]);let v=e=>{let t=h.current||document.getElementById(`id-center-scroll`);if(!t)return;let n=t.querySelector(`#${e}`);n&&t.scrollTo({top:n.offsetTop-80,behavior:`smooth`}),_(e)};return S._scrollToId=e=>{let t=h.current;if(!t)return;let n=t.querySelector(`#${e}`);n&&t.scrollTo({top:n.offsetTop-24,behavior:`smooth`})},(0,m.jsxs)(`div`,{className:c?`id-docs-content`:`cp-dual-center-content`,ref:c?void 0:h,id:c?void 0:`cp-dual-center-scroll`,children:[(0,m.jsxs)(`div`,{className:`cp-dual-section`,id:`section-overview`,children:[(0,m.jsx)(`div`,{className:`cp-section-badge`,children:`OVERVIEW`}),(0,m.jsxs)(`h2`,{className:`cp-dual-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`18`}),e]}),(0,m.jsxs)(`div`,{className:`cp-consolidated-overview-box`,children:[(0,m.jsxs)(`div`,{className:`cp-overview-main-info`,children:[(0,m.jsxs)(`div`,{style:{display:`flex`,gap:`0.75rem`,alignItems:`center`,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-tag`,{label:`<${t}>`,color:`success`}),(0,m.jsx)(`ui-tag`,{label:`Web Component`,color:`info`}),(0,m.jsx)(`ui-tag`,{label:`Stable`,color:`primary`})]}),(0,m.jsx)(`p`,{className:`cp-overview-desc`,children:n})]}),(0,m.jsxs)(`div`,{className:`cp-overview-metadata-grid`,children:[(0,m.jsxs)(`div`,{className:`cp-metadata-item`,children:[(0,m.jsx)(`span`,{className:`cp-metadata-label`,children:`HTML Tag`}),(0,m.jsxs)(`code`,{className:`cp-metadata-value`,children:[`<`,t,`>`]})]}),(0,m.jsxs)(`div`,{className:`cp-metadata-item`,children:[(0,m.jsx)(`span`,{className:`cp-metadata-label`,children:`DOM Class`}),(0,m.jsxs)(`code`,{className:`cp-metadata-value`,children:[`HTML`,e.replace(/\s+/g,``),`Element`]})]}),(0,m.jsxs)(`div`,{className:`cp-metadata-item`,children:[(0,m.jsx)(`span`,{className:`cp-metadata-label`,children:`Scope`}),(0,m.jsx)(`code`,{className:`cp-metadata-value`,children:`Shadow DOM`})]}),(0,m.jsxs)(`div`,{className:`cp-metadata-item`,children:[(0,m.jsx)(`span`,{className:`cp-metadata-label`,children:`Export Name`}),(0,m.jsx)(`code`,{className:`cp-metadata-value`,children:e.replace(/\s+/g,``)})]})]})]}),i.length>0&&(0,m.jsx)(`div`,{style:{marginTop:`2rem`},children:i.map((e,t)=>(0,m.jsxs)(`div`,{className:`cp-consolidated-doc-block`,children:[(0,m.jsx)(`h3`,{className:`cp-doc-subsection-title`,children:e.title}),(0,m.jsx)(`div`,{className:`cp-docs-text`,dangerouslySetInnerHTML:{__html:e.content}})]},t))})]}),(0,m.jsxs)(`div`,{className:`cp-dual-section`,id:`section-examples`,children:[(0,m.jsx)(`div`,{className:`cp-section-badge`,children:`EXAMPLES`}),(0,m.jsxs)(`h2`,{className:`cp-dual-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`code-2`,size:`18`}),`Examples & Demos`]}),(0,m.jsxs)(`div`,{className:`cp-consolidated-examples-list`,children:[a.map((e,t)=>(0,m.jsx)(O,{example:e,index:t},`ex-${t}`)),o&&o.length>0&&(0,m.jsxs)(m.Fragment,{children:[(0,m.jsxs)(`div`,{className:`cp-demos-intro`,children:[(0,m.jsx)(`ui-icon`,{name:`play-circle`,size:`18`}),(0,m.jsxs)(`span`,{children:[`Real demos ported directly from the `,(0,m.jsx)(`code`,{children:t}),` demo files`]})]}),o.map((e,t)=>(0,m.jsx)(k,{section:e,index:t},`demo-${t}`))]}),a.length===0&&(!o||o.length===0)&&(0,m.jsxs)(`div`,{style:{textAlign:`center`,padding:`3rem 2rem`,color:`rgba(255,255,255,0.25)`},children:[(0,m.jsx)(`ui-icon`,{name:`code-2`,size:`36`}),(0,m.jsx)(`p`,{style:{marginTop:`1rem`,fontSize:`0.85rem`},children:`No examples available yet`})]})]})]}),(0,m.jsxs)(`div`,{className:`cp-dual-section`,id:`section-props`,children:[(0,m.jsx)(`div`,{className:`cp-section-badge`,children:`API`}),(0,m.jsxs)(`h2`,{className:`cp-dual-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`list`,size:`18`}),`Props Reference`]}),(0,m.jsxs)(`nav`,{className:`cp-api-anchor-nav`,children:[(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn${g===`sub-props`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-props`),children:[(0,m.jsx)(`ui-icon`,{name:`list`,size:`12`}),`Props`,(0,m.jsx)(`span`,{className:`cp-api-anchor-count`,children:r.length})]}),l.length>0&&(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn cp-api-anchor-btn--events${g===`sub-events`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-events`),children:[(0,m.jsx)(`ui-icon`,{name:`zap`,size:`12`}),`Events`,(0,m.jsx)(`span`,{className:`cp-api-anchor-count`,children:l.length})]}),u.length>0&&(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn cp-api-anchor-btn--methods${g===`sub-methods`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-methods`),children:[(0,m.jsx)(`ui-icon`,{name:`terminal`,size:`12`}),`Methods`,(0,m.jsx)(`span`,{className:`cp-api-anchor-count`,children:u.length})]}),d.length>0&&(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn cp-api-anchor-btn--slots${g===`sub-slots`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-slots`),children:[(0,m.jsx)(`ui-icon`,{name:`layout-template`,size:`12`}),`Slots`,(0,m.jsx)(`span`,{className:`cp-api-anchor-count`,children:d.length})]}),f.length>0&&(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn cp-api-anchor-btn--parts${g===`sub-parts`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-parts`),children:[(0,m.jsx)(`ui-icon`,{name:`paintbrush`,size:`12`}),`CSS Parts`,(0,m.jsx)(`span`,{className:`cp-api-anchor-count`,children:f.length})]}),(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn cp-api-anchor-btn--notes${g===`sub-notes`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-notes`),children:[(0,m.jsx)(`ui-icon`,{name:`file-text`,size:`12`}),`Notes`]})]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,id:`sub-props`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Property`}),(0,m.jsx)(`th`,{children:`Attribute`}),(0,m.jsx)(`th`,{children:`Type`}),(0,m.jsx)(`th`,{children:`Default`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:r.map(e=>{let t=e.rawType||(e.type===`select`?e.options?.join(` | `):e.type)||e.type,n=e.attrName||e.name,r=n!==e.name;return(0,m.jsxs)(`tr`,{children:[(0,m.jsxs)(`td`,{children:[(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name}),e.required&&(0,m.jsx)(`span`,{style:{color:`#f87171`,marginLeft:`4px`,fontSize:`0.7rem`},title:`Required`,children:`*`})]}),(0,m.jsx)(`td`,{children:r?(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{opacity:.75},children:n}):(0,m.jsx)(`span`,{style:{opacity:.35,fontSize:`0.8em`},children:`—`})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`span`,{className:`cp-type-badge`,title:t,style:{maxWidth:`200px`,overflow:`hidden`,textOverflow:`ellipsis`,display:`inline-block`,whiteSpace:`nowrap`},children:t.length>40?t.slice(0,38)+`…`:t})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.defaultValue===void 0?`—`:String(e.defaultValue)})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.description||`—`})]},e.name)})})]})}),l.length>0&&(0,m.jsxs)(`div`,{style:{marginTop:`2rem`},id:`sub-events`,children:[(0,m.jsxs)(`h3`,{className:`cp-doc-subsection-title`,style:{display:`flex`,alignItems:`center`,gap:`8px`,fontSize:`1rem`,fontWeight:600,color:`#fff`,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`zap`,size:`16`}),`Events Emitted`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Event Name`}),(0,m.jsx)(`th`,{children:`Detail / Payload`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:l.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.event})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.detail||`void`})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`})]},e.event))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(52,211,153,0.06)`,borderRadius:`8px`,border:`1px solid rgba(52,211,153,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Listen via `,(0,m.jsxs)(`code`,{style:{color:`#34d399`},children:[`element.addEventListener('`,l[0]?.event,`', e => console.log(e.detail))`]})]})]}),u.length>0&&(0,m.jsxs)(`div`,{style:{marginTop:`2rem`},id:`sub-methods`,children:[(0,m.jsxs)(`h3`,{className:`cp-doc-subsection-title`,style:{display:`flex`,alignItems:`center`,gap:`8px`,fontSize:`1rem`,fontWeight:600,color:`#fff`,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`terminal`,size:`16`}),`Public Methods`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Method`}),(0,m.jsx)(`th`,{children:`Signature`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:u.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.75rem`},children:e.signature})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`})]},e.name))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(96,165,250,0.06)`,borderRadius:`8px`,border:`1px solid rgba(96,165,250,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Call via `,(0,m.jsxs)(`code`,{style:{color:`#60a5fa`},children:[`const el = document.querySelector('`,t,`'); el.`,u[0]?.name,`()`]})]})]}),d.length>0&&(0,m.jsxs)(`div`,{style:{marginTop:`2rem`},id:`sub-slots`,children:[(0,m.jsxs)(`h3`,{className:`cp-doc-subsection-title`,style:{display:`flex`,alignItems:`center`,gap:`8px`,fontSize:`1rem`,fontWeight:600,color:`#fff`,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`layout-template`,size:`16`}),`Named Slots`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Slot Name`}),(0,m.jsx)(`th`,{children:`Description`}),(0,m.jsx)(`th`,{children:`Usage`})]})}),(0,m.jsx)(`tbody`,{children:d.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.72rem`,opacity:.7},children:e.name===`(default)`?`<${t}>content</${t}>`:`<div slot="${e.name}">…</div>`})})]},e.name))})]})})]}),f.length>0&&(0,m.jsxs)(`div`,{style:{marginTop:`2rem`},id:`sub-parts`,children:[(0,m.jsxs)(`h3`,{className:`cp-doc-subsection-title`,style:{display:`flex`,alignItems:`center`,gap:`8px`,fontSize:`1rem`,fontWeight:600,color:`#fff`,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`paintbrush`,size:`16`}),`CSS Shadow Parts`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Part Name`}),(0,m.jsx)(`th`,{children:`Description`}),(0,m.jsx)(`th`,{children:`Selector`})]})}),(0,m.jsx)(`tbody`,{children:f.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`}),(0,m.jsx)(`td`,{children:(0,m.jsxs)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.72rem`,opacity:.7},children:[t,`::part(`,e.name,`)`]})})]},e.name))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(251,191,36,0.06)`,borderRadius:`8px`,border:`1px solid rgba(251,191,36,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Style via CSS: `,(0,m.jsxs)(`code`,{style:{color:`#fbbf24`},children:[t,`::part(`,f[0]?.name,`) `,`{ color: red; }`]})]})]}),(0,m.jsxs)(`div`,{style:{marginTop:`2rem`},id:`sub-notes`,children:[(0,m.jsxs)(`h3`,{className:`cp-doc-subsection-title`,style:{display:`flex`,alignItems:`center`,gap:`8px`,fontSize:`1.05rem`,fontWeight:600,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`file-text`,size:`16`}),`Notes & Guidelines`]}),(0,m.jsx)(`div`,{className:`cp-consolidated-notes-box`,children:(0,m.jsxs)(`ul`,{className:`cp-consolidated-notes-list`,children:[(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`Framework Usage:`}),` In React, pass props as camelCase attributes. Use the HTML attribute name (shown in the Attribute column) in plain HTML.`]}),(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`Public Methods:`}),` Obtain a DOM reference via `,(0,m.jsx)(`code`,{children:`useRef`}),` or `,(0,m.jsxs)(`code`,{children:[`document.querySelector('`,t,`')`]}),` and call methods directly on the element.`]}),(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`Events:`}),` All custom events bubble and are composed — listen with `,(0,m.jsx)(`code`,{children:`addEventListener`}),` or React synthetic events where supported.`]}),d.length>0&&(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`Slots:`}),` Use named slots to inject custom content into specific regions of the component shadow DOM.`]}),f.length>0&&(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`CSS Parts:`}),` Use `,(0,m.jsx)(`code`,{children:`::part()`}),` selectors to style internal shadow DOM elements from the outside without piercing the shadow boundary.`]}),(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`Theming:`}),` Most components inherit CSS custom properties from the nearest ancestor with a `,(0,m.jsx)(`code`,{children:`data-theme`}),` attribute.`]})]})})]})]})]})}var C=new Set([`home`,`overview`,`documentation`,`design-house`,`installation`,`components-guide`,`pricing`]);function w(){let e=window.location.hash.replace(/^#\/?/,``).match(/^component\/([^/]+)\//);return e?e[1]:`playground`}function T(){let e=window.location.hash.replace(/^#\/?/,``),t=e.match(/^component\/[^/]+\/(.+)$/);return t?t[1]:e}function E(e){let t=T();t&&!C.has(t)&&window.history.replaceState(null,``,`#/component/${e}/${t}`)}function D({componentName:e,tagName:t,description:n,props:r,renderPreview:i,buildCode:a,docs:o,examples:s,demoSections:c,interactiveDocs:l=!1,events:u=[],methods:d=[],slots:f=[],parts:g=[]}){let[_,y]=(0,p.useState)(()=>w()||`playground`),b=(0,p.useRef)(null),[C,T]=(0,p.useState)(()=>{let e={};return r.forEach(t=>{e[t.name]=t.defaultValue}),e}),[D,A]=(0,p.useState)(!1),[j,M]=(0,p.useState)(()=>document.documentElement.getAttribute(`data-theme`)||`dark`);(0,p.useEffect)(()=>{let e=new MutationObserver(()=>{M(document.documentElement.getAttribute(`data-theme`)||`light`)});return e.observe(document.documentElement,{attributes:!0,attributeFilter:[`data-theme`]}),()=>e.disconnect()},[]);let N=e=>{y(e),E(e)},P=(e,t)=>{T(n=>({...n,[e]:t}))},F=()=>{navigator.clipboard.writeText(a(C)),A(!0),setTimeout(()=>A(!1),2e3)},I=l?[{id:`docs`,label:`Documentation`,icon:`book-open`},{id:`examples`,label:`Examples & Demos`,icon:`code-2`}]:[{id:`playground`,label:`Design Studio`,icon:`sliders-horizontal`},{id:`docs`,label:`Documentation`,icon:`book-open`},{id:`examples`,label:`Examples & Demos`,icon:`code-2`}];return l?(0,m.jsx)(`div`,{className:`cp-root theme-${j}`,children:(0,m.jsx)(S,{componentName:e,tagName:t,description:n,props:r,propConfigs:r,renderPreview:i,buildCode:a,docs:o,examples:s,demoSections:c,onSectionChange:()=>{},noScrollWrapper:!0,events:u,methods:d,slots:f,parts:g})}):(0,m.jsxs)(`div`,{className:`cp-root theme-${j}`,children:[(0,m.jsxs)(`div`,{className:`cp-header`,children:[(0,m.jsx)(`div`,{className:`cp-header-title-row`,children:(0,m.jsxs)(`div`,{className:`cp-header-title`,children:[(0,m.jsx)(`ui-tag`,{label:`<${t}>`,color:`success`}),(0,m.jsx)(`h1`,{className:`cp-component-name`,children:e})]})}),(0,m.jsx)(`div`,{className:`cp-tabs`,children:I.map(e=>(0,m.jsxs)(`button`,{className:`cp-tab ${_===e.id?`cp-tab--active`:``}`,onClick:()=>N(e.id),children:[(0,m.jsx)(`ui-icon`,{name:e.icon,size:`16`}),e.label]},e.id))})]}),(0,m.jsxs)(`div`,{className:`cp-tab-container`,children:[_===`playground`&&(0,m.jsx)(`div`,{className:`cp-playground-layout`,children:(0,m.jsxs)(`ui-resizable-panel`,{direction:`horizontal`,panels:`[\r
+`)[2]?.trim())||t}function c(e){return i[e]||[]}function l(e){let t=r.components.find(t=>t.tag===e);return!t||!t.events?[]:t.events.map(e=>({event:e.event,detail:e.detail,docs:e.docs}))}function u(e){let t=r.components.find(t=>t.tag===e);return!t||!t.methods?[]:t.methods.map(e=>({name:e.name,signature:e.signature,docs:e.docs}))}function d(e){let t=r.components.find(t=>t.tag===e);return!t||!t.slots?[]:t.slots.map(e=>({name:e.name||`(default)`,docs:e.docs||``}))}function f(e){let t=r.components.find(t=>t.tag===e);return!t||!t.parts?[]:t.parts.map(e=>({name:e.name,docs:e.docs||``}))}var p=t(e(),1),m=n();function h({propConfigs:e,values:t,onChange:n,theme:r=`dark`}){let i=e.filter(e=>e.type===`boolean`),a=e.filter(e=>e.type===`select`),o=e.filter(e=>e.type===`string`||e.type===`textarea`),s=e.filter(e=>![`boolean`,`select`,`string`,`textarea`].includes(e.type)),c=[...i.length>0?[{id:`booleans`,title:`State & Behaviors (${i.length})`}]:[],...a.length>0?[{id:`selects`,title:`Layout & Variants (${a.length})`}]:[],...o.length>0?[{id:`inputs`,title:`Content & Text (${o.length})`}]:[],...s.length>0?[{id:`others`,title:`Advanced Configuration (${s.length})`}]:[]];return(0,m.jsx)(`div`,{className:`pe-root ${r===`light`?`theme-light`:`theme-dark`}`,children:(0,m.jsxs)(`ui-accordion`,{items:JSON.stringify(c),multiple:`true`,"default-open":JSON.stringify(c.map(e=>e.id)),class:`pe-accordion`,style:{"--bg-primary":`transparent`,"--accordion-bg":`transparent`,"--accordion-indicator-bg":`transparent`,"--accordion-content-bg":`transparent`,"--accordion-title-color":r===`light`?`#0f172a`:`#ffffff`,"--accordion-header-color":r===`light`?`#0f172a`:`#ffffff`,"--accordion-icon-color":r===`light`?`#64748b`:`#cbd5e1`,"--accordion-content-inner-color":r===`light`?`#334155`:`#f8fafc`,"--text-primary":r===`light`?`#0f172a`:`#ffffff`,"--text-standard":r===`light`?`#0f172a`:`#ffffff`,"--accordion-border-color":r===`light`?`rgba(0,0,0,0.1)`:`rgba(255, 255, 255, 0.1)`},children:[i.length>0&&(0,m.jsx)(`div`,{slot:`content-booleans`,className:`pe-booleans-wrap pe-accordion-body`,children:i.map(e=>(0,m.jsx)(g,{config:e,value:t[e.name],onChange:t=>n(e.name,t),theme:r},e.name))}),a.length>0&&(0,m.jsx)(`div`,{slot:`content-selects`,className:`pe-grid-2 pe-accordion-body`,children:a.map(e=>(0,m.jsx)(g,{config:e,value:t[e.name],onChange:t=>n(e.name,t),theme:r},e.name))}),o.length>0&&(0,m.jsx)(`div`,{slot:`content-inputs`,className:`pe-grid-2 pe-accordion-body`,children:o.map(e=>(0,m.jsx)(g,{config:e,value:t[e.name],onChange:t=>n(e.name,t),theme:r},e.name))}),s.length>0&&(0,m.jsx)(`div`,{slot:`content-others`,className:`pe-grid-2 pe-accordion-body`,children:s.map(e=>(0,m.jsx)(g,{config:e,value:t[e.name],onChange:t=>n(e.name,t),theme:r},e.name))})]})})}function g({config:e,value:t,onChange:n,theme:r}){let[i,a]=(0,p.useState)(null),[o,s]=(0,p.useState)(()=>typeof t==`object`?JSON.stringify(t,null,2):``),c=(0,p.useRef)(n);c.current=n;let l=(0,p.useRef)(null),u=(0,p.useRef)(null);(0,p.useEffect)(()=>{let t=l.current;if(!t)return;let n=e.type===`number`,r=e=>{let t=e.detail!==void 0&&typeof e.detail==`string`?e.detail:e.detail&&e.detail.value!==void 0?e.detail.value:e.target.value;c.current(n?Number(t):t)};return t.addEventListener(`inputChange`,r),t.addEventListener(`inputInput`,r),t.addEventListener(`uiInput`,r),t.addEventListener(`input`,r),()=>{t.removeEventListener(`inputChange`,r),t.removeEventListener(`inputInput`,r),t.removeEventListener(`uiInput`,r),t.removeEventListener(`input`,r)}},[e.type]),(0,p.useEffect)(()=>{let e=u.current;if(!e)return;let t=e=>{let t=e.detail&&typeof e.detail.checked==`boolean`?e.detail.checked:e.target.checked;c.current(t)};return e.addEventListener(`switchChange`,t),e.addEventListener(`uiChange`,t),e.addEventListener(`change`,t),()=>{e.removeEventListener(`switchChange`,t),e.removeEventListener(`uiChange`,t),e.removeEventListener(`change`,t)}},[t]);let d=e=>{s(e);try{let t=JSON.parse(e);a(null),n(t)}catch{a(`Invalid JSON`)}};return(0,m.jsxs)(`div`,{className:`pe-control`,children:[(0,m.jsxs)(`div`,{className:`pe-label`,children:[(0,m.jsx)(`ui-label`,{children:(0,m.jsx)(`span`,{className:`pe-prop-name`,children:(e=>{let t=e.replace(/([A-Z])/g,` $1`);return t.charAt(0).toUpperCase()+t.slice(1)})(e.name)})}),e.description&&(0,m.jsx)(`ui-tooltip`,{content:e.description,position:`top`,trigger:`hover`,style:{display:`flex`},children:(0,m.jsx)(`span`,{slot:`target`,className:`pe-prop-hint`,children:`?`})})]}),e.type===`boolean`&&(0,m.jsx)(`ui-switch`,{ref:u,checked:t||void 0,size:`sm`,color:`success`,theme:r}),e.type===`string`&&(0,m.jsx)(`ui-input`,{ref:l,value:t??``,placeholder:e.label,size:`sm`,theme:r}),e.type===`textarea`&&(0,m.jsx)(`ui-input`,{ref:l,value:t??``,placeholder:e.label,size:`sm`,theme:r}),e.type===`number`&&(0,m.jsxs)(`div`,{className:`pe-number-row`,children:[(0,m.jsx)(`ui-input`,{ref:l,type:`number`,value:String(t??0),size:`sm`,theme:r,class:`pe-number-input`}),(0,m.jsx)(`input`,{className:`pe-range`,type:`range`,min:0,max:100,value:t??0,onChange:e=>n(Number(e.target.value))})]}),e.type===`color`&&(0,m.jsxs)(`div`,{className:`pe-color-row`,children:[(0,m.jsx)(`input`,{type:`color`,className:`pe-color-picker`,value:t??`#ffffff`,onChange:e=>n(e.target.value)}),(0,m.jsx)(`input`,{className:`pe-input pe-input--color-text`,type:`text`,value:t??``,onChange:e=>n(e.target.value),placeholder:`#rrggbb`})]}),e.type===`select`&&(0,m.jsx)(`select`,{className:`pe-native-select`,value:t??``,onChange:e=>n(e.target.value),children:e.options?.map(e=>(0,m.jsx)(`option`,{value:e,children:e},e))}),e.type===`json`&&(0,m.jsxs)(`div`,{className:`pe-json-wrap`,children:[(0,m.jsx)(`textarea`,{className:`pe-json-textarea ${i?`pe-json-textarea--error`:``}`,value:o,onChange:e=>d(e.target.value),rows:6,spellCheck:!1}),i&&(0,m.jsx)(`span`,{className:`pe-json-error`,children:i})]})]})}function _(e,t){if(t===`html`){let t=[],n=/(<\/?)([a-zA-Z-]+)([^>]*?)(\/?>)|(\{[^}]*\})|("(?:[^"\\]|\\.)*")|([a-zA-Z-]+=)|(<!--[\s\S]*?-->)|([^<{]+)/g,r;for(;(r=n.exec(e))!==null;)if(r[1]!==void 0){t.push({type:`punctuation`,value:r[1]}),t.push({type:`tag`,value:r[2]});let e=r[3];if(e){let n=/([a-zA-Z-]+)(=?)("(?:[^"\\]|\\.)*")?/g,r,i=0;for(;(r=n.exec(e))!==null;){let n=e.slice(i,r.index);n&&t.push({type:`text`,value:n}),t.push({type:`attr-name`,value:r[1]}),r[2]&&t.push({type:`punctuation`,value:`=`}),r[3]&&t.push({type:`attr-value`,value:r[3]}),i=r.index+r[0].length}let a=e.slice(i);a&&t.push({type:`text`,value:a})}t.push({type:`punctuation`,value:r[4]})}else r[5]?t.push({type:`jsx-expr`,value:r[5]}):r[6]?t.push({type:`attr-value`,value:r[6]}):r[7]?t.push({type:`attr-name`,value:r[7]}):r[8]?t.push({type:`comment`,value:r[8]}):r[9]&&t.push({type:`text`,value:r[9]});return t}return[{type:`text`,value:e}]}function v({code:e,language:t=`html`}){let[n,r]=(0,p.useState)(!1),i=()=>{navigator.clipboard.writeText(e),r(!0),setTimeout(()=>r(!1),2e3)},a=_(e,t);return(0,m.jsxs)(`div`,{className:`code-preview`,children:[(0,m.jsxs)(`div`,{className:`code-preview-header`,children:[(0,m.jsx)(`span`,{className:`code-preview-lang`,children:t.toUpperCase()}),(0,m.jsx)(`ui-button`,{variant:n?`success`:`ghost`,size:`sm`,icon:n?`check`:`copy`,class:`code-preview-copy`,onClick:i,children:n?`Copied!`:`Copy`})]}),(0,m.jsx)(`pre`,{className:`code-preview-pre`,children:(0,m.jsx)(`code`,{children:a.map((e,t)=>(0,m.jsx)(`span`,{className:`token-${e.type}`,children:e.value},t))})})]})}function y({html:e,label:t}){let n=(0,p.useRef)(null);return(0,p.useEffect)(()=>{n.current&&(window.openDialog||(window.openDialog=e=>{let t=document.getElementById(e);t&&(typeof t.show==`function`?t.show():t.open=!0)}),window.closeDialog||(window.closeDialog=e=>{let t=document.getElementById(e);t&&(typeof t.hide==`function`?t.hide():t.open=!1)}),n.current.innerHTML=e,n.current.querySelectorAll(`script`).forEach(e=>{let t=e.textContent||``;if(!e.hasAttribute(`src`)&&t.trim()!==``){let n=e.getAttribute(`type`);if(!(n&&n!==`text/javascript`&&n!==`module`&&n!==`application/javascript`))try{let e=t.replace(/import\s+.*?;?/g,``);Function(e)}catch(e){console.warn(`Skipping broken inline demo script due to syntax error:`,e);return}}let n=document.createElement(`script`);Array.from(e.attributes).forEach(e=>n.setAttribute(e.name,e.value));let r=t;r.includes(`section.`)&&(r=`const section = document.currentScript.parentElement;
+`+r),n.textContent=r,e.parentNode?.replaceChild(n,e)}))},[e]),(0,m.jsxs)(`div`,{className:`demo-renderer`,children:[t&&(0,m.jsx)(`div`,{className:`demo-renderer-label`,children:t}),(0,m.jsx)(`div`,{ref:n,className:`demo-renderer-content`})]})}var b=[{id:`section-overview`,label:`Overview`,icon:`info`},{id:`section-examples`,label:`Examples`,icon:`code-2`},{id:`section-props`,label:`Props Reference`,icon:`list`}];function x({propCount:e,events:t,methods:n,slots:r,parts:i,docs:a,scrollContainerRef:o}){let[s,c]=(0,p.useState)(`docs-props`),l=[{id:`docs-props`,label:`Props`,icon:`list`,count:e,color:`indigo`},...t.length>0?[{id:`docs-events`,label:`Events`,icon:`zap`,count:t.length,color:`emerald`}]:[],...n.length>0?[{id:`docs-methods`,label:`Methods`,icon:`terminal`,count:n.length,color:`blue`}]:[],...r.length>0?[{id:`docs-slots`,label:`Named Slots`,icon:`layout-template`,count:r.length,color:`amber`}]:[],...i.length>0?[{id:`docs-parts`,label:`CSS Parts`,icon:`paintbrush`,count:i.length,color:`rose`}]:[],...a.map((e,t)=>({id:`docs-guide-${t}`,label:e.title,icon:`book-open`,count:0,color:`slate`}))];(0,p.useEffect)(()=>{let e=o.current;if(!e)return;let t=()=>{let t=e.getBoundingClientRect().top;for(let n of[...l].reverse()){let r=e.querySelector(`#${n.id}`);if(r&&r.getBoundingClientRect().top-t<=150){c(n.id);return}}l.length>0&&c(l[0].id)};return e.addEventListener(`scroll`,t,{passive:!0}),()=>e.removeEventListener(`scroll`,t)},[l.map(e=>e.id).join()]);let u=e=>{let t=o.current;if(!t)return;let n=t.querySelector(`#${e}`);if(n){let e=t.getBoundingClientRect().top,r=n.getBoundingClientRect().top;t.scrollTo({top:t.scrollTop+r-e-32,behavior:`smooth`})}c(e)},d={indigo:`#818cf8`,emerald:`#34d399`,blue:`#60a5fa`,amber:`#fbbf24`,rose:`#fb7185`,slate:`#94a3b8`};return(0,m.jsxs)(`aside`,{className:`cp-docs-toc`,children:[(0,m.jsxs)(`div`,{className:`cp-docs-toc-header`,children:[(0,m.jsx)(`ui-icon`,{name:`menu`,size:`12`}),`On this page`]}),(0,m.jsx)(`div`,{className:`cp-docs-toc-list`,children:l.map(e=>(0,m.jsxs)(`button`,{className:`cp-docs-toc-item${s===e.id?` cp-docs-toc-item--active`:``}`,style:s===e.id?{"--toc-active-color":d[e.color]}:{},onClick:()=>u(e.id),children:[(0,m.jsx)(`ui-icon`,{name:e.icon,size:`12`}),(0,m.jsx)(`span`,{children:e.label}),e.count>0&&(0,m.jsx)(`span`,{className:`cp-docs-toc-count`,children:e.count})]},e.id))})]})}function S({componentName:e,tagName:t,description:n,propConfigs:r,docs:i,examples:a,demoSections:o,onSectionChange:s,noScrollWrapper:c=!1,events:l=[],methods:u=[],slots:d=[],parts:f=[]}){let h=(0,p.useRef)(null),[g,_]=(0,p.useState)(`sub-props`);(0,p.useEffect)(()=>{let e=h.current;if(!e)return;let t=()=>{let t=b.map(e=>e.id),n=e.getBoundingClientRect().top;for(let r of[...t].reverse()){let t=e.querySelector(`#${r}`);if(t&&t.getBoundingClientRect().top-n<=120){s(r);return}}s(t[0])};return e.addEventListener(`scroll`,t,{passive:!0}),()=>e.removeEventListener(`scroll`,t)},[]),(0,p.useEffect)(()=>{let e=()=>h.current||document.getElementById(`id-center-scroll`),t=[`sub-props`,...l.length>0?[`sub-events`]:[],...u.length>0?[`sub-methods`]:[],...d.length>0?[`sub-slots`]:[],...f.length>0?[`sub-parts`]:[],`sub-notes`],n=()=>{let n=e();if(!n)return;let r=n.getBoundingClientRect().top;for(let e of[...t].reverse()){let t=n.querySelector(`#${e}`);if(t&&t.getBoundingClientRect().top-r<=160){_(e);return}}},r=e();return r?.addEventListener(`scroll`,n,{passive:!0}),()=>r?.removeEventListener(`scroll`,n)},[l.length,u.length,d.length,f.length]);let v=e=>{let t=h.current||document.getElementById(`id-center-scroll`);if(!t)return;let n=t.querySelector(`#${e}`);if(n){let e=t.getBoundingClientRect().top,r=n.getBoundingClientRect().top;t.scrollTo({top:t.scrollTop+r-e-80,behavior:`smooth`})}_(e)};return S._scrollToId=e=>{let t=h.current;if(!t)return;let n=t.querySelector(`#${e}`);if(n){let e=t.getBoundingClientRect().top,r=n.getBoundingClientRect().top;t.scrollTo({top:t.scrollTop+r-e-24,behavior:`smooth`})}},(0,m.jsxs)(`div`,{className:c?`id-docs-content`:`cp-dual-center-content`,ref:c?void 0:h,id:c?void 0:`cp-dual-center-scroll`,children:[(0,m.jsxs)(`div`,{className:`cp-dual-section`,id:`section-overview`,children:[(0,m.jsx)(`div`,{className:`cp-section-badge`,children:`OVERVIEW`}),(0,m.jsxs)(`h2`,{className:`cp-dual-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`18`}),e]}),(0,m.jsxs)(`div`,{className:`cp-consolidated-overview-box`,children:[(0,m.jsxs)(`div`,{className:`cp-overview-main-info`,children:[(0,m.jsxs)(`div`,{style:{display:`flex`,gap:`0.75rem`,alignItems:`center`,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-tag`,{label:`<${t}>`,color:`success`}),(0,m.jsx)(`ui-tag`,{label:`Web Component`,color:`info`}),(0,m.jsx)(`ui-tag`,{label:`Stable`,color:`primary`})]}),(0,m.jsx)(`p`,{className:`cp-overview-desc`,children:n})]}),(0,m.jsxs)(`div`,{className:`cp-overview-metadata-grid`,children:[(0,m.jsxs)(`div`,{className:`cp-metadata-item`,children:[(0,m.jsx)(`span`,{className:`cp-metadata-label`,children:`HTML Tag`}),(0,m.jsxs)(`code`,{className:`cp-metadata-value`,children:[`<`,t,`>`]})]}),(0,m.jsxs)(`div`,{className:`cp-metadata-item`,children:[(0,m.jsx)(`span`,{className:`cp-metadata-label`,children:`DOM Class`}),(0,m.jsxs)(`code`,{className:`cp-metadata-value`,children:[`HTML`,e.replace(/\s+/g,``),`Element`]})]}),(0,m.jsxs)(`div`,{className:`cp-metadata-item`,children:[(0,m.jsx)(`span`,{className:`cp-metadata-label`,children:`Scope`}),(0,m.jsx)(`code`,{className:`cp-metadata-value`,children:`Shadow DOM`})]}),(0,m.jsxs)(`div`,{className:`cp-metadata-item`,children:[(0,m.jsx)(`span`,{className:`cp-metadata-label`,children:`Export Name`}),(0,m.jsx)(`code`,{className:`cp-metadata-value`,children:e.replace(/\s+/g,``)})]})]})]}),i.length>0&&(0,m.jsx)(`div`,{style:{marginTop:`2rem`},children:i.map((e,t)=>(0,m.jsxs)(`div`,{className:`cp-consolidated-doc-block`,children:[(0,m.jsx)(`h3`,{className:`cp-doc-subsection-title`,children:e.title}),(0,m.jsx)(`div`,{className:`cp-docs-text`,dangerouslySetInnerHTML:{__html:e.content}})]},t))})]}),(0,m.jsxs)(`div`,{className:`cp-dual-section`,id:`section-examples`,children:[(0,m.jsx)(`div`,{className:`cp-section-badge`,children:`EXAMPLES`}),(0,m.jsxs)(`h2`,{className:`cp-dual-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`code-2`,size:`18`}),`Examples & Demos`]}),(0,m.jsxs)(`div`,{className:`cp-consolidated-examples-list`,children:[a.map((e,t)=>(0,m.jsx)(O,{example:e,index:t},`ex-${t}`)),o&&o.length>0&&(0,m.jsxs)(m.Fragment,{children:[(0,m.jsxs)(`div`,{className:`cp-demos-intro`,children:[(0,m.jsx)(`ui-icon`,{name:`play-circle`,size:`18`}),(0,m.jsxs)(`span`,{children:[`Real demos ported directly from the `,(0,m.jsx)(`code`,{children:t}),` demo files`]})]}),o.map((e,t)=>(0,m.jsx)(k,{section:e,index:t},`demo-${t}`))]}),a.length===0&&(!o||o.length===0)&&(0,m.jsxs)(`div`,{style:{textAlign:`center`,padding:`3rem 2rem`,color:`rgba(255,255,255,0.25)`},children:[(0,m.jsx)(`ui-icon`,{name:`code-2`,size:`36`}),(0,m.jsx)(`p`,{style:{marginTop:`1rem`,fontSize:`0.85rem`},children:`No examples available yet`})]})]})]}),(0,m.jsxs)(`div`,{className:`cp-dual-section`,id:`section-props`,children:[(0,m.jsx)(`div`,{className:`cp-section-badge`,children:`API`}),(0,m.jsxs)(`h2`,{className:`cp-dual-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`list`,size:`18`}),`Props Reference`]}),(0,m.jsxs)(`nav`,{className:`cp-api-anchor-nav`,children:[(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn${g===`sub-props`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-props`),children:[(0,m.jsx)(`ui-icon`,{name:`list`,size:`12`}),`Props`,(0,m.jsx)(`span`,{className:`cp-api-anchor-count`,children:r.length})]}),l.length>0&&(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn cp-api-anchor-btn--events${g===`sub-events`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-events`),children:[(0,m.jsx)(`ui-icon`,{name:`zap`,size:`12`}),`Events`,(0,m.jsx)(`span`,{className:`cp-api-anchor-count`,children:l.length})]}),u.length>0&&(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn cp-api-anchor-btn--methods${g===`sub-methods`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-methods`),children:[(0,m.jsx)(`ui-icon`,{name:`terminal`,size:`12`}),`Methods`,(0,m.jsx)(`span`,{className:`cp-api-anchor-count`,children:u.length})]}),d.length>0&&(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn cp-api-anchor-btn--slots${g===`sub-slots`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-slots`),children:[(0,m.jsx)(`ui-icon`,{name:`layout-template`,size:`12`}),`Slots`,(0,m.jsx)(`span`,{className:`cp-api-anchor-count`,children:d.length})]}),f.length>0&&(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn cp-api-anchor-btn--parts${g===`sub-parts`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-parts`),children:[(0,m.jsx)(`ui-icon`,{name:`paintbrush`,size:`12`}),`CSS Parts`,(0,m.jsx)(`span`,{className:`cp-api-anchor-count`,children:f.length})]}),(0,m.jsxs)(`button`,{className:`cp-api-anchor-btn cp-api-anchor-btn--notes${g===`sub-notes`?` cp-api-anchor-btn--active`:``}`,onClick:()=>v(`sub-notes`),children:[(0,m.jsx)(`ui-icon`,{name:`file-text`,size:`12`}),`Notes`]})]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,id:`sub-props`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Property`}),(0,m.jsx)(`th`,{children:`Attribute`}),(0,m.jsx)(`th`,{children:`Type`}),(0,m.jsx)(`th`,{children:`Default`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:r.map(e=>{let t=e.rawType||(e.type===`select`?e.options?.join(` | `):e.type)||e.type,n=e.attrName||e.name,r=n!==e.name;return(0,m.jsxs)(`tr`,{children:[(0,m.jsxs)(`td`,{children:[(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name}),e.required&&(0,m.jsx)(`span`,{style:{color:`#f87171`,marginLeft:`4px`,fontSize:`0.7rem`},title:`Required`,children:`*`})]}),(0,m.jsx)(`td`,{children:r?(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{opacity:.75},children:n}):(0,m.jsx)(`span`,{style:{opacity:.35,fontSize:`0.8em`},children:`—`})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`span`,{className:`cp-type-badge`,title:t,style:{maxWidth:`200px`,overflow:`hidden`,textOverflow:`ellipsis`,display:`inline-block`,whiteSpace:`nowrap`},children:t.length>40?t.slice(0,38)+`…`:t})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.defaultValue===void 0?`—`:String(e.defaultValue)})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.description||`—`})]},e.name)})})]})}),l.length>0&&(0,m.jsxs)(`div`,{style:{marginTop:`2rem`},id:`sub-events`,children:[(0,m.jsxs)(`h3`,{className:`cp-doc-subsection-title`,style:{display:`flex`,alignItems:`center`,gap:`8px`,fontSize:`1rem`,fontWeight:600,color:`#fff`,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`zap`,size:`16`}),`Events Emitted`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Event Name`}),(0,m.jsx)(`th`,{children:`Detail / Payload`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:l.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.event})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.detail||`void`})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`})]},e.event))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(52,211,153,0.06)`,borderRadius:`8px`,border:`1px solid rgba(52,211,153,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Listen via `,(0,m.jsxs)(`code`,{style:{color:`#34d399`},children:[`element.addEventListener('`,l[0]?.event,`', e => console.log(e.detail))`]})]})]}),u.length>0&&(0,m.jsxs)(`div`,{style:{marginTop:`2rem`},id:`sub-methods`,children:[(0,m.jsxs)(`h3`,{className:`cp-doc-subsection-title`,style:{display:`flex`,alignItems:`center`,gap:`8px`,fontSize:`1rem`,fontWeight:600,color:`#fff`,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`terminal`,size:`16`}),`Public Methods`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Method`}),(0,m.jsx)(`th`,{children:`Signature`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:u.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.75rem`},children:e.signature})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`})]},e.name))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(96,165,250,0.06)`,borderRadius:`8px`,border:`1px solid rgba(96,165,250,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Call via `,(0,m.jsxs)(`code`,{style:{color:`#60a5fa`},children:[`const el = document.querySelector('`,t,`'); el.`,u[0]?.name,`()`]})]})]}),d.length>0&&(0,m.jsxs)(`div`,{style:{marginTop:`2rem`},id:`sub-slots`,children:[(0,m.jsxs)(`h3`,{className:`cp-doc-subsection-title`,style:{display:`flex`,alignItems:`center`,gap:`8px`,fontSize:`1rem`,fontWeight:600,color:`#fff`,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`layout-template`,size:`16`}),`Named Slots`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Slot Name`}),(0,m.jsx)(`th`,{children:`Description`}),(0,m.jsx)(`th`,{children:`Usage`})]})}),(0,m.jsx)(`tbody`,{children:d.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.72rem`,opacity:.7},children:e.name===`(default)`?`<${t}>content</${t}>`:`<div slot="${e.name}">…</div>`})})]},e.name))})]})})]}),f.length>0&&(0,m.jsxs)(`div`,{style:{marginTop:`2rem`},id:`sub-parts`,children:[(0,m.jsxs)(`h3`,{className:`cp-doc-subsection-title`,style:{display:`flex`,alignItems:`center`,gap:`8px`,fontSize:`1rem`,fontWeight:600,color:`#fff`,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`paintbrush`,size:`16`}),`CSS Shadow Parts`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Part Name`}),(0,m.jsx)(`th`,{children:`Description`}),(0,m.jsx)(`th`,{children:`Selector`})]})}),(0,m.jsx)(`tbody`,{children:f.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`}),(0,m.jsx)(`td`,{children:(0,m.jsxs)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.72rem`,opacity:.7},children:[t,`::part(`,e.name,`)`]})})]},e.name))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(251,191,36,0.06)`,borderRadius:`8px`,border:`1px solid rgba(251,191,36,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Style via CSS: `,(0,m.jsxs)(`code`,{style:{color:`#fbbf24`},children:[t,`::part(`,f[0]?.name,`) `,`{ color: red; }`]})]})]}),(0,m.jsxs)(`div`,{style:{marginTop:`2rem`},id:`sub-notes`,children:[(0,m.jsxs)(`h3`,{className:`cp-doc-subsection-title`,style:{display:`flex`,alignItems:`center`,gap:`8px`,fontSize:`1.05rem`,fontWeight:600,marginBottom:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`file-text`,size:`16`}),`Notes & Guidelines`]}),(0,m.jsx)(`div`,{className:`cp-consolidated-notes-box`,children:(0,m.jsxs)(`ul`,{className:`cp-consolidated-notes-list`,children:[(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`Framework Usage:`}),` In React, pass props as camelCase attributes. Use the HTML attribute name (shown in the Attribute column) in plain HTML.`]}),(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`Public Methods:`}),` Obtain a DOM reference via `,(0,m.jsx)(`code`,{children:`useRef`}),` or `,(0,m.jsxs)(`code`,{children:[`document.querySelector('`,t,`')`]}),` and call methods directly on the element.`]}),(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`Events:`}),` All custom events bubble and are composed — listen with `,(0,m.jsx)(`code`,{children:`addEventListener`}),` or React synthetic events where supported.`]}),d.length>0&&(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`Slots:`}),` Use named slots to inject custom content into specific regions of the component shadow DOM.`]}),f.length>0&&(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`CSS Parts:`}),` Use `,(0,m.jsx)(`code`,{children:`::part()`}),` selectors to style internal shadow DOM elements from the outside without piercing the shadow boundary.`]}),(0,m.jsxs)(`li`,{children:[(0,m.jsx)(`strong`,{children:`Theming:`}),` Most components inherit CSS custom properties from the nearest ancestor with a `,(0,m.jsx)(`code`,{children:`data-theme`}),` attribute.`]})]})})]})]})]})}var C=new Set([`home`,`overview`,`documentation`,`design-house`,`installation`,`components-guide`,`pricing`]);function w(){let e=window.location.hash.replace(/^#\/?/,``).match(/^component\/([^/]+)\//);return e?e[1]:`playground`}function T(){let e=window.location.hash.replace(/^#\/?/,``),t=e.match(/^component\/[^/]+\/(.+)$/);return t?t[1]:e}function E(e){let t=T();t&&!C.has(t)&&window.history.replaceState(null,``,`#/component/${e}/${t}`)}function D({componentName:e,tagName:t,description:n,props:r,renderPreview:i,buildCode:a,docs:o,examples:s,demoSections:c,interactiveDocs:l=!1,events:u=[],methods:d=[],slots:f=[],parts:g=[]}){let[_,y]=(0,p.useState)(()=>w()||`playground`),b=(0,p.useRef)(null),[C,T]=(0,p.useState)(()=>{let e={};return r.forEach(t=>{e[t.name]=t.defaultValue}),e}),[D,A]=(0,p.useState)(!1),[j,M]=(0,p.useState)(()=>document.documentElement.getAttribute(`data-theme`)||`dark`);(0,p.useEffect)(()=>{let e=new MutationObserver(()=>{M(document.documentElement.getAttribute(`data-theme`)||`light`)});return e.observe(document.documentElement,{attributes:!0,attributeFilter:[`data-theme`]}),()=>e.disconnect()},[]);let N=e=>{y(e),E(e)},P=(e,t)=>{T(n=>({...n,[e]:t}))},F=()=>{navigator.clipboard.writeText(a(C)),A(!0),setTimeout(()=>A(!1),2e3)},I=l?[{id:`docs`,label:`Documentation`,icon:`book-open`},{id:`examples`,label:`Examples & Demos`,icon:`code-2`}]:[{id:`playground`,label:`Design Studio`,icon:`sliders-horizontal`},{id:`docs`,label:`Documentation`,icon:`book-open`},{id:`examples`,label:`Examples & Demos`,icon:`code-2`}];return l?(0,m.jsx)(`div`,{className:`cp-root theme-${j}`,children:(0,m.jsx)(S,{componentName:e,tagName:t,description:n,props:r,propConfigs:r,renderPreview:i,buildCode:a,docs:o,examples:s,demoSections:c,onSectionChange:()=>{},noScrollWrapper:!0,events:u,methods:d,slots:f,parts:g})}):(0,m.jsxs)(`div`,{className:`cp-root theme-${j}`,children:[(0,m.jsxs)(`div`,{className:`cp-header`,children:[(0,m.jsx)(`div`,{className:`cp-header-title-row`,children:(0,m.jsxs)(`div`,{className:`cp-header-title`,children:[(0,m.jsx)(`ui-tag`,{label:`<${t}>`,color:`success`}),(0,m.jsx)(`h1`,{className:`cp-component-name`,children:e})]})}),(0,m.jsx)(`div`,{className:`cp-tabs`,children:I.map(e=>(0,m.jsxs)(`button`,{className:`cp-tab ${_===e.id?`cp-tab--active`:``}`,onClick:()=>N(e.id),children:[(0,m.jsx)(`ui-icon`,{name:e.icon,size:`16`}),e.label]},e.id))})]}),(0,m.jsxs)(`div`,{className:`cp-tab-container`,children:[_===`playground`&&(0,m.jsx)(`div`,{className:`cp-playground-layout`,children:(0,m.jsxs)(`ui-resizable-panel`,{direction:`horizontal`,panels:`[\r
                   {"id":"panel-1","minSize":20,"maxSize":50,"size":30},\r
                   {"id":"panel-2","minSize":50,"maxSize":80,"size":70}\r
-                ]`,"handle-size":6,"handle-color":`rgba(255,255,255,0.08)`,"handle-hover-color":`rgba(99,102,241,0.6)`,animated:!0,"show-handle-icon":!0,style:{flex:1,minHeight:0,overflow:`hidden`},children:[(0,m.jsxs)(`div`,{className:`cp-controls-panel`,slot:`panel-1`,children:[(0,m.jsxs)(`div`,{className:`cp-controls-header`,children:[(0,m.jsx)(`ui-icon`,{name:`settings-2`,size:`16`}),(0,m.jsx)(`span`,{children:`Properties`})]}),(0,m.jsx)(h,{propConfigs:r,values:C,onChange:P,theme:j}),(0,m.jsx)(`ui-button`,{variant:`outline`,icon:`rotate-ccw`,"full-width":!0,class:`cp-reset-btn`,onClick:()=>{let e={};r.forEach(t=>{e[t.name]=t.defaultValue}),T(e)},children:`Reset to Defaults`})]}),(0,m.jsxs)(`div`,{className:`cp-preview-panel`,slot:`panel-2`,children:[(0,m.jsxs)(`div`,{className:`cp-preview-label`,children:[(0,m.jsx)(`span`,{children:`Live Preview`}),(0,m.jsx)(`div`,{className:`cp-preview-actions`,children:(0,m.jsx)(`ui-button`,{variant:D?`success`:`outline`,size:`sm`,icon:D?`check`:`copy`,onClick:F,title:`Copy code`,children:D?`Copied!`:`Copy Code`})})]}),(0,m.jsxs)(`div`,{className:`cp-preview-stage`,children:[(0,m.jsx)(`div`,{className:`cp-preview-grid-bg`}),(0,m.jsx)(`div`,{className:`cp-preview-content`,children:(()=>{let e=i(C);return p.isValidElement(e)?p.cloneElement(e,{theme:j}):e})()})]}),(0,m.jsx)(`div`,{className:`cp-code-section`,children:(0,m.jsx)(v,{code:a(C),language:`html`})})]})]})}),_===`docs`&&(0,m.jsxs)(`div`,{className:`cp-docs-layout`,children:[(0,m.jsxs)(`div`,{className:`cp-docs-content`,ref:b,children:[(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-props`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`list`,size:`18`}),`Props Reference`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Property`}),(0,m.jsx)(`th`,{children:`Attribute`}),(0,m.jsx)(`th`,{children:`Type`}),(0,m.jsx)(`th`,{children:`Default`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:r.map(e=>{let t=e.rawType||(e.type===`select`?e.options?.join(` | `):e.type)||e.type,n=e.attrName||e.name,r=n!==e.name;return(0,m.jsxs)(`tr`,{children:[(0,m.jsxs)(`td`,{children:[(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name}),e.required&&(0,m.jsx)(`span`,{style:{color:`#f87171`,marginLeft:`4px`,fontSize:`0.7rem`},title:`Required`,children:`*`})]}),(0,m.jsx)(`td`,{children:r?(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{opacity:.75},children:n}):(0,m.jsx)(`span`,{style:{opacity:.35,fontSize:`0.8em`},children:`—`})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`span`,{className:`cp-type-badge`,title:t,style:{maxWidth:`200px`,overflow:`hidden`,textOverflow:`ellipsis`,display:`inline-block`,whiteSpace:`nowrap`},children:t.length>40?t.slice(0,38)+`…`:t})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.defaultValue===void 0?`—`:String(e.defaultValue)})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.description||`—`})]},e.name)})})]})})]}),u&&u.length>0&&(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-events`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`zap`,size:`18`}),`Events Emitted`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Event Name`}),(0,m.jsx)(`th`,{children:`Detail / Payload`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:u.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.event})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.detail||`void`})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`})]},e.event))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(52,211,153,0.06)`,borderRadius:`8px`,border:`1px solid rgba(52,211,153,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Listen via `,(0,m.jsxs)(`code`,{style:{color:`#34d399`},children:[`element.addEventListener('`,u[0]?.event,`', e => console.log(e.detail))`]})]})]}),d&&d.length>0&&(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-methods`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`terminal`,size:`18`}),`Public Methods`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Method`}),(0,m.jsx)(`th`,{children:`Signature`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:d.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.75rem`},children:e.signature})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`})]},e.name))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(96,165,250,0.06)`,borderRadius:`8px`,border:`1px solid rgba(96,165,250,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Call via `,(0,m.jsxs)(`code`,{style:{color:`#60a5fa`},children:[`const el = document.querySelector('`,t,`'); el.`,d[0]?.name,`()`]})]})]}),f&&f.length>0&&(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-slots`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`layout-template`,size:`18`}),`Named Slots`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Slot Name`}),(0,m.jsx)(`th`,{children:`Description`}),(0,m.jsx)(`th`,{children:`Usage`})]})}),(0,m.jsx)(`tbody`,{children:f.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.72rem`,opacity:.7},children:e.name===`(default)`?`<${t}>content</${t}>`:`<div slot="${e.name}">…</div>`})})]},e.name))})]})})]}),g&&g.length>0&&(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-parts`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`paintbrush`,size:`18`}),`CSS Shadow Parts`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Part Name`}),(0,m.jsx)(`th`,{children:`Description`}),(0,m.jsx)(`th`,{children:`Selector`})]})}),(0,m.jsx)(`tbody`,{children:g.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`}),(0,m.jsx)(`td`,{children:(0,m.jsxs)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.72rem`,opacity:.7},children:[t,`::part(`,e.name,`)`]})})]},e.name))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(251,191,36,0.06)`,borderRadius:`8px`,border:`1px solid rgba(251,191,36,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Style via CSS: `,(0,m.jsxs)(`code`,{style:{color:`#fbbf24`},children:[t,`::part(`,g[0]?.name,`) `,`{ color: red; }`]})]})]}),o.map((e,t)=>(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-guide-${t}`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`book-open`,size:`18`}),e.title]}),(0,m.jsx)(`div`,{className:`cp-docs-text`,dangerouslySetInnerHTML:{__html:e.content}})]},t))]}),(0,m.jsx)(x,{propCount:r.length,events:u,methods:d,slots:f,parts:g,docs:o,scrollContainerRef:b})]}),_===`examples`&&(0,m.jsxs)(`div`,{className:`cp-examples-split-layout`,children:[(0,m.jsx)(`div`,{className:`cp-examples-sidebar`,children:(0,m.jsx)(`ui-anchor`,{"scroll-container":`.cp-examples-scroll-container`,sticky:`true`,"scroll-offset":`40`,"smooth-scroll":`true`,theme:`dark`,size:`sm`,"active-color":`#10b981`,items:JSON.stringify([...s.map((e,t)=>({id:`link-ex-${t}`,label:e.title,target:`example-heading-${t}`})),...(c||[]).map((e,t)=>({id:`link-demo-${t}`,label:e.title,target:`demo-heading-${t}`})),{id:`demo-child`,label:`Demo Example`,target:`example-heading-0`}])})}),(0,m.jsxs)(`div`,{className:`cp-examples-scroll-container`,children:[s.map((e,t)=>(0,m.jsx)(O,{example:e,index:t},`ex-${t}`)),c&&c.length>0&&(0,m.jsxs)(m.Fragment,{children:[(0,m.jsxs)(`div`,{className:`cp-demos-intro`,style:{marginTop:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`play-circle`,size:`18`}),(0,m.jsxs)(`span`,{children:[`Real demos ported directly from the `,(0,m.jsx)(`code`,{children:t}),` demo files`]})]}),c.map((e,t)=>(0,m.jsx)(k,{section:e,index:t},`demo-${t}`))]})]})]})]})]})}function O({example:e,index:t}){let[n,r]=(0,p.useState)(!1),[i,a]=(0,p.useState)(!1);return(0,m.jsxs)(`div`,{className:`cp-example-card`,children:[(0,m.jsxs)(`div`,{className:`cp-example-header`,children:[(0,m.jsxs)(`div`,{children:[(0,m.jsxs)(`div`,{className:`cp-example-number`,children:[`Example `,t+1]}),(0,m.jsx)(`h3`,{className:`cp-example-title`,id:`example-heading-${t}`,children:e.title}),e.description&&(0,m.jsx)(`p`,{className:`cp-example-desc`,children:e.description})]}),(0,m.jsxs)(`div`,{className:`cp-example-actions`,children:[(0,m.jsx)(`ui-button`,{variant:i?`success`:`outline`,size:`sm`,icon:i?`check`:`copy`,onClick:()=>{navigator.clipboard.writeText(e.code),a(!0),setTimeout(()=>a(!1),2e3)},children:i?`Copied!`:`Copy`}),(0,m.jsx)(`ui-button`,{variant:n?`primary`:`outline`,size:`sm`,icon:`code-2`,onClick:()=>r(e=>!e),children:n?`Hide Code`:`Show Code`})]})]}),(0,m.jsxs)(`div`,{className:`cp-example-preview`,children:[(0,m.jsx)(`div`,{className:`cp-preview-grid-bg`}),(0,m.jsx)(`div`,{className:`cp-preview-content`,children:e.render()})]}),n&&(0,m.jsx)(`div`,{className:`cp-example-code`,children:(0,m.jsx)(v,{code:e.code,language:`html`})})]})}function k({section:e,index:t}){let[n,r]=(0,p.useState)(!1),[i,a]=(0,p.useState)(!1);return(0,m.jsxs)(`div`,{className:`cp-demo-section`,children:[(0,m.jsxs)(`div`,{className:`cp-demo-section-header`,children:[(0,m.jsxs)(`div`,{style:{display:`flex`,gap:`1rem`,alignItems:`flex-start`},children:[(0,m.jsx)(`span`,{className:`cp-demo-section-number`,children:t+1}),(0,m.jsxs)(`div`,{children:[(0,m.jsx)(`h3`,{className:`cp-demo-section-title`,id:`demo-heading-${t}`,children:e.title}),e.description&&(0,m.jsx)(`p`,{className:`cp-demo-section-desc`,children:e.description})]})]}),(0,m.jsxs)(`div`,{className:`cp-example-actions`,children:[(0,m.jsx)(`ui-button`,{variant:i?`success`:`outline`,size:`sm`,icon:i?`check`:`copy`,onClick:()=>{navigator.clipboard.writeText(e.html),a(!0),setTimeout(()=>a(!1),2e3)},children:i?`Copied!`:`Copy`}),(0,m.jsx)(`ui-button`,{variant:n?`primary`:`outline`,size:`sm`,icon:`code-2`,onClick:()=>r(e=>!e),children:n?`Hide Code`:`Show Code`})]})]}),(0,m.jsx)(`div`,{className:`cp-demo-section-body`,children:(0,m.jsx)(y,{html:e.html})}),n&&(0,m.jsx)(`div`,{className:`cp-example-code`,children:(0,m.jsx)(v,{code:e.html,language:`html`})})]})}export{u as a,d as c,l as i,c as n,f as o,s as r,o as s,D as t};
+                ]`,"handle-size":6,"handle-color":`rgba(255,255,255,0.08)`,"handle-hover-color":`rgba(99,102,241,0.6)`,animated:!0,"show-handle-icon":!0,style:{flex:1,minHeight:0,overflow:`hidden`},children:[(0,m.jsxs)(`div`,{className:`cp-controls-panel`,slot:`panel-1`,children:[(0,m.jsxs)(`div`,{className:`cp-controls-header`,children:[(0,m.jsx)(`ui-icon`,{name:`settings-2`,size:`16`}),(0,m.jsx)(`span`,{children:`Properties`})]}),(0,m.jsx)(h,{propConfigs:r,values:C,onChange:P,theme:j}),(0,m.jsx)(`ui-button`,{variant:`outline`,icon:`rotate-ccw`,"full-width":!0,class:`cp-reset-btn`,onClick:()=>{let e={};r.forEach(t=>{e[t.name]=t.defaultValue}),T(e)},children:`Reset to Defaults`})]}),(0,m.jsxs)(`div`,{className:`cp-preview-panel`,slot:`panel-2`,children:[(0,m.jsxs)(`div`,{className:`cp-preview-label`,children:[(0,m.jsx)(`span`,{children:`Live Preview`}),(0,m.jsx)(`div`,{className:`cp-preview-actions`,children:(0,m.jsx)(`ui-button`,{variant:D?`success`:`outline`,size:`sm`,icon:D?`check`:`copy`,onClick:F,title:`Copy code`,children:D?`Copied!`:`Copy Code`})})]}),(0,m.jsxs)(`div`,{className:`cp-preview-stage`,children:[(0,m.jsx)(`div`,{className:`cp-preview-grid-bg`}),(0,m.jsx)(`div`,{className:`cp-preview-content`,children:i(C)})]}),(0,m.jsx)(`div`,{className:`cp-code-section`,children:(0,m.jsx)(v,{code:a(C),language:`html`})})]})]})}),_===`docs`&&(0,m.jsxs)(`div`,{className:`cp-docs-layout`,children:[(0,m.jsxs)(`div`,{className:`cp-docs-content`,ref:b,children:[(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-props`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`list`,size:`18`}),`Props Reference`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Property`}),(0,m.jsx)(`th`,{children:`Attribute`}),(0,m.jsx)(`th`,{children:`Type`}),(0,m.jsx)(`th`,{children:`Default`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:r.map(e=>{let t=e.rawType||(e.type===`select`?e.options?.join(` | `):e.type)||e.type,n=e.attrName||e.name,r=n!==e.name;return(0,m.jsxs)(`tr`,{children:[(0,m.jsxs)(`td`,{children:[(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name}),e.required&&(0,m.jsx)(`span`,{style:{color:`#f87171`,marginLeft:`4px`,fontSize:`0.7rem`},title:`Required`,children:`*`})]}),(0,m.jsx)(`td`,{children:r?(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{opacity:.75},children:n}):(0,m.jsx)(`span`,{style:{opacity:.35,fontSize:`0.8em`},children:`—`})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`span`,{className:`cp-type-badge`,title:t,style:{maxWidth:`200px`,overflow:`hidden`,textOverflow:`ellipsis`,display:`inline-block`,whiteSpace:`nowrap`},children:t.length>40?t.slice(0,38)+`…`:t})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.defaultValue===void 0?`—`:String(e.defaultValue)})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.description||`—`})]},e.name)})})]})})]}),u&&u.length>0&&(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-events`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`zap`,size:`18`}),`Events Emitted`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Event Name`}),(0,m.jsx)(`th`,{children:`Detail / Payload`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:u.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.event})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.detail||`void`})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`})]},e.event))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(52,211,153,0.06)`,borderRadius:`8px`,border:`1px solid rgba(52,211,153,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Listen via `,(0,m.jsxs)(`code`,{style:{color:`#34d399`},children:[`element.addEventListener('`,u[0]?.event,`', e => console.log(e.detail))`]})]})]}),d&&d.length>0&&(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-methods`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`terminal`,size:`18`}),`Public Methods`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Method`}),(0,m.jsx)(`th`,{children:`Signature`}),(0,m.jsx)(`th`,{children:`Description`})]})}),(0,m.jsx)(`tbody`,{children:d.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.75rem`},children:e.signature})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`})]},e.name))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(96,165,250,0.06)`,borderRadius:`8px`,border:`1px solid rgba(96,165,250,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Call via `,(0,m.jsxs)(`code`,{style:{color:`#60a5fa`},children:[`const el = document.querySelector('`,t,`'); el.`,d[0]?.name,`()`]})]})]}),f&&f.length>0&&(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-slots`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`layout-template`,size:`18`}),`Named Slots`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Slot Name`}),(0,m.jsx)(`th`,{children:`Description`}),(0,m.jsx)(`th`,{children:`Usage`})]})}),(0,m.jsx)(`tbody`,{children:f.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`}),(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.72rem`,opacity:.7},children:e.name===`(default)`?`<${t}>content</${t}>`:`<div slot="${e.name}">…</div>`})})]},e.name))})]})})]}),g&&g.length>0&&(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-parts`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`paintbrush`,size:`18`}),`CSS Shadow Parts`]}),(0,m.jsx)(`div`,{className:`cp-props-table-wrapper`,children:(0,m.jsxs)(`table`,{className:`cp-props-table`,children:[(0,m.jsx)(`thead`,{children:(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`th`,{children:`Part Name`}),(0,m.jsx)(`th`,{children:`Description`}),(0,m.jsx)(`th`,{children:`Selector`})]})}),(0,m.jsx)(`tbody`,{children:g.map(e=>(0,m.jsxs)(`tr`,{children:[(0,m.jsx)(`td`,{children:(0,m.jsx)(`code`,{className:`cp-code-inline`,children:e.name})}),(0,m.jsx)(`td`,{className:`cp-prop-desc`,children:e.docs||`—`}),(0,m.jsx)(`td`,{children:(0,m.jsxs)(`code`,{className:`cp-code-inline`,style:{fontSize:`0.72rem`,opacity:.7},children:[t,`::part(`,e.name,`)`]})})]},e.name))})]})}),(0,m.jsxs)(`div`,{style:{marginTop:`0.75rem`,padding:`0.75rem 1rem`,background:`rgba(251,191,36,0.06)`,borderRadius:`8px`,border:`1px solid rgba(251,191,36,0.15)`,fontSize:`0.8rem`,color:`rgba(255,255,255,0.5)`},children:[(0,m.jsx)(`ui-icon`,{name:`info`,size:`13`,style:{marginRight:`6px`,verticalAlign:`middle`}}),`Style via CSS: `,(0,m.jsxs)(`code`,{style:{color:`#fbbf24`},children:[t,`::part(`,g[0]?.name,`) `,`{ color: red; }`]})]})]}),o.map((e,t)=>(0,m.jsxs)(`section`,{className:`cp-docs-section`,id:`docs-guide-${t}`,children:[(0,m.jsxs)(`h2`,{className:`cp-docs-section-title`,children:[(0,m.jsx)(`ui-icon`,{name:`book-open`,size:`18`}),e.title]}),(0,m.jsx)(`div`,{className:`cp-docs-text`,dangerouslySetInnerHTML:{__html:e.content}})]},t))]}),(0,m.jsx)(x,{propCount:r.length,events:u,methods:d,slots:f,parts:g,docs:o,scrollContainerRef:b})]}),_===`examples`&&(0,m.jsxs)(`div`,{className:`cp-examples-split-layout`,children:[(0,m.jsx)(`div`,{className:`cp-examples-sidebar`,children:(0,m.jsx)(`ui-anchor`,{header:`Examples & Demos`,"scroll-container":`.cp-examples-scroll-container`,sticky:`true`,"scroll-offset":`40`,"smooth-scroll":`true`,theme:`dark`,size:`sm`,"active-color":`#10b981`,items:JSON.stringify([...s.map((e,t)=>({id:`link-ex-${t}`,label:e.title,target:`example-heading-${t}`})),...(c||[]).map((e,t)=>({id:`link-demo-${t}`,label:e.title,target:`demo-heading-${t}`})),{id:`demo-child`,label:`Demo Example`,target:`example-heading-0`}])})}),(0,m.jsxs)(`div`,{className:`cp-examples-scroll-container`,children:[s.map((e,t)=>(0,m.jsx)(O,{example:e,index:t},`ex-${t}`)),c&&c.length>0&&(0,m.jsxs)(m.Fragment,{children:[(0,m.jsxs)(`div`,{className:`cp-demos-intro`,style:{marginTop:`1rem`},children:[(0,m.jsx)(`ui-icon`,{name:`play-circle`,size:`18`}),(0,m.jsxs)(`span`,{children:[`Real demos ported directly from the `,(0,m.jsx)(`code`,{children:t}),` demo files`]})]}),c.map((e,t)=>(0,m.jsx)(k,{section:e,index:t},`demo-${t}`))]})]})]})]})]})}function O({example:e,index:t}){let[n,r]=(0,p.useState)(!1),[i,a]=(0,p.useState)(!1);return(0,m.jsxs)(`div`,{className:`cp-example-card`,children:[(0,m.jsxs)(`div`,{className:`cp-example-header`,children:[(0,m.jsxs)(`div`,{children:[(0,m.jsxs)(`div`,{className:`cp-example-number`,children:[`Example `,t+1]}),(0,m.jsx)(`h3`,{className:`cp-example-title`,id:`example-heading-${t}`,children:e.title}),e.description&&(0,m.jsx)(`p`,{className:`cp-example-desc`,children:e.description})]}),(0,m.jsxs)(`div`,{className:`cp-example-actions`,children:[(0,m.jsx)(`ui-button`,{variant:i?`success`:`outline`,size:`sm`,icon:i?`check`:`copy`,onClick:()=>{navigator.clipboard.writeText(e.code),a(!0),setTimeout(()=>a(!1),2e3)},children:i?`Copied!`:`Copy`}),(0,m.jsx)(`ui-button`,{variant:n?`primary`:`outline`,size:`sm`,icon:`code-2`,onClick:()=>r(e=>!e),children:n?`Hide Code`:`Show Code`})]})]}),(0,m.jsxs)(`div`,{className:`cp-example-preview`,children:[(0,m.jsx)(`div`,{className:`cp-preview-grid-bg`}),(0,m.jsx)(`div`,{className:`cp-preview-content`,children:e.render()})]}),n&&(0,m.jsx)(`div`,{className:`cp-example-code`,children:(0,m.jsx)(v,{code:e.code,language:`html`})})]})}function k({section:e,index:t}){let[n,r]=(0,p.useState)(!1),[i,a]=(0,p.useState)(!1);return(0,m.jsxs)(`div`,{className:`cp-demo-section`,children:[(0,m.jsxs)(`div`,{className:`cp-demo-section-header`,children:[(0,m.jsxs)(`div`,{style:{display:`flex`,gap:`1rem`,alignItems:`flex-start`},children:[(0,m.jsx)(`span`,{className:`cp-demo-section-number`,children:t+1}),(0,m.jsxs)(`div`,{children:[(0,m.jsx)(`h3`,{className:`cp-demo-section-title`,id:`demo-heading-${t}`,children:e.title}),e.description&&(0,m.jsx)(`p`,{className:`cp-demo-section-desc`,children:e.description})]})]}),(0,m.jsxs)(`div`,{className:`cp-example-actions`,children:[(0,m.jsx)(`ui-button`,{variant:i?`success`:`outline`,size:`sm`,icon:i?`check`:`copy`,onClick:()=>{navigator.clipboard.writeText(e.html),a(!0),setTimeout(()=>a(!1),2e3)},children:i?`Copied!`:`Copy`}),(0,m.jsx)(`ui-button`,{variant:n?`primary`:`outline`,size:`sm`,icon:`code-2`,onClick:()=>r(e=>!e),children:n?`Hide Code`:`Show Code`})]})]}),(0,m.jsx)(`div`,{className:`cp-demo-section-body`,children:(0,m.jsx)(y,{html:e.html})}),n&&(0,m.jsx)(`div`,{className:`cp-example-code`,children:(0,m.jsx)(v,{code:e.html,language:`html`})})]})}export{u as a,d as c,l as i,c as n,f as o,s as r,o as s,D as t};
